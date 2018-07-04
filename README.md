@@ -1,0 +1,8 @@
+hello word!!
+
+
+.
+adjksj
+-=\
+/
+""
