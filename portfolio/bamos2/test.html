@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/main.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/common.css"/>
+  <link href="./static/css/jquery.bxslider.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <!--[if gte IE 9]>
+ <script src="./static/js/jquery-2.1.1.min.js"></script>
+ <![endif]-->
+ <!--[if !IE]> -->
+ <script src="./static/js/jquery-2.1.1.min.js"></script>
+ <!-- <![endif]-->
+  <!--[if lt IE 9]>
+	<link type="text/css" rel="stylesheet" href="./static/css/ie8.css"/>
+	<script src="./static/js/jquery-1.11.1.min.js"></script>
+	<script src="./static/js/html5shiv.js"></script>
+	<script src="./static/js/ie9.js"></script>
+	<script src="./static/js/respond.js"></script>
+  <![endif]-->
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="./static/js/jquery.bxslider.min.js"></script>
+  <script src="./static/js/jquery_publisher.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.color.js"></script>
+  <script>
+	$(document).ready(function(){
+	   bxslide();
+	   tab();
+	});
+	function bxslide() {
+	  $('.bxslider').bxSlider({
+		mode:'fade',
+		auto:false,
+		speed:1000,
+		pager:false,
+		maxSlides:2,
+		autoHover:false,
+		controls:true
+	  });
+	  $('.slider4').bxSlider({
+		slideWidth: 165,
+		minSlides: 2,
+		maxSlides: 6,
+		moveSlides: 1,
+		slideMargin: 20,
+		auto:true,
+		controls:false
+	  });
+	}
+	function tab() {
+		$(".galleryList li").stop().click(function(){
+			var num = $(this).index();
+			$(".galleryList li").removeClass("on");
+			$(this).addClass("on");
+			switch(num){
+				case 0: 
+					$(".galleryWrap div").stop().fadeIn();
+					break;
+				case 1: 
+					$(".galleryWrap div").stop().hide("100");
+					$(".galleryWrap div.logo").stop().show("500", function(){});
+					break;
+				case 2:
+					$(".galleryWrap div").stop().hide("100");
+					$(".galleryWrap div.product").stop().show("500", function(){});
+					break;
+				case 3:
+					$(".galleryWrap div").stop().hide("100");
+					$(".galleryWrap div.web").stop().show("500", function(){});
+					break;
+				case 4:
+					$(".galleryWrap div").stop().hide();
+					$(".galleryWrap div.update").stop().show("500", function(){});
+					break;
+				default: break;
+			}
+			
+		});
+	}
+  </script>
+  <style>
+	.container {
+		width:1100px;
+		margin:0 auto;	
+	}
+	.galleryList {
+		text-align:center
+	}
+	.galleryList:after {
+		display:block;
+		clear:both;
+		content:"";
+	}
+	.galleryList li{
+		width:20%;
+		border:1px solid #ddd;
+		float:left;
+		padding:10px 15px;
+		box-sizing:border-box;
+		cursor:pointer;
+	}
+	.galleryList li.on {
+		background-color:#999;
+		color:#fff;
+	}
+	.galleryWrap {
+		width:1100px;
+		magin:0 auto;
+	}
+	.galleryWrap div {
+		width:20%;
+		float:left;
+		height:200px
+	}
+	.galleryWrap div:nth-child(1) {
+		background:url("./static/images/temp/tab01.png") no-repeat;
+		background-size:100% 100%;
+	}
+	.galleryWrap div:nth-child(2) {
+		background:url("./static/images/temp/tab02.jpg") no-repeat;
+		background-size:100% 100%;
+	}
+	.galleryWrap div:nth-child(3) {
+		background:url("./static/images/temp/tab03.jpg") no-repeat;
+		background-size:100% 100%;
+	}
+	.galleryWrap div:nth-child(4) {
+		background:url("./static/images/temp/tab04.jpg") no-repeat;
+		background-size:100% 100%;
+	}
+	.galleryWrap div:nth-child(5) {
+		background:url("./static/images/temp/tab05.jpg") no-repeat;
+		background-size:100% 100%;
+	}
+	.galleryWrap div:nth-child(6) {
+		background:url("./static/images/temp/tab06.jpg") no-repeat;
+		background-size:100% 100%;
+	}
+	.galleryWrap div:nth-child(7) {
+		background:url("./static/images/temp/tab07.jpg") no-repeat;
+		background-size:100% 100%;
+	}
+	.galleryWrap div:nth-child(8) {
+		background:url("./static/images/temp/tab08.jpg") no-repeat;
+		background-size:100% 100%;
+	}
+  </style>
+ </head>
+ <body>
+  <!--스킨 네비게이션-->
+  <div id="skipNav">
+	<a href="#contents">Skip to the menu / 본문가기</a>
+  </div>
+  <!--// 스킨 네비게이션-->
+  <!-- 전체 레이아웃 -->
+  <div id="wrap">
+	<!-- visual -->
+    <div class="visual">
+
+    </div>
+	<div class="container">
+		<ul class="galleryList">
+			<li class="all on">전체</li>
+			<li class="">로고 디자인</li>
+			<li class="">제품 디자인</li>
+			<li class="">웹 디자인</li>
+			<li class="">편집 디자인</li>
+		</ul>
+		<div class="galleryWrap">
+			<div class="logo"></div>
+			<div class="web"></div>
+			<div class="logo"></div>
+			<div class="web"></div>
+			<div class="logo"></div>
+			<div class="product"></div>
+			<div class="update"></div>
+			<div class="update"></div>
+			<div class="product"></div>
+			<div class="product"></div>
+		</div>
+	</div>
+	<!-- // visual -->
+  </div>
+ </body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/main.css"/>
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.color.js"></script>
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+  jQuery(document).ready(function(){
+    slideReady();
+    slideAction();
+    slideTimer();
+    if($(".btnR, .btnL").mouseover=true){
+    }
+    headH();
+    stItem();
+    //btnSlide();
+  });
+  var html01 ='';
+  var slideNum = 0;
+  var imgSrc = ['./static/images/main1.png','./static/images/main2.png','./static/images/main4.png'];
+  var imgSrcL = imgSrc.length;
+  var slideSpeed = 200;
+  function slideReady(){
+  for(i=0 ; i < imgSrcL ; i++){
+    //html01 += '<img src="'+imgSrc[i]+'" alt="" data-index=""/>';
+    html01 += '<div class="itemBox" style="background:url('+imgSrc[i]+') no-repeat top center; background-size:cover;"></div>';
+  };
+  $('.slideItem').html(html01);
+  //$('.slideItem').find('img').first().css({'display':'block'});
+  $('.slideItem').find('.itemBox').first().css({'display':'block'});
+  };
+  function slideAction(){
+  $('.btnL').on('click',function(){
+    if(slideNum > 0){
+      $('.slideItem').find('.itemBox').eq(slideNum -1).css({'left':'-100%','display':'block'});
+      $('.slideItem').find('.itemBox').eq(slideNum).stop().animate({'left':'100%'},slideSpeed);
+      $('.slideItem').find('.itemBox').eq(slideNum -1).stop().animate({'left':0},slideSpeed);
+        slideNum --;
+    }else{
+      $('.slideItem').find('.itemBox').eq(imgSrcL -1).css({'left':'-100%','display':'block'});
+      $('.slideItem').find('.itemBox').eq(slideNum).stop().animate({'left':'100%'},slideSpeed);
+      $('.slideItem').find('.itemBox').eq(imgSrcL -1).stop().animate({'left':0},slideSpeed,function(){
+        slideNum = imgSrcL -1;
+      });
+    };
+  });
+  $('.btnR').on('click',function(){
+    if(slideNum < imgSrcL-1){
+      $('.slideItem').find('.itemBox').eq(slideNum +1).css({'left':'100%','display':'block'});
+      $('.slideItem').find('.itemBox').eq(slideNum).stop().animate({'left':'-100%'},slideSpeed);
+      $('.slideItem').find('.itemBox').eq(slideNum +1).stop().animate({'left':0},slideSpeed,function(){
+        slideNum ++;
+      });
+    }else {
+      $('.slideItem').find('.itemBox').eq(0).css({'left':'100%'});
+      $('.slideItem').find('.itemBox').eq(slideNum).stop().animate({'left':'-100%'},slideSpeed);
+      $('.slideItem').find('.itemBox').eq(0).stop().animate({'left':0},slideSpeed,function(){
+        slideNum = 0;
+      });
+    };
+  });
+  };
+  function headH() {
+    $(".nav li").hover(function(){
+      $(".header").height("auto");
+    }, function(){
+      $(".header").height(86);
+    });
+  }
+  function stItem() {
+    $(".stItem li").hover(function(){
+      var num = $(this).index();
+      console.log(num);
+      $(".stItem li:eq("+num+") a").children('img').attr("src","./static/images/p_btn"+(num+1)+"on.png");
+    }, function(){
+      var num = $(this).index();
+      $(".stItem li:eq("+num+") a").children('img').attr("src","./static/images/p_btn"+(num+1)+".png");
+    });
+  }
+  function slideTimer(){
+    clearTimeout(slideSetTime);
+    var slideSetTime = setTimeout(function(){
+
+      $('.btnR').trigger('click');
+      slideTimer();
+      /*if($(".btnR, .bthL").mousehover = true)
+      {
+        clearTimeout(slideSetTime);
+        return false;
+      }*/
+    }, 5000);
+  }
+  function btnSlide(){
+    $(".slideBox .btnSlide li").click(function(){
+      var onBtn = $(this).index();
+      var slide = $(".slideBox .itemBox");
+      slide.eq(onBtn).css({"left":"100%"});
+      slide.eq(onBtn).animate({"left":"0"});
+    });
+  }
+  </script>
+  <style type="text/css">
+  </style>
+ </head>
+ <body>
+	<div id="wrap">
+    <div class="headerWrap">
+  		<div class="header">
+  			<h1 class="logo">
+          <a href="/"><img src="./static/images/logo.png" alt="AROUND SAMCHEOK"></a>
+        </h1>
+        <ul class="nav">
+          <li><a href="#">자전거 투어</a>
+            <ul>
+              <li><a href="#">자전거 코스</a></li>
+              <li><a href="#">자전거 친화적 매장</a></li>
+            </ul>
+          </li>
+          <li><a href="#">관광지 소개</a>
+            <ul>
+              <li><a href="#">맛 이야기</a></li>
+              <li><a href="#">숙박정보</a></li>
+              <li><a href="#">이달의 추천 여행코스</a></li>
+              <li><a href="#">사진으로 보는 삼척</a></li>
+              <li><a href="#">삼척 관광지도</a></li>
+            </ul>
+          </li>
+          <li><a href="#">커뮤니티</a>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">최신기사</a></li>
+              <li><a href="#">축제 및 행사</a></li>
+            </ul>
+          </li>
+          <li><a href="#">메달 코스</a>
+            <ul>
+              <li><a href="#">코스 소개</a></li>
+              <li><a href="#">메달 코스</a></li>
+            </ul>
+          </li>
+          <li><a href="#">팸투어</a>
+            <ul>
+              <li><a href="#">팸투어 일정</a></li>
+              <li><a href="#">팸투어 신청</a></li>
+            </ul>
+          </li>
+          <li><a href="#">자전거 대회</a>
+            <ul>
+              <li><a href="#">대회개요</a></li>
+              <li><a href="#">대회신청확인</a></li>
+              <li><a href="#">대회안내</a></li>
+              <li><a href="#">코스보기</a></li>
+              <li><a href="#">협찬사</a></li>
+            </ul>
+          </li>
+        </ul>
+  		</div>
+    </div>
+    <div class="visual">
+      <div class="slideBox">
+        <div class="slideIn">
+          <div class="buttonBox">
+      			<button class="btnL"><img src="./static/images/prev.png" alt=""></button>
+      			<button class="btnR"><img src="./static/images/next.png" alt=""></button>
+			    </div>
+          <div class="slideItem"></div>
+          <div class="slideText">
+            <h2>Around 삼척 2017</h2>
+            <p>기간 : 2017년 4월 22일(토) ~ 2017년 4월 23일(일)</p>
+            <p>장소 : 4월 22일 - 삼척종합운동장, 4월 23일 - 맹방해수욕장</p>
+            <p>코스 : 30km, 110km</p>
+          </div>
+          <ul class="btnSlide">
+            <li>●</li>
+            <li>●</li>
+            <li>●</li>
+            <li>●</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="section1">
+        <div class="stBoxL">
+          <h3>대회신청안내<span>제1회 자전거 대회에 신청하세요</span></h3>
+          <ul class="stItem">
+            <li><a href=""><img src="./static/images/p_btn1.png" alt=""/></a></li>
+            <li><a href=""><img src="./static/images/p_btn2.png" alt=""/></a></li>
+            <li><a href=""><img src="./static/images/p_btn3.png" alt=""/></a></li>
+          </ul>
+        </div>
+        <div class="stBoxR">
+          <h3>이달의 추천 여행코스<span>자전거를 타고 삼척으로 떠나보세요</span></h3>
+          <div class="stImg">
+            <img src="./static/images/thumb-f75530f47aafb4cebe97abf834a98e68_1489039633_5863_211x209.jpg" alt=""/>
+          </div>
+          <div class="stText">
+            <h4>강원종합박물관(사립)</h4>
+            <p>
+              ▶ 소개 <br/>
+              강원종합박물관은 2004년 12월 학교법인 대진교육재단에서 동.서양의 고건축 양식을 응용하여 건립 운영하고 있는 시설로 연면적 12,321.02m(약3,727평), 대지면적 25,266m(약7,643평)에
+              세계 각국의 유물 20,000여점을 전시하고 있다.
+            </p>
+            <div class="more">
+              <img src="./static/images/mmore.gif" alt=""/>
+            </div>
+          </div>
+          <div class="by">
+            <img src="./static/images/banner_main.jpg" alt=""/>
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="stInner">
+          <h3>자전거코스</h3>
+          <div class="stList">
+            <img src="./static/images/course.png" alt=""/>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+        <div class="notice">
+          <h3>공지사항</h3>
+          <div class="ntList">
+            <dl>
+              <dt class="first">(자전거대회) 4월 22일 참가자 물품 수령시 신분증 지참 안내</dt>
+              <dd>안녕하세요 어라운드삼척 운영사무국입니다.4월 22일 참가자 물품 수령시 신분증이 필요하오니 꼭 지참해주시기 바랍니다.(대리수령시에도 신분증 사본이 필요합니다.)4월 22일 참가자 물품 배부 시간에 맞춰 도착하지 못하시는 분은미리 운영사무국으로 연락 주시기 바랍니다.감사…</dd>
+              <dt>(자전거대회) 삼척시 자전거연맹 지원 보급소(비공식) 안내</dt>
+              <dd></dd>
+              <dt>(자전거대회) 참가자 경품 LG TONE+ Studio HBS-W1…</dt>
+              <dd></dd>
+            </dl>
+          </div>
+        </div>
+        <div class="news">
+          <h3>최신기사</h3>
+          <div class="ntList">
+            <dl>
+              <dt class="first">(강원일보) [삼척]전국 자전거 동호인 1,500명 레이스</dt>
+              <dd>【삼척】국내 처음 시도되는 비경쟁 방식의 자전거 축제인 `어라운드 삼척 2017'의 22, 23일 개최를 앞두고 삼척시가 준비에 박차를 가하고 있다. </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="section4">
+        <div class="store">
+          <div class="stL">
+            <h3>자전거 친화적 매장</h3>
+            <strong>자전거 친화적 매장</strong>
+            <p>자전거 관리가 편리한 식당, 카페 등을 확인해보세요.</p>
+          </div>
+          <div class="stR">
+            <a href="#"><img src="./static/images/btn_go.png" alt=""></a>
+          </div>
+        </div>
+        <div class="linkImg">
+          <ul>
+            <li><a href="#"><img src="./static/images/main_btn01.png" alt=""></a></li>
+            <li><a href="#"><img src="./static/images/main_btn02.png" alt=""></a></li>
+            <li><a href="#"><img src="./static/images/main_btn03.png" alt=""></a></li>
+            <li><a href="#"><img src="./static/images/main_btn04.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        대회 문의 : 02-552-2957 (어라운드삼척 운영사무국) | (25914) 강원도 삼척시 중앙로 296 | 전화 : 033-570-3544 | 팩스 : 033-570-3141<br/>
+        <em>Copyright ⓒ 2017 Samcheok City. All rights reserved.</em>
+      </p>
+    </div>
+
+	</div>
+ </body>
+</html>

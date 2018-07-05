@@ -1,0 +1,4 @@
+@charset "utf-8";
+@import url(reset.css);
+
+#content .visual { margin:0 auto;}

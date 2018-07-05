@@ -1,0 +1,361 @@
+@charset "utf-8";
+body {
+	overflow:hidden;
+}
+#header .headWrap {
+	background:url("../images/layout/gnb_bg.jpg") no-repeat;
+	background-size:cover;
+}
+/* container */
+#container {
+	margin-top:142px;
+	position:relative;
+	background:url('../images/main/main_bg.jpg') no-repeat;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/main/main01.jpg', sizingMethod='scale');
+	background-size:cover;
+	box-shadow:inset 0px 13px 8px -11px #6aa2cd;
+}
+.contentBox {
+	width:1100px;
+	margin:0 auto;
+	height:100%;
+	position:relative;
+}
+.contentBox .topTitle {
+	text-align:center;
+	padding:55px 0;
+}
+.mainCon:after, .mainCon .innerBox02:after, .innerBox02 .item01:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+.mainCon {
+	width:1020px;
+	margin:0 32px 0 48px;
+	padding-bottom:178px;
+}
+.mainCon .conWrap {
+	float:left;
+	padding-left:16px;
+}
+.mainCon .boxWrap01 {
+	width:675px;
+}
+.mainCon .boxWrap02 {
+	width:330px;
+	margin-left:15px;
+}
+.mainCon .boxWrap01, .mainCon .boxWrap02 {
+	float:left;
+}
+.mainCon .conBox01 {
+	width:675px;
+	height:262px;
+	background:url("../images/main/mainBoxBg01.jpg") no-repeat;
+	background-size:cover;
+	margin-bottom:20px;
+}
+.mainCon .conBox02 {
+	width:330px;
+	height:262px;
+	background:url("../images/main/mainBoxBg02.jpg") no-repeat;
+	background-size:cover;
+}
+.mainCon .conBox03 {
+	width:330px;
+	height:262px;
+	background:url("../images/main/mainBoxBg03.jpg") no-repeat;
+	background-size:cover;
+	margin-left:15px;
+}
+.mainCon .conBox04 {
+	width:330px;
+	height:543px;
+	background:url("../images/main/mainBoxBg04.jpg") no-repeat;
+	background-size:cover;
+}
+.mainCon .conWrap h2 {
+	font-size:21px;
+	color:#fff;
+	padding:25px 0 8px 24px;
+	position:relative;
+}
+.mainCon .conBox03 h2 {
+	color:#000;
+}
+.mainCon .conWrap .more {
+	position:absolute;
+	top:25px;
+	right:34px;
+	width:25px;
+	height:25px;
+}
+.mainCon .innerBox02 .item01, .mainCon .innerBox02 .item02 {
+	float:left;
+}
+.mainCon .innerBox02 .item01 {
+	padding:52px 0 0 20px;
+}
+.mainCon .innerBox02 .item01 img {
+	width:71px;
+}
+.innerBox02 .item01 li {
+	float:left;
+	padding-right:27px;
+}
+.innerBox02 .item02 {
+	color:#fff;
+	padding:35px 0 0 23px;
+}
+.innerBox02 .item02 p{
+	padding-bottom:8px;
+}
+.mainCon .conBox02 .boardBox, .mainCon .conBox03 .boardBox {
+	padding-left:14px;
+	padding-top:30px;
+}
+.conBox02 .boardBox .list {
+	padding:0 0 18px 20px;
+	background:url("../images/common/arrow_white.png") no-repeat;
+}
+.conBox03 .boardBox .list {
+	padding:0 0 20px 20px;
+	background:url("../images/common/arrow_black.png") no-repeat;
+}
+.conBox02 .boardBox .list a {
+	color:#fff;
+	font-size:15px;
+}
+.conBox03 .boardBox .list a {
+	font-size:15px;
+}
+.calendarBox {
+	padding-top:33px;
+}
+.calendarBox .textInner .topText, .calendarBox .textInner .midText, .calendarBox .textInner .botText {
+	display:block;
+	font-size:11px;
+	padding-left:18px;
+}
+.calendarBox .textInner {
+	padding:0 26px 18px 12px;
+}
+.calendarBox .itemBox {
+	padding:16px 0 6px 12px;
+	background:transparent;
+	background-color:rgba(149, 172, 174, 0.7);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr=#b395acae,endColorStr=#b395acae)";
+zoom:1
+
+	border-bottom:1px solid #6f8b8e;
+	box-shadow:1px 1px 1px 1px #4a6a6d;
+	position:relative;
+}
+.calendarBox .textInner a {
+	color:#fff;
+	display:block;
+	padding-left:50px;
+}
+.calendarBox .textInner .dateBox {
+	position:absolute;
+	top:14.5px;
+	left:11px;
+	border:3px solid #fff;
+	border-radius:30px;
+	width:60px;
+	height:60px;
+	padding-top:6px;
+	font-weight:700;
+}
+.calendarBox .textInner .dateBox span {
+	display:block;
+	text-align:center;
+	font-size:19px;
+	color:#fff;
+}
+.calendarBox .textInner .topText {
+	font-size:14px;
+	padding-bottom:10px;
+}
+.calendarBox .textInner .midText span {
+	margin-bottom:5px;
+	display:block;
+}
+.calendarBox .textInner .botText {
+	padding-left:44px;
+	width:90%;
+	height:11px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.calendarBox .textInner .botText span {
+	display:block;
+	margin-bottom:5px;
+}
+@media all and (max-width:1100px) {
+	.contentBox {
+		font-size:14px;
+	}
+	.mainCon {
+		padding-bottom:15px;
+	}
+	.mainCon .botLineImg {
+		display:none;
+	}
+	.mainCon .innerBox {
+		border-bottom:1px solid #fff;
+		padding-bottom:5px;
+	}
+	.mainCon .conBox03 .innerBox {
+		border-bottom:1px solid #000;
+	}
+	.mainCon .conWrap .more {
+		right:10px;
+	}
+	.contentBox, .mainCon {
+		width:100%;
+	}
+	.mainCon .conWrap {
+		padding:0 15px;
+	}
+	.mainCon .conWrap h2 {
+		font-size:18px;
+		padding-left:10px;
+	}
+	.contentBox .topTitle img{
+		width:60%;
+	}
+	.mainCon {
+		margin-left:0;
+	}
+	.mainCon .conBox02 .boardBox, .mainCon .conBox03 .boardBox {
+		padding-top:15px;
+	}
+	.mainCon .conBox01, .mainCon .conBox04 {
+		width:100%;
+        padding-bottom:10px;
+	}
+	.mainCon .conBox01, .mainCon .conBox02, .mainCon .conBox03, .mainCon .conBox04 {
+		margin-bottom:15px;
+	}
+	.mainCon .conBox01, .mainCon .conBox04 {
+		height:auto;
+	}
+	.mainCon .conBox02, .mainCon .conBox03 {
+		width:49%;
+        min-height:220px;
+	}
+	.mainCon .conBox02 {
+		margin-right:1%;
+	}
+	.mainCon .conBox03 {
+		margin-left:1%;
+	}
+	.mainCon .innerBox02 .item01 {
+		padding-top:10px;
+	}
+	.mainCon .boxWrap01, .mainCon .boxWrap02 {
+		width:90%;
+		margin:0 auto;
+	}
+	.mainCon .boxWrap01, .mainCon .boxWrap02, .mainCon .boxWrap03 {
+		float:none;
+	}
+	.innerBox02 .item02 {
+		padding-top:10px;
+	}
+	.calendarBox .textInner {
+		padding-right:10px;
+		width:50%;
+		float:left;
+	}
+	.conBox02 .boardBox .list a, .conBox03 .boardBox .list a {
+		font-size:12px;
+	}
+	.calendarBox .textInner a {
+		padding-left:80px;
+	}
+	.calendarBox .textInner .topText, .calendarBox .textInner .midText, .calendarBox .textInner .botText {
+		padding-left:0;
+	}
+	.conBox02 .boardBox .list, .conBox03 .boardBox .list {
+		padding-top:3px;
+	}
+}
+@media all and (max-width:767px) {
+	#container {
+		margin-top:81px;
+	}
+	.contentBox .topTitle img {
+		width:80%;
+	}
+	.mainCon .conWrap .more {
+		top:15px;
+	}
+	.mainCon .conWrap h2 {
+		padding-top:15px;
+	}
+	.mainCon .conBox02, .mainCon .conBox03 {
+		width:100%;
+		height:auto;
+	}
+	.mainCon .conWrap h2 {
+		font-size:16px;
+	}
+	.mainCon .innerBox02 .item01 img {
+		width:50px;
+	}
+	.calendarBox .textInner .dateBox {
+		width:50px;
+		height:50px;
+		border-radius:25px;
+		top:8px;
+	}
+	.calendarBox .textInner .dateBox span {
+		font-size:16px;
+	}
+	.calendarBox .textInner a {
+		padding-left:60px;
+	}
+	.calendarBox .textInner .midText span:nth-child(2){
+		width:90%;
+		height:11px;
+		text-overflow:ellipsis;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	.calendarBox .textInner .botText {
+		display:none;
+	}
+	.contentBox {
+		font-size:12px;
+	}
+	.calendarBox {
+		padding-top:15px;
+	}
+	.calendarBox .textInner {
+		width:100%;
+	}
+	.mainCon .innerBox02 .item01, .mainCon .innerBox02 .item02 {
+		float:none;
+		padding-left:0px;
+		text-align:center;
+	}
+	.calendarBox .itemBox {
+		padding-top:10px;
+	}
+	.innerBox02 .item01 li {
+		float:none;
+		display:inline-block;
+	}
+	.innerBox02 .item01 li:last-child {
+		padding-right:0;
+	}
+	.mainCon .innerBox02 {
+		padding-bottom:10px;
+	}
+	.mainCon .conBox03 {
+		margin-left:0;
+	}
+}

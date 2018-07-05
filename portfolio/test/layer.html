@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> 테스트 페이지 </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/layer.css"/>
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script>
+  	$(document).ready(function(){
+      $('.layer .close').click(function(e){	//배경을 클릭하면 레이어를 사라지게 하는 이벤트 핸들러
+  				$('.layer').fadeOut();
+  				e.preventDefault();
+  			});
+  	});
+    function layer_open(el){
+  			var temp = $('#' + el);
+  			var bg = temp.prev().hasClass('bg');	//dimmed 레이어를 감지하기 위한 boolean 변수
+
+  			if(bg){
+  				$('.layer').fadeIn();	//'bg' 클래스가 존재하면 레이어가 나타나고 배경은 dimmed 된다.
+  			}else{
+  				temp.fadeIn();
+  			}
+  			// 화면의 중앙에 레이어를 띄운다.
+  			if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/2+'px');
+  			//if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-300px');
+  			else temp.css('top', '0px');
+  			if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', '-'+temp.outerWidth()/2+'px');
+  			//if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', '-100px');
+  			else temp.css('left', '0px');
+
+  			temp.find('a.cbtn').click(function(e){
+  				if(bg){
+  					$('.layer').fadeOut(); //'bg' 클래스가 존재하면 레이어를 사라지게 한다.
+  				}else{
+  					temp.fadeOut();
+  				}
+  				e.preventDefault();
+  			});
+
+  			$('.layer .bg').click(function(e){	//배경을 클릭하면 레이어를 사라지게 하는 이벤트 핸들러
+  				$('.layer').fadeOut();
+  				e.preventDefault();
+  			});
+  		}
+  </script>
+  <style type="text/css">
+
+  </style>
+</head>
+
+ <body>
+   <div>
+     <a href="#" onclick="layer_open('layer2');return false;">click</a>
+   </div>
+   <form method="" action="">
+ 		<div class="layer" style="display:none;">
+ 			<div class="bg"></div>
+ 			<div id="layer2" class="pop-layer">
+ 				<div class="close">X</div>
+ 				<div class="section2">
+ 					<div class="nameBox">
+ 						<label>이름</label>
+ 						<input type="text" maxlength="8">
+ 					</div>
+ 					<div class="phoneBox">
+ 						<label>연락처</label>
+ 						<input type="numbel" maxlength="3" class="firstPh"><input type="numbel" maxlength="4"><input type="numbel" maxlength="4">
+ 					</div>
+ 				</div>
+ 				<div class="section3">
+ 					<p class="title">[ 개인정보 수집 이용안내 ]</p>
+ 					<div class="content">
+ 						<div class="textBox">
+ 							<p>
+ 								○ 개인정보 수집 이용 목적 <br/>
+ 									<span>: 빠르고 간편하게 예약을 진행하기 위한 용도</span></br>
+ 								○ 수집하려는 개인정보 항목 </br>
+ 									<span>: 고객성명, 연락처(전화번호 또는 휴대폰번호)</span></br>
+ 								○ 보유 및 이용기간
+ 									<span>: 수집한 정보는 1년 후 삭제되며, 예약 외의 목적으로는 사용하지 않습니다.</span></br>
+ 							</p>
+ 							<p class="bot">※ 개인정보 수집·이용을 거부할 수 있으며, 이 경우 첫방문고객 간편진료예약 서비스를 받으실 수 없습니다.</p>
+ 						</div>
+ 					</div>
+ 					<div class="submitBox">
+ 						<div class="check"><input type="checkbox"><label>개인정보 수집처리에 동의합니다.</label></div>
+ 					</div>
+ 				</div>
+ 				<div class="section4">
+ 					<p>급하신 경우 전화상담으로 전화 주시면 예약을 도와 드리겠습니다. (전화예약 : 02)903-3444)<br/>
+ 					[전화예약] 월/수/금 09:30~21:00, 화/목 09:30~19:00, 토요일 09:30~14:00</p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</form>
+ </body>
+</html>

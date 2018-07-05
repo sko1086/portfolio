@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.header {
+  background:rgba(47,47,47,0.98);
+  height:56px;
+  width:100%;
+}
+.header h1 {
+  float:left;
+  padding-left:20px;
+}
+.header h1 a{
+  color:#fff;
+  font-size:25px;
+  line-height:50px;
+  display:block;
+}
+.headOn {
+  position:fixed;
+}
+.gnb {
+  float:left;
+  padding-left:40px;
+}
+.gnb:after, .category:after, .infoBox:after, .designList:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+.gnb li {
+  float:left;
+  line-height:56px;
+  padding:0 15px;
+}
+.gnb li a {
+  color:#fff;
+}
+.gnb li a:hover {
+  color:#ddd;
+}
+.headR {
+  float:right;
+}
+.headR .searchBox {
+  float:left;
+  line-height:56px;
+  padding-right:50px;
+}
+.headR .searchBox input {
+  padding:5px 0;
+}
+.headR .searchBox a {
+  color:#fff;
+}
+.headR .loginBox {
+  float:left;
+  line-height:56px;
+}
+.headR .loginBox a{
+  color:#fff;
+  padding-right:15px;
+}

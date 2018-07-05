@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/js/jquery.bxslider.css">
+	<link rel="stylesheet" href="./static/css/smartphoto.css">
+	<style>
+		a {
+			width:300px;
+			height:300px;
+			display:block;
+		}
+		a img {
+			width:100%;
+			height:100%;
+		}
+	</style>
+</head>
+<body>
+    <!-- Swiper -->
+	<div>
+		<a href="./static/images/small-1.jpg" class="js-img-viwer" data-caption="Caption 1" data-id="id-1">
+		  <img src="./static/images/small-1.jpg" data-group="group">
+		</a>
+		<a href="./static/images/small-2.jpg" class="js-img-viwer" data-caption="Caption 2" data-id="id-2">
+		  <img src="./static/images/small-2.jpg" data-group="group">
+		</a>
+		<a href="./static/images/small-3.jpg" class="js-img-viwer" data-caption="Caption 3" data-id="id-3">
+		  <img src="./static/images/small-3.jpg" data-group="group">
+		</a>
+	</div>
+    <!-- Swiper JS -->
+	<script src="./static/js/jquery-2.1.1.min.js"></script>
+    <script src="./static/js/jquery.bxslider.min.js"></script>
+	<script src="./static/js/jquery-smartphoto.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+		$(function(){
+			$(".js-img-viwer").smartPhoto();
+		});
+    </script>
+</body>
+</html>

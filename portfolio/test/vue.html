@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+	<script src="./static/js/jquery-2.1.1.min.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<style>
+
+	</style>
+</head>
+<body>
+	<div id="app">
+		<select v-model="selected">
+			<option disabled value="">please select one</option>
+			<option>A</option>
+			<option>B</option>
+			<option>C</option>
+		</select>
+		<span>선택함 : {{selected}}</span>
+	</div>
+	<!-- 오시는길 시작-->
+	<!-- 오시는길 끝 -->
+	<script>
+		var app = new Vue({
+			el:'#app',
+			data: {
+				selected:''
+			}
+		});
+	</script>
+</body>
+
+</html>

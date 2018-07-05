@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>jqPlot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./static/jquery.jqplot.js"></script>
+<script type="text/javascript" src="./static/plugins/jqplot.barRenderer.js"></script>
+<script type="text/javascript" src="./static/plugins/jqplot.categoryAxisRenderer.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/jquery.jqplot.css"/>
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+
+    var member = [20, 30, 40,100, 80, 50, 10,30,40];
+    var album = [20, 30, 40, 100, 80, 50, 10,30,40];
+
+
+
+    jQuery("#chart").jqplot([member, album], {
+          title : "그래프"
+        , series : [
+
+            // 첫번째 블록에서 member 배열에 대핸 데이터를 처리한다.
+            {
+                // member 배열을 막대 그래프 차트로 나타낸다. 
+                renderer : jQuery.jqplot.BarRenderer
+            }
+        ]
+        , axes: {
+            xaxis : { 
+                  renderer : jQuery.jqplot.CategoryAxisRenderer
+                , ticks : ['1월', '2월', '3월', '4월', '5월', '6월', '7월','8월','9월']
+            },
+			yaxis : {
+				ticks : ['0','10','20','30','40','50','60','70','80','90','100']
+				, pad : 10
+			}
+			
+        }
+    });
+});
+</script>
+</head>
+<body>
+<div id="chart" style="width:780px;height:304px;">
+</body>
+</html>

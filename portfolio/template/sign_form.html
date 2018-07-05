@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- // 브라우저 안내 END -->
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="./static/css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/common.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/style.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/jquery.bxslider.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/font.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+	<link type="text/css" rel="stylesheet" href="./static/css/ie9.css"/>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<script src="./static/js/selectivizr-min.js"></script>
+	<script type="text/javascript" src="./static/js/respond.js"></script>
+	<script type="text/javascript" src="./static/js/jquery-1.11.1.min.js"></script>
+  <![endif]-->
+  <!--[if gte IE 9]>
+	<script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <![endif]-->
+  <!--[if !IE]>-->
+	<script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <!--<![endif]-->
+  <style>
+    .no-js { display: none; }
+    .sign_form {
+      width:1000px;
+      margin:0 auto;
+    }
+    .sign_form li:after {
+    	content:"";
+    	display:block;
+    	clear:both;
+    }
+    .sign_form .signTitle, .sign_form .signInput {
+    	width:50%;
+    	float:left;
+    }
+    .sign_form .signTitle {
+      line-height:30px;
+    }
+    .sign_form li {
+      padding:10px 0;
+    }
+    .sign_form input, .sign_form select {
+      height:30px;
+    }
+    @media all and (max-width:768px) {
+      .sign_form {
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 스킵네비게이션 -->
+  <div id="skipNav">
+    <div><a href="#container" title="">skip to the menu</a></div>
+  </div>
+  <div class="sign_form">
+    <form class="" action="" method="">
+    	<ul>
+    		<li>
+    			<div class="signTitle">회원구분</div>
+    			<div class="signInput">
+    				<span>회원<input type="radio" name="type" title="회원"></span>
+    				<span>기업<input type="radio" name="type" title="기업"></span>
+    			</div>
+    		</li>
+        <li>
+          <div class="signTitle">이메일</div>
+    			<div class="signInput">
+    				<span><input type="text" name="type" title="이메일"></span>@
+    				<span><input type="text" name="type" title="이메일"></span>
+            <span>
+              <select title="sele">
+                <option value="">1111</option>
+                <option value="">2222</option>
+                <option value="">3333</option>
+              </select>
+            </span>
+    			</div>
+        </li>
+        <li>
+    			<div class="signTitle">비밀번호</div>
+    			<div class="signInput">
+    				<span><input type="password" name="type" title="비밀번호"></span>&nbsp;
+    				<span>숫자와 영문을 포함한 8자 입력</span>
+    			</div>
+    		</li>
+        <li>
+    			<div class="signTitle">비밀번호 확인</div>
+    			<div class="signInput">
+    				<span><input type="password" name="type" title="비밀번호확인"></span>
+    			</div>
+    		</li>
+        <li>
+    			<div class="signTitle">성명</div>
+    			<div class="signInput">
+    				<span><input type="text" name="type" title="성명"></span>
+    			</div>
+    		</li>
+        <li>
+          <div class="signTitle">성명</div>
+          <div class="signInput">
+            <span><input type="text" name="type" title="성명"></span>
+          </div>
+        </li>
+    	</ul>
+    </form>
+  </div>
+  <script type="text/javascript" src="./static/js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery_publisher.js"></script>
+  <script type="text/javascript" src="./static/js/jquery_publisher_main.js"></script>
+  <script type="text/javascript" src="./static/js/jquery_publisher_plugn.js"></script>
+  <script>
+    $('html').removeClass('no-js');
+  </script>
+</body>
+
+</html>

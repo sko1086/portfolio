@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Title</title>
+<link rel="stylesheet" type="text/css" href="css/IFA.css" />
+</head>
+ <body>
+	<div class="content">
+		<h1>THE TIME TO MAKE NEW THINGS POSSIBLE IS NOW</h1>
+		<div class="article">
+			<div class="art_head">
+				<h2>SEE WHAT’S NEW FROM SAMSUNG</h2>
+				<button type="button">IFA Gallery</button>
+				<p>
+					Samsung is back at IFA with even more solutions and more possibilities for your business. <br/>
+					See what we have in store for 2015 and beyond, from the latest technologies to innovative software solutions.
+				</p>
+			</div>	
+			<div class="shopping">
+				<h3>Smart Shopping</h3>
+				<ul class="inner">
+					<li class="img_item">
+						<h4>Mirror Display</h4>
+						<div class="img"><img src="images/shop01.jpg" alt=""/></div>
+						<div class="text">
+							Think it’s just a mirror? Think again.<br/>
+							<span class="br">The Samsung OLED screen has a reflectance level of</span>
+							<span class="br">over 75%, meaning that customers get a clear view of</span>
+							<span class="br">their outfits augmented by additional information</span>
+							provided by the retailer on-screen.
+						</div>
+					</li>
+					<li>
+						<h4>Virtual Fitting Room</h4>
+						<div class="img"><img src="images/shop02.jpg" alt=""/></div>
+						<div class="text">
+							The Samsung screen provides a unique brick-and-mortar shopping experience 
+							by offering customers a chance to get a 360-degree view of their selected 
+							outfits on a 3D model they can customize to match their own body shape and size.
+						</div>
+					</li>
+					<li class="img_item">
+						<h4>Samsung Pay</h4>
+						<div class="img"><img src="images/shop03.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">Convert shoppers to buyers with easy and innovative</span>
+							<span class="br">POS systems that make efficient use of time and space,</span>
+							<span class="br">streamline purchasing for staff and customers, and </span>
+							build brand loyalty.
+						</div>
+					</li>
+					<li>
+						<h4>Smart LED Signage</h4>
+						<div class="img"><img src="images/shop04.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">Attract and engage customers with Samsung Smart LED</span>
+							<span class="br">Signage that is timely and personalized. Crisp imagery</span>
+							<span class="br">draws the eye to the storefront while interactive touch</span>
+							<span class="br">elements allow customers to engage with the brand</span>
+							in-store and in-person.
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="office">
+				<h3>Smart Office</h3>
+				<ul class="inner">
+					<li>
+						<h4>WLAN</h4>
+						<div class="img"><img src="images/office01.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">Tamsung’s WLAN systems optimize channel usage and </span>
+							<span class="br">allow multiple users to access video, voice and text</span>
+							<span class="br">messaging without delays. Whether it’s employees</span>
+							<span class="br">coordinating large amounts of communications and</span>
+							<span class="br">data or customers who need to get connected,</span>
+							everyone stays connected and stays happy.
+						</div>
+					</li>
+					<li>
+						<h4>KNOX</h4>
+						<div class="img"><img src="images/office02.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">Mobile devices are the future of work—KNOX is </span>
+							<span class="br">Samsung’s Android-based solution to help businesses </span>
+							<span class="br">create a secure mobile environment. Using key </span>
+							<span class="br">technology patented by the NSA, KNOX ensures that </span>
+							your business is both mobile and protected.
+						</div>
+					</li>
+					<li>
+						<h4>Printing Smart UX SDK</h4>
+						<div class="img"><img src="images/office03.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">This Android-based SDK allows developers to easily </span>
+							<span class="br">integrate secure copying, scanning and printing func-</span>
+							<span class="br">tions into their applications. Whether your application is</span>
+							<span class="br">used internally or is customer-facing, content can be</span>
+							secured and kept private from start to finish.
+						</div>
+					</li>
+					<li>
+						<h4>UHD Video Wall</h4>
+						<div class="img"><img src="images/office04.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">amsung’s UHD video walls are not only large, they have</span>
+							<span class="br">incredible picture quality. And as the first video walls to</span>
+							<span class="br">feature integrated DP 1.2 and HDMI ports, they can dis-</span>
+							<span class="br">play high quality content to engage and delight </span>
+							<span class="br">customers from near and afar, especially in large and</span>
+							busy spaces where brands must compete for attention
+						</div>
+					</li>
+					<li class="height_s">
+						<h4>Magic IWB</h4>
+						<div class="img"><img src="images/office05.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">Communicate and share information clearly with the</span>
+							<span class="br">Magic Interactive Whiteboard Solution, a tool for board-</span>
+							<span class="br">rooms and brainstorming sessions alike. Access files</span>
+							<span class="br">from any PC, integrate with multiple mobile devices,</span>
+							<span class="br">interact with content directly on-screen with the touch</span>
+							<span class="br">feature, and use the Bluetooth-enabled pointer to move</span>
+							freely around the room.
+						</div>
+					</li>
+					<li>
+						<h4>Smart MultiXpress 7</h4>
+						<div class="img"><img src="images/office06.jpg" alt=""/></div>
+						<div class="text">
+							<span class="br">Get super-fast, professional printing results on a</span>
+							<span class="br">made-for-business device. This wireless-enabled print-</span>
+							<span class="br">ing center is powered by Android and comes with a vari-</span>
+							<span class="br">ety of customizable, pre-loaded applications for your</span>
+							content production needs.
+						</div>
+					</li>
+				</ul>
+			</div>	
+			<div class="office_bot">
+				<p>We’re here to help you find the right solutions for you and your brand.</p>
+				<button type="button">
+					CONTACT US
+				</button>
+			</div>
+		</div>
+		<div class="ifa">
+			<div class="ifa_box">
+				<div class="ifa_head">
+					<h2>IFA Gallery</h2>
+					<button type="button">SEE WHAT'S NEW FROM SAMSUNG</button>
+					<p>Catch up on the events and activities on-site at IFA this year.</p>
+				</div>
+				<div class="screen">
+					<div class="slide_left"></div>
+					<div class="slide_right"></div>
+					<div class="galleryWrap">
+						<div class="gallery1 gallery">
+							<div class="box_left clear">
+								<a href="#none" class="img_top image">
+									<img src="images/p_img01.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img01.jpg" alt="" class="m_img"/>
+								</a>
+								<a href="#none" class="img_bot image">
+									<img src="images/p_img02.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img02.jpg" alt="" class="m_img"/>
+								</a>
+							</div>
+							<div class="box_right clear">
+								<a href="#none" class="img_top image">
+									<img src="images/p_img03.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img03.jpg" alt="" class="m_img"/>
+								</a>
+								<a id="z2HTPuY2scM" href="#none" class="img_bot video1">
+									<img src="images/p_img04.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img04.jpg" alt="" class="m_img"/>
+								</a>
+							</div>
+							<div class="box_bot">
+								<div class="bot_item">
+									<a href="#none" class="bot_left image">
+										<img src="images/p_img05.jpg" alt="" class="pc_img"/>
+										<img src="images/m_img05.jpg" alt="" class="m_img"/>
+									</a>
+								</div>
+								<div class="bot_item2">
+									<a id="K-B48BQv2nY" class="bot_right video1">
+										<img src="images/p_img06.jpg" alt="" class="pc_img"/>
+										<img src="images/m_img06.jpg" alt="" class="m_img"/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="gallery2 gallery">
+							<div class="box_left clear">
+								<a id="_O7HvZCUlF4" href="#none" class="img_top video1">
+									<img src="images/p_img07.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img07.jpg" alt="" class="m_img"/>
+								</a>
+								<a href="#none" class="img_bot image">
+									<img src="images/p_img08.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img08.jpg" alt="" class="m_img"/>
+								</a>
+							</div>
+							<div class="box_right clear">
+								<a id="modal_05" href="#none" class="img_top image">
+									<img src="images/p_img09.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img09.jpg" alt="" class="m_img"/>
+								</a>
+								<a id="0k02guf4oU8" href="#none" class="img_bot video1">
+									<img src="images/p_img10.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img10.jpg" alt="" class="m_img"/>
+								</a>
+							</div>
+							<div class="box_bot">
+								<div class="bot_item">
+									<a href="#none" class="bot_left image">
+										<img src="images/p_img11.jpg" alt="" class="pc_img"/>
+										<img src="images/m_img11.jpg" alt="" class="m_img"/>
+									</a>
+								</div>
+								<div class="bot_item2">
+									<a href="#none" class="bot_right image">
+										<img src="images/p_img12.jpg" alt="" class="pc_img"/>
+										<img src="images/m_img12.jpg" alt="" class="m_img"/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="gallery3 gallery">
+							<div class="box_left clear">
+								<a id="3FcERY4lyV4" href="#none" class="img_top video1">
+									<img src="images/p_img13.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img13.jpg" alt="" class="m_img"/>
+								</a>
+								<a href="#none" class="img_bot image">
+									<img src="images/p_img14.jpg" alt=""class="pc_img"/>
+									<img src="images/m_img14.jpg" alt="" class="m_img"/>
+								</a>
+							</div>
+							<div class="box_right clear">
+								<a href="#none" class="img_top image">
+									<img src="images/p_img15.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img15.jpg" alt="" class="m_img"/>
+								</a>
+								<a href="#none" class="img_bot image">
+									<img src="images/p_img16.jpg" alt="" class="pc_img"/>
+									<img src="images/m_img16.jpg" alt="" class="m_img"/>
+								</a>
+							</div>
+							<div class="box_bot">
+								<img src="images/p_img17.jpg" alt="" class="pc_img"/>
+								<img src="images/m_img17.jpg" alt="" class="m_img"/>
+							</div>
+						</div>
+					</div>
+					<div class="modal">
+						<div class="btn">
+							<button type="button">close</button>
+						</div>
+					</div>
+					<div class="modal_img">
+						<button type="button">close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay">
+		
+		</div>
+	</div>
+ </body>
+ <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+ <script>
+	function Height_size(){
+		var text_box = $(".office .inner li.height_s").outerHeight();
+		$(".inner li:not(.height_s)").css({"height":+text_box+"px"});
+	}
+	$(window).load(function(){
+		Height_size();
+	});
+	$(window).resize(function(){
+		Height_size();
+	});
+	
+	$(document).ready(function(){
+		
+		var Wrap_h = $(window).height();
+
+		$(".screen a.video1").click(function(){
+			$(".modal").show();
+			$(".overlay").show();
+			var num = $(this).attr("id");
+			var src = "<iframe width='640' height='360' src='https://www.youtube.com/embed/"+num+"'frameborder='0' allowfullscreen></iframe>"; /* iframe 값에 num넣어 변수에 넣어두기 */
+			$(".modal").append(src); /* modal_layer에 iframe 추가 */
+			v_size();		
+			
+		});
+		$(".screen a:not(.video1)").click(function(){
+			$(".modal_img").show();
+			$(".overlay").show();
+			var index =$(this).children("img").attr("src").substring(12, 14);
+			var image="<img src='images/modal_"+index+".jpg'/>";
+			$(".modal_img").append(image);
+			img_size();
+		});
+		$(".modal_img button").click(function(){
+			$(".overlay").hide();
+			$(".modal_img").hide();
+			$(".modal_img img").remove();
+		});
+		$(".modal button").click(function(){
+			$(".overlay").hide();
+			$(".modal").hide();
+			$(".modal iframe").remove();
+		});
+		
+		$(".galleryWrap").prepend($(".screen .gallery:last"));
+		width = $(".gallery").width();
+		$(".galleryWrap").css({"marginLeft":"-"+width+"px"});
+		// 다음버튼
+		$(".slide_right").click(function(){	film("next", "fast"); });
+		// 이전버튼
+		$(".slide_left").click(function(){ film("prev", "fast"); });
+
+		$(window).resize(function(){
+			width = $(".gallery").width();
+			$(".galleryWrap").css({"marginLeft":"-"+width+"px"});
+		
+		});
+		
+	});
+	function v_size(){
+		var OWidth = $(".screen").width()/2;
+		var OHeight = $(".screen").height()/2;
+		var MHeight = $(".modal").height()/2;
+		var Iwidth = $(".modal iframe").width()/2;
+		var modal_w = OWidth - Iwidth;
+		var modal_h = OHeight - MHeight;
+		$(".modal").css({"top":+modal_h+"px","left":+modal_w+"px"})
+	
+	}
+	function img_size(){
+		var OWidth = $(".screen").width()/2;
+		var OHeight = $(".screen").height()/2;
+		var IWidth = $(".modal_img").width()/2
+		var MHeight = $(".modal_img").height()/2;
+		var modal_w = OWidth - IWidth;
+		var modal_h = OHeight - MHeight;
+		$(".modal_img").css({"top":+modal_h+"px","left":+modal_w+"px"});
+	}
+
+	function film(target, speed){
+			if( target == "next"){
+				$(".galleryWrap").animate({"marginLeft":"-="+width+"px"},300, function(){
+					$(".galleryWrap").css({"marginLeft":"-"+width+"px"});
+					$(".gallery:first").appendTo(".galleryWrap");
+				});
+			}
+			if( target == "prev" ){
+				$(".galleryWrap").animate({"marginLeft":"+="+width+"px"},300, function(){
+					$(".galleryWrap").css({"marginLeft":"-"+width+"px"});
+					$(".gallery:last").prependTo(".galleryWrap");
+				});	
+			}
+		}
+
+ </script>
+ <script></script>
+</html>

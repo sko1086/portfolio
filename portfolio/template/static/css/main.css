@@ -1,0 +1,267 @@
+@charset "utf-8";
+body {
+	overflow:hidden;
+}
+/* container */
+#container {
+	margin-top:142px;
+	position:relative;
+	background:url('../images/main/main_bg.jpg') no-repeat;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/main/main01.jpg', sizingMethod='scale');
+	background-size:cover;
+	box-shadow:inset 0px 13px 8px -11px #6aa2cd;
+}
+.contentBox {
+	width:1100px;
+	margin:0 auto;
+	height:100%;
+	position:relative;
+}
+.contentBox .topTitle {
+	text-align:center;
+	padding:55px 0;
+}
+.mainCon:after, .mainCon .innerBox02:after, .innerBox02 .item01:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+.mainCon {
+	width:1020px;
+	margin:0 32px 0 48px;
+	padding-bottom:178px;
+}
+.mainCon .conWrap {
+	float:left;
+	padding-left:16px;
+}
+.mainCon .boxWrap01 {
+	width:675px;
+}
+.mainCon .boxWrap02 {
+	width:330px;
+	margin-left:15px;
+}
+.mainCon .boxWrap01, .mainCon .boxWrap02 {
+	float:left;
+}
+.mainCon .conBox01 {
+	width:675px;
+	height:262px;
+	background:url("../images/main/mainBoxBg01.jpg") no-repeat;
+	margin-bottom:20px;
+}
+.mainCon .conBox02 {
+	width:330px;
+	height:262px;
+	background:url("../images/main/mainBoxBg02.jpg") no-repeat;
+}
+.mainCon .conBox03 {
+	width:330px;
+	height:262px;
+	background:url("../images/main/mainBoxBg03.jpg") no-repeat;
+	margin-left:15px;
+}
+.mainCon .conBox04 {
+	width:330px;
+	height:543px;
+	background:url("../images/main/mainBoxBg04.jpg") no-repeat;
+}
+.mainCon .conWrap h2 {
+	font-size:21px;
+	color:#fff;
+	padding:25px 0 12px 20px;
+	position:relative;
+}
+.mainCon .conBox03 h2 {
+	color:#000;
+}
+.mainCon .conWrap .more {
+	position:absolute;
+	top:25px;
+	right:34px;
+	width:25px;
+	height:25px;
+}
+.mainCon .innerBox02 .item01, .mainCon .innerBox02 .item02 {
+	float:left;
+}
+.mainCon .innerBox02 .item01 {
+	padding:52px 0 0 20px;
+}
+.innerBox02 .item01 li {
+	float:left;
+	padding-right:27px;
+}
+.innerBox02 .item02 {
+	color:#fff;
+	padding:35px 0 0 23px;
+}
+.innerBox02 .item02 p{
+	padding-bottom:8px;
+}
+.mainCon .conBox02 .boardBox, .mainCon .conBox03 .boardBox {
+	padding-left:14px;
+	padding-top:30px;
+}
+.conBox02 .boardBox .list {
+	padding:0 0 20px 20px;
+	background:url("../images/common/arrow_white.png") no-repeat;
+}
+.conBox03 .boardBox .list {
+	padding:0 0 20px 20px;
+	background:url("../images/common/arrow_black.png") no-repeat;
+}
+.conBox02 .boardBox .list a {
+	color:#fff;
+	font-size:15px;
+}
+.conBox03 .boardBox .list a {
+	font-size:15px;
+}
+.calendarBox {
+	padding-top:33px;
+}
+.calendarBox .textInner .topText, .calendarBox .textInner .midText, .calendarBox .textInner .botText {
+	display:block;
+	font-size:11px;
+	padding-left:18px;
+}
+.calendarBox .textInner {
+	padding:0 26px 18px 12px;
+}
+.calendarBox .itemBox {
+	padding:16px 0 12px 12px;
+	background-color:rgba(149, 172, 174, 0.6);
+	border-bottom:1px solid #6f8b8e;
+	box-shadow:1px 1px 1px 1px #4a6a6d;
+}
+.calendarBox .textInner a {
+	color:#fff;
+	display:block;
+	padding-left:38px;
+	background:url("../images/main/year_icon.png") no-repeat left top;
+}
+.calendarBox .textInner .topText {
+	font-size:14px;
+	padding-bottom:10px;
+}
+.calendarBox .textInner .midText span {
+	margin-bottom:5px;
+	display:block;
+}
+.calendarBox .textInner .botText {
+	padding-left:44px;
+}
+.calendarBox .textInner .botText span {
+	display:block;
+	margin-bottom:2px;
+}
+.quick {
+	position:absolute;
+	right:-92px;
+	top:210px;
+}
+.quick .quickTop {
+	width:80px;
+	height:64px;
+	color:#fff;
+	background-color:#00481d;
+	text-align:center;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+	padding-top:20px;
+	font-size:14px;
+}
+.quick .quickTop strong, .quick .quickTop span {
+	display:inline-block;
+}
+.quick .quickTop strong {
+	margin-bottom:5px;
+}
+.quickBtnBox {
+	padding:10px 0;
+	background-color:#efefef;
+	border-bottom-left-radius:40px;
+	border-bottom-right-radius:40px;
+}
+.quickBtnBox .quickBtn {
+	height:61px;
+	text-align:center;
+}
+.quickBtnBox .quickBotLine {
+	margin-top:-7px;
+	text-align:center;
+	height:13px;
+}
+/* ie7 경고 */
+.browserBox{
+	position:fixed;
+	display:none;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:5000;
+}
+.browserBg{
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:url(../images/main/browser_bg.png) repeat;
+}
+.browserCon{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-top:-210px;
+	margin-left:-220px;
+	background:#fff;
+}
+.browserConIn{
+	width:440px;
+	padding:50px 30px 30px 30px;
+}
+.browserConIn img{
+	max-width:100%;
+}
+.browserCloseBtn{
+	position:absolute;
+	right:11px;
+	top:11px;
+  min-width:20px;
+}
+.browserCon .p01{
+	margin-bottom:50px;
+	font-size:36px;
+	font-weight:500;
+	color:#000;
+	text-align:center;
+}
+.browserCon .p02{
+	margin-bottom:50px;
+	font-size:18px;
+	line-height:170%;
+	color:#000;
+}
+.browserBtnBox{
+	overflow:hidden;
+	min-height:57px;
+}
+.browserBtnBox .fL,
+.browserBtnBox .fR{
+	display:inline-block;
+}
+.browserBtnBox .fL{
+	float:left;
+	width:49%;
+}
+.browserBtnBox .fR{
+	float:right;
+	width:49%;
+}
+.browserBtnBox02 button{
+	display:block;
+	width:100%;
+}

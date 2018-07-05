@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PHILTAX</title>
+<link rel="stylesheet" type="text/css" href="css/PHILTAX.css" />
+</head>
+ <body>
+<div id="wrapper">
+	<div id="headerWrap">
+		<div class="t_headerWrap">
+		  <div class="t_header">
+			<div class="link">
+				<div class="user">
+					UserIDName
+				</div>
+				<div class="notice">
+					<ul class="inner">
+						<li class="n_icon"><a href="#">NOTICE</a></li>
+						<li><a href="#">HELP</a></li>
+						<li><a href="#">SITE MAP</a></li>
+						<li>
+							<select name="area" id="area">
+								<option value="English">English</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		  </div>
+	    </div>
+		<div class="b_headerWrap">
+			<div class="b_header">
+				<div class="logo"><h1><a href="index.html"><img src="images/logo.png" alt="PHILTAX"/></a></h1></div>
+				<ul class="gnb">
+					<li><a href="#">OUR SERVICE </a></li>
+					<li><a href="#">MANAGER </a></li>
+					<li><a href="#">RENTAL  </a></li>
+					<li><a href="#">LABOUR COST  </a>
+						<ul class="gnb_bot">
+							<li><a href="PHILTAX_sub_p44.html">SubMenu01</a></li>
+							<li class="select"><a href="PHILTAX_sub_p45.html">SubMenu02</a></li>
+							<li><a href="">SubMenu03</a></li>
+						</ul>
+					</li>
+					<li><a href="#">REGISTER  </a></li>
+					<li><a href="#">CUSTOMER SERVICE </a></li>
+					<li><a href="#">STATISTIC </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="visualWrap2">
+		<div class="visual2">
+			<p>CostPayment History</p>
+			<ul>
+				<li><a href="#">Home ></a></li>
+				<li><a href="#">Labour Cost ></a></li>
+				<li class="color"><a href="#">Payment History</a></li>
+
+			</ul>
+		</div>
+	</div>
+	<div id="contentWrap_45">
+		<form>
+			<div class="content">
+				<h2>Labor payment history <span>(Monthly)</span></h2>
+					<div class="tb_box1">
+						<h3>Basic Information</h3>
+						
+						<table>
+							<tbody>
+								<tr>
+									<th>Tax Return</th>
+									<td class="radio" colspan="3">
+										<input type="radio" id="Monthly" name="mon">
+										<label for="Monthly">Monthly</label>
+							
+										<input type="radio" id="Biweekly" name="mon">
+										<label for="Biweekly">Biweekly</label>
+										
+										<input type="radio" id="Weekly" name="mon">
+										<label for="Weekly">Weekly</label>
+									</td>
+								</tr>
+								<tr>
+									<th>Date</th>
+									<td class="date_month" colspan="3">
+										<input type="text" id="date_text">
+										<button type="button">calendar</button>
+									</td>
+								</tr>
+								<tr>
+									<th>Calculation Period</th>
+									<td class="cal_month">
+										<input type="text" id="cal_text">
+										<button type="button" class="btn2">calendar</button> ~
+										<input type="text" id="cal_text2">
+										<button type="button">calendar</button>
+									</td>
+									<td class="work">
+										Work Time
+									</td>
+									<td class="num">
+										<select name="workTime" id="workTime">
+											<option value="8">8</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>Holiday</th>
+									<td colspan="3" class="check">
+										<input type="checkbox" id="holiday_200">
+										<label for="holiday_200">200%</label>
+
+										<input type="checkbox" id="holiday_150">
+										<label for="holiday_150">150%</label>
+										
+										<input type="checkbox" id="holiday_100">
+										<label for="holiday_100">100%</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="tb_box2">
+						<table>
+							<thead>
+								<tr>
+									<th> <input type="checkbox"/> </th>
+									<th>Code</th>
+									<th class="name">Name</th>
+									<th>Position</th>
+									<th>Confirm</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox"/></td>
+									<td>20140</td>
+									<td >John Lee</td>
+									<td>Manager</td>
+									<td class="check"><span>check</span></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"/></td>
+									<td>014A2</td>
+									<td>Hyun Soo Kim</td>
+									<td>Junior</td>
+									<td class="check"><span>check</span></td>
+								</tr>
+								<tr class="check_color">
+									<td><input type="checkbox"/></td>
+									<td>20140</td>
+									<td>Ferry Jane Wang</td>
+									<td>Manager</td>
+									<td class="check_null"><span>null</span></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"/></td>
+									<td>014A2</td>
+									<td>Gil Dong Hong</td>
+									<td>Manager</td>
+									<td class="check_null"><span>null</span></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"/></td>
+									<td>59213</td>
+									<td>Moon Jay Lee</td>
+									<td>Manager</td>
+									<td class="check_null"><span>null</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<button type="button">
+							staff Management
+						</button>
+					</div>
+					<div class="tb_boxWrap">
+						<div class="tb_box3">
+							<h3>Staff Information</h3>
+							<table>
+								<tbody>
+									<tr>
+										<th>Name</th>
+										<td>Gil Dong Hong</td>
+										<th>Staff Code</th>
+										<td>2014A203k</td>
+									</tr>
+									<tr>
+										<th>Department</th>
+										<td>R&D</td>
+										<th>Tax</th>
+										<td>
+											<input type="radio" name="Tax" id="Tax_Y"/>
+											<label for="Tax_Y">Y</label>
+											<input type="radio" name="Tax" id="Tax_N"/>
+											<label for="Tax_N">N</label>
+										</td>
+									</tr>
+									<tr>
+										<th>Busniness</th>
+										<td>Management</td>
+										<th>Status</th>
+										<td>Full-Time</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tb_box4"> 
+							<h3>Payment Items</h3>
+							<div class="tb1">
+								<h4>Salar<span>(unit:PHP)</span></h4>
+								<table>
+									<tbody>
+										<tr>
+											<th rowspan="2">Salary</th>
+											<td>
+												<input type="radio" id="salary_radio" name="salary_radio"/>
+												<label for="salary_radio">fixed amount</label>
+												<input type="text" id="salary_text"/>
+												<input type="checkbox" id="salary_check" name="salary_check"/>
+												<label for="salary_check">Paid the legal minimum wage</label>
+											</td>
+											
+										</tr>
+										<tr>
+											<td>
+												<input type="radio" id="charge" name="salary_radio"/>
+												<label for="charge">charge per day</label>
+												<input type="text"/>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tb2">
+								<h4>Payment Item<span>(unit:PHP)</span></h4>
+								<table>
+									<tbody>
+										<tr>
+											<th>Working day</th>
+											<td> 
+												<input type="radio" id="Working_day" name="Working"/>
+												<label for="Working_day">auto cal.</label>
+												<input type="text" id="Working_text">
+												<label for="Working_text">day</label>
+											</td>
+											<td>
+												<input type="radio" id="directinput" name="Working"/>
+												<label for="directinput">direct input</label>
+												<input type="text" id="Working_day_direct"/>
+												<label for="Working_day_direct">PHP</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Overtime</th>
+											<td> 
+												<input type="radio" id="Working_auto" name="Overtime"/>
+												<label for="Working_auto">auto cal.</label>
+												<input type="text" id="Overtime_text"/>
+												<label for="Overtime_text">hour</label>
+											</td>
+											<td>
+												<input type="radio" id="Overtime_direct" name="Overtime"/>
+												<label for="Overtime_direct">direct input</label>
+												<input type="text" id="Overtime_direct_text"/>
+												<label for="Overtime_direct_text">PHP</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Holiday</th>
+											<td> 
+												<input type="radio" id="Holyday_auto" name="Holiday"/>
+												<label for="Holyday_auto">auto cal.</label>
+												<input type="text" id="Holyday_text">
+												<label for="Holyday_text">day</label>
+											</td>
+											<td>
+												<input type="radio" id="Holyday_direct" name="Holiday"/>
+												<label for="Holyday_direct">direct input</label>
+												<input type="text" id="Holiday_php"/>
+												<label for="Holiday_php">PHP</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Special holiday</th>
+											<td> 
+												<input type="radio" id="Special" name="Special"/>
+												<label for="Special">auto cal.</label>
+												<input type="text" id="Special_text">
+												<label for="Special_text">day</label>
+											</td>
+											<td>
+												<input type="radio" id="Special_direct" name="Special"/>
+												<label for="Special_direct">direct input</label>
+												<input type="text" id="Special_direct_text"/>
+												<label for="Special_direct_text">PHP</label>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th>
+												<input type="text" id="title_head"/>
+											</th>
+											<td colspan="2">
+												<input type="text" id="add"/>
+												<button type="button">add</button>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<div class="tb3">
+								<h4>Tax-free <span>(unit:PHP)</span></h4>
+								<table>
+									<tbody>
+										<tr>
+											<th>Meals</th>
+											<td><input type="text"/></td>
+										
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th><input type="text"/></th>
+											<td>
+												<input type="text" class="add"/>
+												<button type="button">add</button>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<div class="tb4">
+								<h4>Payment Item<span>(unit:PHP)</span></h4>
+								<table>
+									<tbody>
+										<tr>
+											<th>SSS</th>
+											<td> 
+												<input type="radio" id="SSS_auto" name="SSS"/>
+												<label for="SSS_auto">auto cal.</label>
+												<input type="text" id="SSS_text">
+												<label for="SSS_text">day</label>
+											</td>
+											<td>
+												<input type="radio" id="SSS_direct" name="SSS"/>
+												<label for="SSS_direct">direct input</label>
+												<input type="text" id="SSS_direct_text"/>
+												<label for="SSS_direct_text">PHP</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Phil health</th>
+											<td> 
+												<input type="radio" id="phil_auto" name="Phil"/>
+												<label for="phil_auto">auto cal.</label>
+												<input type="text" id="phil_text">
+												<label for="phil_text">day</label>
+											</td>
+											<td>
+												<input type="radio" id="phil_direct" name="Phil"/>
+												<label for="phil_direct">direct input</label>
+												<input type="text" id="phil_direct_text"/>
+												<label for="phil_direct_text">PHP</label>
+											</td>
+										</tr>
+										<tr>
+											<th>Pag-ibig</th>
+											<td> 
+												<input type="radio" id="pag_auto" name="pag-ibig"/>
+												<label for="pag_auto">auto cal.</label>
+												<input type="text" id="pag_text">
+												<label for="pag_text">day</label>
+											</td>
+											<td>
+												<input type="radio" id="pag_direct" name="pag-ibig"/>
+												<label for="pag_direct">direct input</label>
+												<input type="text" id="pag_direct_text"/>
+												<label for="pag_direct_text">PHP</label>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<th><input type="text"/></th>
+											<td colspan="2">
+												<input type="text" id="add2"/>
+												<button type="button">add</button>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+								<div class="bot_btn">
+									<button type="button">Adjustment</button>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</form>
+	</div>
+	<div id="footerWrap">
+		<div class="footer">
+			<div class="f_item1">
+				<div class="f_logo">
+					<img src="images/f_logo.png" alt="PHILTAX"/>
+				</div>
+				<div class="contact">
+					<strong>CONTACT US</strong>
+					Location: 11-300 SamYangRo Seong Buk-gu, Seoul, Korea<br/>
+					Phone numbers: +00 345 67 00 89, +00 987 00 65 43 <a href="#">E-mail: sales@philtax.com</a>
+				</div>
+			</div>
+			<div class="f_item2">
+				<ul>
+					<li><a href="#">CANDIDATE PRIVACY NOTICE</a> </li>
+					<li><a href="#">TERMS</a> </li>
+					<li><a href="#">PRIVACY</a></li>
+				</ul>
+				<div class="copyright">
+					© 2015 Philtax Co. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	 <script type="text/javascript" src="js/PHILTAX.js"></script>
+ </body>
+</html>

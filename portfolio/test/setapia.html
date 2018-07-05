@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/js/jquery.bxslider.css">
+	<script src="./static/js/jquery-2.1.1.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var winSc = $(window).scrollTop();
+				if(winSc > 300) {
+					$(".section01 div").addClass("onScroll01");
+				}
+			});
+		});
+	</script>
+	<style>
+		.section01 {
+			position:relative;
+		}
+		.Item01 {
+			background-color:#ddd;
+		}
+		.Item02 {
+			background-color:#999;
+		}
+		.Item01, .Item02 {
+			float:left;
+			width:50%;
+			height:1500px;
+			opacity:0;
+			position:absolute;
+			top:200px;
+		}
+		.onScroll01 {
+			transition:2s;
+			opacity:1;
+			top:500px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<ul class="gnb">
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">제품소개</a></li>
+				<li><a href="#">공지사항</a></li>
+				<li><a href="#">Q&A</a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div class="content">
+				<div class="section01">
+					<div class="Item01 "></div>
+					<div class="Item02 "></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

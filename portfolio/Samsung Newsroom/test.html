@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	.left .sub { display:none;}
+  </style>
+ </head>
+ <body>
+	<div id="header">
+		<ul class="left">
+			<li>
+				<a style="cursor:pointer">BIKE &amp; FRAME ▼</a>
+				<div class="sub">
+					<ul style="margin:0 0 0 13%;">
+						<li><a href="/front/php/category.php?cate_no=43">COMPLETE BIKE</a></li>
+						<li><a href="/front/php/category.php?cate_no=44">FRAME</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a style="cursor:pointer">WHEELS ▼</a>
+				<div class="sub">
+					<ul style="margin:0 0 0 13%;">
+						<li><a href="/front/php/category.php?cate_no=46">WHEELS</a></li>
+						<li><a href="/front/php/category.php?cate_no=97">HUB</a></li>
+						<li><a href="/front/php/category.php?cate_no=96">RIM</a></li>
+						<li><a href="/front/php/category.php?cate_no=63">COG</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+   <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+   <script type="text/javascript">
+   
+		function main(){
+    $('#header ul.left li').click(function(){
+		
+		$(this).children('.sub').toggle();
+        
+    });
+    $('#main ul li').hover(function(){
+        $(this).stop().fadeTo(250 , 0.5);
+    },function(){
+        $(this).stop().fadeTo(250 , 1);
+    });
+    $('#main ul.left li , #main ul.right li , #main ul.slide_outer').css({ 'margin-bottom'  : $(window).width() / 100});
+    $('#contents').css({ 'min-height' : $(window).height() - ($('#header').height() + $('#footer').height())});
+}
+main();
+   </script>
+ </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PHILTAX</title>
+<link rel="stylesheet" type="text/css" href="css/PHILTAX.css" />
+</head>
+ <body>
+<div id="wrapper">
+	<div id="headerWrap">
+		<div class="t_headerWrap">
+		  <div class="t_header">
+			<div class="link">
+				<div class="user">
+					UserIDName
+				</div>
+				<div class="notice">
+					<ul class="inner">
+						<li class="n_icon"><a href="#">NOTICE</a></li>
+						<li><a href="#">HELP</a></li>
+						<li><a href="#">SITE MAP</a></li>
+						<li>
+							<select name="area" id="area">
+								<option value="English">English</option>
+							</select>
+						</li>
+					</ul>
+					
+				</div>
+			</div>	
+		  </div>
+	    </div>
+		<div class="b_headerWrap">
+			<div class="b_header">
+				<h1><a href="index.html"><img src="images/logo.png" alt="PHILTAX"/></a></h1>
+				<ul class="gnb">
+					<li><a href="#">OUR SERVICE </a></li>
+					<li><a href="#">MANAGER </a></li>
+					<li><a href="#">RENTAL  </a></li>
+					<li><a href="#">LABOUR COST  </a></li>
+					<li><a href="#">REGISTER  </a></li>
+					<li><a href="#">CUSTOMER SERVICE </a></li>
+					<li><a href="#">STATISTIC </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="visualWrap">
+		<div class="visual">
+			<ul class="main_slide">
+				<li class="img1">
+					<p>My business has been changed
+					after meeting the PHILTAX™</p>
+					<img src="images/visual.jpg" alt=""/>
+					<div class="info">
+						<a href="">More information</a>
+					</div>
+				</li>
+				<li class="img2">
+					<p>My business has been changed
+					after meeting the PHILTAX™2</p>
+					<img src="images/visual.jpg" alt=""/>
+					<div class="info">
+						<a href="">More information</a>
+					</div>
+				</li>
+				<li class="img3">
+					<p>My business has been changed
+					after meeting the PHILTAX™3</p>
+					<img src="images/visual.jpg" alt=""/>
+					<div class="info">
+						<a href="">More information</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="slide_btn">
+				<li class="blue"><button type="button"></button></li>
+				<li><button type="button"></button></li>
+				<li><button type="button"></button></li>
+			</ul>
+		</div>
+	</div>
+	<div id="contentWrap">
+		<div class="content">
+			<div class="article">
+				<div class="section">
+					<h2>Why PHILTAX?</h2>
+					<p class="why">PHILTAX is the perfect online tax accounting solution for small and midsized businesses.</p>
+					<ul class="row">
+						<li class="row_item1 first">
+							<div class="title">
+								<h3>Easy Accounting</h3>
+								<a href=""><span>MORE</span></a>
+							</div>
+							<p>
+								Are you an accounting novice? Don't worry!<br/>
+								The program is easy to use for both beginners and experts.  Easily manage invoicing, accounts recei-vables and accounts payables with integrated inventory data. You can quickly generate financial statements and status reports with real-time data.
+							</p>
+						</li>
+						<li class="row_item2">
+							<div class="title">
+								<h3>Payroll Management Software</h3>
+								<a href=""><span>MORE</span></a>
+							</div>
+							<p>
+								PHILTAX provides a Payroll module to track employee compensation and to generate payroll. Earnings and deduction vary by each business’s pay structure. PHILTAX can be easily configured to fit perfectly for all businesses. All payroll is integrated with the overtime and leave management for accurate and easy payroll.
+
+							</p>
+						</li>
+						<li class="row_item3">
+							<div class="title">
+								<h3>Online Accounting Software</h3>
+								<a href=""><span>MORE</span></a>
+							</div>
+							<p>
+								PHILTAX accounting and financials ERP modules help businesses manage A/R, A/P, cost accounting, profit and loss, cash flow projections, and more. 
+								While many businesses today have some sort of financial or accounting software available, they still experience problems.
+							</p>
+						</li>
+						<li class="row_item4">
+							<div class="title">
+								<h3>Accessibility & Security</h3>
+								<a href=""><span>MORE</span></a>
+							</div>
+							<p>
+								PHILTAX is an entirely web-based program that is accessible at anytime and from anywhere!
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="banner">
+					<h2>How Do I Use PHILTAX?</h2>
+					<div class="banner_box">
+						<ul class="slide">
+							<li class="slide_box1">
+								<img src="images/banner_img.jpg" alt=""/>
+								<h3>1. Account FOR $00 PER MONTH</h3>
+								<p>
+									Web-based tax accounting <br/>
+									Unlimited User IDs <br/>
+									Free system upgrades <br/>
+									Free data security and backups
+								</p>
+								<div class="learn"><a href="#">LEARN MORE</a></div>
+							</li>
+							<li class="slide_box2">
+								<img src="images/banner_img.jpg" alt=""/>
+								<h3>2. Account FOR $00 PER MONTH</h3>
+								<p>
+									Web-based tax accounting <br/>
+									Unlimited User IDs <br/>
+									Free system upgrades <br/>
+									Free data security and backups
+								</p>
+								<div class="learn"><a href="#">LEARN MORE</a></div>
+							</li>
+							<li class="slide_box3">
+								<img src="images/banner_img.jpg" alt=""/>
+								<h3>3. Account FOR $00 PER MONTH</h3>
+								<p>
+									Web-based tax accounting <br/>
+									Unlimited User IDs <br/>
+									Free system upgrades <br/>
+									Free data security and backups
+								</p>
+								<div class="learn"><a href="#">LEARN MORE</a></div>
+							</li>
+						</ul>
+						<div class="banner_btn">
+							<ul>
+								<li class="btn1"><button class="choice">1</button></li>
+								<li class="btn2"><button>2</button></li>
+								<li class="btn3"><button>3</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="acc">
+					<div class="image"><img src="images/human.jpg" alt=""/></div>
+					<div class="text">
+						<h3><span style="font-weight:100;">Accountant</span>  Mac Kotecha</h3>
+						<p>
+							<strong>Thank you for visiting</strong>
+							Firstly, thank you for visiting our site. I hope you will have been impressed
+							enough to call us on 0208 346 0391 and arrange a no obligation meeting
+							for up to an hour, at our expense!
+						</p>
+					</div>
+				</div>
+				<div class="btn">
+					<div class="btn_item1">
+						<div class="demo">
+							<a href="#"><span>PRODUCT DEMO</span></a>
+						</div>
+					</div>
+					<div class="btn_item2">
+						CONTACT US  00-000-00000
+					</div>
+				</div>
+				<div class="news">
+					<div class="dl_item1">
+						<h2>
+							Tax News
+							<a href="#">MORE</a>
+						</h2>
+						
+						<ul>
+							<li><a href="#">Tax News (2015.03)</a></li>
+							<li><a href="#">The Fourth Joint Working Group Meeting</a></li>
+							<li><a href="#"> Tax News (2015.02)</a></li>
+							<li><a href="#">Income Tax department to closely scrutinise ...</a></li>
+						</ul>
+					</div>
+					<div class="dl_item2">
+						<h2>Notice
+							<a href="#">MORE</a>
+						</h2>
+						<ul>
+							<li><a href="#">Notice of PHILTAX system checking</a></li>
+							<li><a href="#">When you log in the event of an error Temporary...</a></li>
+							<li><a href="#">Notice of PHILTAX system checking</a></li>
+							<li><a href="#">Notice of PHILTAX system checking</a></li>
+						</ul>
+	
+					</div>
+				</div>
+			</div>
+			<div class="aside">
+				<div class="log">
+					<div class="user">
+						<div class="user_img">
+							<img src="images/log_img.jpg" alt=""/>
+						</div>
+						<div class="user_mail">
+							<strong>userID (special)</strong>
+							userEmail@gmail.com
+						</div>
+					</div>
+					<div class="info">
+						<div class="not"><strong>Notice</strong> <span style="color:#ff6600;">2</span></div>
+						<div class="login"><strong>Last Login</strong> <span >  00:31:01  March 10, 2015</span></div>
+						<div class="log_btn">
+							<button type="button" class="account">
+								Account Info
+							</button>
+							<button type="button" class="logout">
+								Logout
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="acodian">
+					<dl class="aco_item1">
+						<dt>Forms</dt>
+						<dd class="aicon"><a href="#">Withholding e-variation</a></dd>
+						<dd class="aicon"><a href="#">GST group - forming changin orcancelling</a></dd>
+						<dd class="aicon"><a href="#">Company tax return 2014</a></dd>
+						<dd class="aicon"><a href="#">Company tax return instructions 2014</a></dd>
+						<dd class="alink"><a href="#">More forms and instructions ></a></dd>
+					</dl>
+					<dl class="aco_item2">
+						<dt>Tax rates and Codes</dt>
+						<dd class="aicon"><a href="#">Withholding e-variation</a></dd>
+						<dd class="aicon"><a href="#">GST group - forming changin orcancelling</a></dd>
+						<dd class="aicon"><a href="#">Company tax return 2014</a></dd>
+						<dd class="aicon"><a href="#">Company tax return instructions 2014</a></dd>
+						<dd class="alink"><a href="#">More forms and instructions ></a></dd>
+					</dl>
+					<dl class="aco_item3">
+						<dt>Calculators and tools</dt>
+						<dd class="aicon"><a href="#">Withholding e-variation</a></dd>
+						<dd class="aicon"><a href="#">GST group - forming changin orcancelling</a></dd>
+						<dd class="aicon"><a href="#">Company tax return 2014</a></dd>
+						<dd class="aicon"><a href="#">Company tax return instructions 2014</a></dd>
+						<dd class="alink"><a href="#">More forms and instructions ></a></dd>
+					</dl>
+				</div>
+				<div class="calendar">
+					<h2>Tax Calendal</h2>
+					<div class="month">June
+						<button type="button" class="month_prev"></button>
+						<button type="button" class="month_next"></button>
+					</div>
+					<table>
+						<tr>
+							<td class="none">29</td>
+							<td class="none">30</td>
+							<td class="none">31</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td class="event">8</td>
+							<td>9</td>
+							<td class="ten">10</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td class="today">17</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>20</td>
+							<td class="event">21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td class="none">1</td>
+							<td class="none">2</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footerWrap">
+		<div class="footer">
+			<div class="f_item1">
+				<div class="f_logo">
+					<a href=""><img src="images/f_logo.png" alt="PHILTAX_logo"/></a>
+				</div>
+				<div class="contact">
+					<strong>CONTACT US</strong>
+					Location: 11-300 SamYangRo Seong Buk-gu, Seoul, Korea<br/>
+					Phone numbers: +00 345 67 00 89, +00 987 00 65 43 <a href="#">E-mail: sales@philtax.com</a>
+				</div>
+			</div>
+			<div class="f_item2">
+				<ul>
+					<li><a href="#">CANDIDATE PRIVACY NOTICE</a> </li>
+					<li><a href="#">TERMS</a> </li>
+					<li><a href="#">PRIVACY</a></li>
+				</ul>
+				<div class="copyright">
+					© 2015 Philtax Co. All Rights Reserved.
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+	 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	 <script type="text/javascript" src="js/PHILTAX.js"></script>
+ </body>
+</html>

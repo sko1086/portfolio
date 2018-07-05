@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/main.css"/>
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+	 background();
+	 btnClick();
+	 $(window).resize(function(){
+		background();
+	 });
+
+  });
+  function background() {
+	var winH = $(window).height();
+	$(".mainContent").height(winH);
+
+  }	
+  function btnClick() {
+	$(".kInner").hover(function(){
+		$(".nav").stop().fadeIn();
+	}, function(){
+		$(".nav").stop().fadeOut();
+	});
+  }
+  </script>
+  <style>
+
+  .mainContent {
+	background:url("./static/images/backfround.jpg") no-repeat center center;
+	background-size:cover;
+	min-width:1200px;
+	min-height:600px;
+  }
+  .kschool {
+	position:absolute;
+	left:200px;
+	top:50%;
+  }
+  .kschool .nav {
+	display:none;
+  }
+  .kschool .btn {
+  }
+  </style>
+ </head>
+ <body>
+	<div id="wrap">
+		<div class="mainContent">
+			<h1>kaist</h1>
+			<div class="title">
+			</div>
+			<div class="imgRadius">
+			</div>
+			<div class="kschool">
+				<div class="kInner">
+					<div class="btn">
+						<img src="./static/images/kschoolBtn.png"/>
+						<div class="nav">
+							<ul>
+								<li><a href="#">aaaaa</li>
+								<li><a href="#">aaaaa</li>
+								<li><a href="#">aaaaa</li>
+								<li><a href="#">aaaaa</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="kds">
+			</div>
+			<div class="kbms">
+			</div>
+			<div class="copyright"></div>
+		</div>
+	</div>
+ </body>
+</html>

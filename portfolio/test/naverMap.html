@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=FFnnaQt7HNwbZW_ZneWI&submodules=geocoder"></script>
+</head>
+<body>
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+navermap();
+function navermap()
+{
+	var mapOptions = {
+		center: new naver.maps.LatLng(37.545619, 126.916173),
+		zoom: 11
+	};
+	var map = new naver.maps.Map('map', mapOptions);
+	var marker = new naver.maps.Marker({
+		position: new naver.maps.LatLng(37.5456934,126.9162080),
+		map: map
+	});
+	var contentString = [
+			'<div class="iw_inner">',
+			'   <h3 style="font-size:14px;">아이유아이</h3>',
+			'   <p>서울특별시 마포구 토정로 47 (합정동) 서일빌딩 203호<br />',
+			'   </p>',
+			'</div>'
+		].join('');
+
+	var infowindow = new naver.maps.InfoWindow({
+		content: contentString
+	});
+
+	naver.maps.Event.addListener(marker, "click", function(e) {
+		if (infowindow.getMap()) {
+			infowindow.close();
+		} else {
+			infowindow.open(map, marker);
+		}
+	});
+}
+
+</script>
+</body>
+</html>

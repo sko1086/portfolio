@@ -1,0 +1,3201 @@
+@charset "utf-8";
+
+
+/* base option */
+.taR{
+	text-align:right !important;
+}
+.taC{
+	text-align:center !important;
+}
+.mR5{
+	margin-right:0.313em;
+}
+.mR9{
+	margin-right:0.563em;
+}
+h3.type02{
+	padding-top:1.063em;
+}
+h3.type02 span{
+	font-size:1.5em;
+	font-weight:lighter;
+}
+/* tab */
+.tabBox .tabCon{
+	display:none;
+}
+.tabBox .tabCon:first-child{
+	display:block;
+}
+/* checkbox */
+.checkbox{
+	position:relative;
+	display:inline-block;
+	color:#fff;
+	padding-left:1.688em;
+}
+.checkbox .checkboxIco{
+	position:absolute;
+	display:inline-block;
+	width:1.250em;
+	height:1.250em;
+	left:0;
+	top:50%;
+	margin-top:-0.625em;
+	background:#fff;
+}
+.checkbox .checkboxText{
+	font-size:1.063em;
+	white-space: nowrap;
+}
+.checkbox.checked .checkboxIco {
+	background:#fff url(../images/common/checkbox_on.png) no-repeat center center;
+	background-size:0.813em;	
+}
+.checkbox02{
+	position:relative;
+	display:inline-block;
+	color:#3b4650;
+	font-weight:500;
+	padding-left:1.688em;
+	margin-right:1.313em;
+	margin-bottom:0.5em;
+}
+.checkbox02 .checkboxIco{
+	position:absolute;
+	box-sizing:border-box;
+	display:inline-block;
+	width:1.375em;
+	height:1.375em;
+	left:0;
+	top:50%;
+	margin-top:-0.688em;
+	border:0.125em solid #6f777f;
+	border-radius:0.25em;
+}
+.checkbox02.checked .checkboxIco {
+	background:#fff url(../images/common/check_ico_01.png) no-repeat center center;
+	background-size:0.750em;	
+}
+.checkbox02 .checkboxText{
+	white-space: nowrap;
+}
+.checkbox03{
+	position:relative;
+	display:inline-block;
+	color:#3b4650;
+	padding-left:1.688em;
+	margin-right:1.313em;
+	margin-bottom:0.5em;
+	line-height:1em;
+	min-height:1.4em;
+}
+.checkbox03 .checkboxText{
+	overflow:visible;
+	display:inline-block;
+	font-size:1.125em;
+	font-weight:500;
+	color:#3b4650;
+	min-height:0.947em;
+	padding:0.105em 0;
+}
+.checkbox03 .checkboxIco{
+	position:absolute;
+	box-sizing:border-box;
+	display:inline-block;
+	width:1.25em;
+	height:1.25em;
+	left:0;
+	top:50%;
+	margin-top:-0.625em;
+	border:0.125em solid #9cadbd;
+	border-radius:0.25em;
+	background:transparent;
+}
+.checkbox03.checked .checkboxIco {
+	background:url(../images/common/check_ico_01.png) no-repeat center center;
+	background-size:0.813em;	
+	border-color:#3bc4d8;
+}
+.checkbox04{
+	position:relative;
+	display:inline-block;
+	color:#3b4650;
+	padding-left:1.688em;
+	margin-right:1.313em;
+	margin-bottom:0.5em;
+	min-height:1.4em;
+}
+.checkbox04 .checkboxText{
+	font-size:1.188em;
+	color:#3bc4d8;
+	font-weight:500;
+}
+.checkbox04 .checkboxIco{
+	position:absolute;
+	box-sizing:border-box;
+	display:inline-block;
+	width:1.25em;
+	height:1.25em;
+	left:0;
+	top:50%;
+	margin-top:-0.625em;
+	border:0.125em solid #3bc4d8;
+	border-radius:0.25em;
+	background:transparent;
+	background-size: 0.813em;
+}
+.checkbox04.checked .checkboxIco {
+    background: #3bc4d8 url(../images/common/check_ico_02.png) no-repeat center center;
+	background-size:0.813em;	
+	border-color:#3bc4d8;
+}
+.checkbox05{
+	position:relative;
+	display:inline-block;
+	color:#3b4650;
+	padding-left:1.688em;
+	margin-right:1.313em;
+	line-height:1.313em;
+}
+.checkbox05 .checkboxText{
+	font-size:1.188em;
+	font-weight:500;
+	color:#9cadbd;
+}
+.checkbox05 .checkboxIco{
+	position:absolute;
+	box-sizing:border-box;
+	display:inline-block;
+	width:1.25em;
+	height:1.25em;
+	left:0;
+	top:50%;
+	margin-top:-0.625em;
+	border:0.125em solid #9cadbd;
+	border-radius:0.25em;
+	background:transparent;
+}
+.checkbox05.checked .checkboxIco {
+	background: #3bc4d8 url(../images/common/check_ico_02.png) no-repeat center center;
+	background-size:0.813em;	
+	border-color:#3bc4d8;
+}
+.checkbox05.checked .checkboxText{
+	color:#3bc4d8;
+}
+
+
+.checkbox06{
+	position:relative;
+	display:inline-block;
+	color:#3b4650;
+	font-weight:500;
+	padding-left:1.688em;
+}
+.checkbox06 .checkboxIco{
+	position:absolute;
+	box-sizing:border-box;
+	display:inline-block;
+	width:1.250em;
+	height:1.250em;
+	left:0;
+	top:50%;
+	margin-top:-0.563em;
+	border-radius:0.25em;
+	background:#fff;
+}
+.checkbox06.checked .checkboxIco {
+	background:#fff url(../images/common/check_ico_01.png) no-repeat center center;
+	background-size:0.750em;	
+}
+.checkbox06 .checkboxText{
+	color:#fff;
+	font-weight:500;
+	white-space: nowrap;
+}
+
+.checkbox07{
+	position:relative;
+	display:inline-block;
+	color:#3b4650;
+	font-weight:500;
+	padding-left:1.688em;
+	min-height:1.4em;
+}
+.checkbox07 .checkboxIco{
+	position:absolute;
+	box-sizing:border-box;
+	display:inline-block;
+	width:1.250em;
+	height:1.250em;
+	left:0;
+	top:50%;
+	margin-top:-0.563em;
+	border-radius:0.25em;
+	background:#fff;
+	border:0.125em solid #3bc4d8;
+}
+.checkbox07.checked .checkboxIco {
+	background:#fff url(../images/common/check_ico_01.png) no-repeat center center;
+	background-size:0.750em;	
+}
+.checkbox07 .checkboxText{
+	color:#3b4650;
+	font-weight:500;
+	white-space: nowrap;
+}
+/* radio */
+.radio02 .radioIco{
+	display:inline-block;
+	width:1.25em;
+	height:1.5em;
+	margin-right:0.438em;
+	background:url(../images/common/radio_off.png) no-repeat center center;
+	background-size:1.25em;
+	vertical-align:middle;
+}
+.radio02 .radioIco span{
+	display:none;
+}
+.radio02.checked .radioIco{
+	background:url(../images/common/radio_on02.png) no-repeat center center;
+	background-size:1.25em;
+}
+.radio02.checked .radioIco span{
+	background:#3bc4d8;
+}
+
+.radio02 .radioText{
+	display:inline-block;
+	font-size:1em;
+	font-weight:500;
+	color:#3b4650;
+	white-space:nowrap;
+	overflow:visible;
+	vertical-align:middle;
+}
+
+/* 멀티 아코디언 기본 옵션 */
+.multiAccordionBox .accordionDiv{
+	display:none;
+}
+
+/* text */
+.pS01{
+	margin-bottom:0.625em;
+	line-height:130%;
+	font-size:0.938em;
+	color:#000;
+}
+/* btn */
+.datailBtn{
+	position:relative;
+	display:inline-block;
+	height:1.750em;
+	padding:0 0.938em 0 2em;
+	line-height:1.750em;
+	border-radius:0.875em;
+	background:#3bc4d8;
+}
+.datailBtn .ico{
+	position:absolute;
+	left:0;
+	top:0;
+	display:block;
+	height:1.750em;
+	width:2.125em;
+}
+.datailBtn .text{
+	display:block;
+	font-size:0.938em;
+	font-weight:500;
+	color:#fff;
+}
+.datailBtn02,
+.datailBtn03{
+    line-height: 2.250em;
+    height: 2.250em;
+    border-radius: 2.250em;
+    padding-left: 2.250em;
+    padding-right: 1.125em;
+}
+.datailBtn01 .ico{
+	background:url(../images/page/detail_btn_01.png) no-repeat 1.063em center;
+	background-size:0.75em;
+}
+.datailBtn02 .ico{
+	height:100%;
+	background:url(../images/page/detail_btn_02.png) no-repeat 1.063em center;
+	background-size:0.75em;
+}
+.datailBtn03 .ico{
+	height:100%;
+	background:url(../images/page/detail_btn_03.png) no-repeat 0.938em center;
+	background-size:0.875em;
+}
+.btnSize01 img{
+	height:2.875em;
+}
+.btnS01,
+.managementBtn03,
+.join .joinBtn,
+.secessionBtn01,
+.findTab .findBtn01{
+	display:block;
+	width:100%;
+	background:#3b4650;
+	text-align:center;
+	line-height:3.625em;
+	border-radius:0.375em;
+}
+.btnS01 span,
+.managementBtn03 span,
+.join .joinBtn span,
+.secessionBtn01 span,
+.findTab .findBtn01 span{
+	font-size:1.250em;
+	font-weight:500;
+	color:#fff;
+}
+.btnS02,
+.managementBtn02,
+.questionFooter button,
+.cpBtn01,
+.join .joinBtn02,
+.join .joinBtn03,
+.joinClearBtn a,
+.findTab .findBtn02,
+.findWrap .findBtn05{
+	display:block;
+	width:100%;
+	background:#fe7e00;
+	text-align:center;
+	line-height:3.625em;
+	border-radius:0.375em;
+	font-size:1em;
+}
+.btnS02 span,
+.managementBtn02 span,
+.questionFooter button span,
+.cpBtn01 span,
+.join .joinBtn02 span,
+.join .joinBtn03 span,
+.joinClearBtn a span,
+.findTab .findBtn02 span,
+.findWrap .findBtn05 span{
+	font-size:1.250em;
+	font-weight:500;
+	color:#fff;
+}
+.btnS03,
+.findWrap .findBtn03{
+	display:block;
+	width:49%;
+	float:left;
+	line-height:3.625em;
+	border-radius:0.375em;
+	background:#fe7e00;
+	text-align:center;
+}
+.btnS03 span,
+.findWrap .findBtn03 span{
+	font-size:1.250em;
+	font-weight:500;
+	letter-spacing:-0.05em;
+	color:#fff;
+}
+.btnS04,
+.findWrap .findBtn04{
+	display:block;
+	width:49%;
+	float:right;
+	line-height:3.625em;
+	border-radius:0.375em;
+	background:#3b4650;
+	text-align:center;
+}
+.btnS04 span,
+.findWrap .findBtn04 span{
+	font-size:1.250em;
+	font-weight:500;
+	letter-spacing:-0.05em;
+	color:#fff;
+}
+.btnS05,
+#footer03 a,
+#footer02 button{
+	display:inline-block;
+	width:100%;
+	line-height:3.75em;
+	text-align:center;
+	background:#fe7e00;
+}
+.btnS05 span,
+#footer03 a span,
+#footer02 button span{
+	font-size:1.25em;
+	font-weight:500;
+	color:#fff;
+}
+td .btnS01,
+td .managementBtn03{
+	font-size:1.067em;
+}
+/* input */
+input[type="text"], 
+input[type="password"], 
+input[type="number"], 
+input[type="email"],
+input[type="tel"]{
+    box-sizing: border-box;
+    height: 2.813em;
+	width:100%;
+    padding: 0 0.625em;
+    border: 1px solid #bbc7d2;
+    color: #9caebe;
+    font-size: 0.938em;
+    font-weight: 500;
+}
+input[type="text"].checked,
+input[type="password"].checked,
+input[type="number"].checked,
+input[type="email"].checked,
+input[type="tel"].checked{
+	color:#3b4650;
+}
+textarea{
+    box-sizing: border-box;
+	height:11.25em;
+	width:100%;
+    padding: 0.875em 0.625em;
+    border: 1px solid #bbc7d2;
+	font-family:"Noto Sans","Noto Sans CJK KR",sans-serif;
+    color: #9caebe;
+    font-size: 1em;
+}
+textarea.checked{
+	color:#3b4650;	
+}
+
+.managementInput01{
+	background:url(../images/common/input_text08.png) no-repeat 0.625em center;
+}
+.managementInput02,
+.findInputText02,
+.joinInput01{
+	background:#fff url(../images/common/input_text05.png) no-repeat 0.625em center;
+}
+.cpInput01{
+	background:url(../images/common/input_text01.png) no-repeat 0.625em center;
+}
+.cpInput02{
+	background:url(../images/common/input_text02.png) no-repeat 0.625em center;
+}
+.cpInput03,
+.join .password02,
+.secessionInput01,
+.findInput03{
+	background:url(../images/common/input_text03.png) no-repeat 0.625em center;
+}
+.findInputText,
+.join .ul01 .li04 input[type="number"],
+.join .ul01 .li04 input[type="tel"],
+.findSection01 .ul03 .li04 input[type="number"]{
+	background: url(../images/common/input_text04.png) no-repeat 0.625em center;
+}
+.inputNum{
+	background:url(../images/common/input_text09.png) no-repeat 0.625em center;
+}
+.join .date01{
+	width:43%;
+	margin-right:1%;
+	background:url(../images/common/input_text06.png) no-repeat 0.625em center;
+}
+.password01,
+.findInput02{
+	background:url(../images/common/input_text07.png) no-repeat 0.625em center;
+}
+#loginBox .loginInputBox input[type="email"].text01{
+	background:#fff url(../images/common/login_text01.png) no-repeat 3% center;
+}
+#loginBox .loginInputBox input[type="password"].password01{
+	background:#fff url(../images/common/login_text02.png) no-repeat 3% center;
+}
+
+.managementInput01,
+.cpInput01,
+.cpInput02,
+.cpInput03,
+.findInputText,
+.inputNum,
+.join .ul01 .li04 input[type="number"],
+.join .ul01 .li04 input[type="tel"],
+.joinInput01,
+.join .password01,
+.join .password02,
+.secessionInput01,
+.findSection01 .ul03 .li04 input[type="number"],
+.managementInput02,
+.findInputText02,
+#loginBox .loginInputBox input[type="email"].text01,
+#loginBox .loginInputBox input[type="password"].password01,
+.join .date01,
+.questionWrap .inputNum,
+.findInput02,
+.findInput03{
+	background-size:auto 3.125em;
+}
+
+.managementInput01.checked,
+.cpInput01.checked,
+.cpInput02.checked,
+.cpInput03.checked,
+.findInputText.checked,
+.inputNum.checked,
+.join .ul01 .li04 input[type="number"].checked,
+.join .ul01 .li04 input[type="tel"].checked,
+.joinInput01.checked,
+.join .password01.checked,
+.join .password02.checked,
+.secessionInput01.checked,
+.findSection01 .ul03 .li04 input[type="number"].checked,
+.findInput02.checked,
+.findInput03.checked{
+	background:none;
+}
+.managementInput02.checked,
+.findInputText02.checked,
+#loginBox .loginInputBox input[type="email"].text01.checked,
+#loginBox .loginInputBox input[type="password"].password01.checked{
+	background:#Fff;
+}
+
+
+/* 팝업 모음 */
+/* 검색 */
+.searchSection{
+	padding-top:10px;
+}
+.searchBox01,
+.searchSports{
+	padding:0 4%;
+}
+.searchTab .tabHeader{
+	padding:0 1.9%;
+}
+.searchTab .tabHeader{
+	padding:0 1.9%;
+	background:#fff;
+}
+.searchTab .tabHeaderIn{
+	box-sizing:border-box;
+	overflow:hidden;
+	border:1px solid #3cc4d8;
+	border-radius:0.25em;
+}
+.searchTab .tabHeader li{
+	box-sizing:border-box;
+	display:inline-block;
+	float:left;
+	width:33.33%;
+	text-align:center;
+}
+.searchTab.type02 .tabHeader li{
+	width:50%;
+}
+.searchTab .tabHeader a,
+.searchTab .tabHeader span{
+	display:block;
+	width:100%;
+}
+.searchTab .tabHeader a{
+	border-right:1px solid #3bc4d8;
+	line-height:2.250em;
+}
+.searchTab .tabHeader li:last-child a{
+	border-right:none;
+}
+.searchTab .tabHeader span{
+	font-size:1em;
+	font-weight:500;
+	color:#3bc4d8;
+}
+.searchTab .tabHeader li.on a,
+.searchTab .tabHeader li:hover a{
+	background:#3bc4d8;
+}
+.searchTab .tabHeader li.on span,
+.searchTab .tabHeader li:hover span{
+	color:#fff;
+}
+.searchSports{
+	padding-top:0.188em;
+}
+.searchSportsItem{
+	padding:1.313em 0 0 0;
+	border-bottom:1px solid #dee3e6;
+}
+.searchSportsItem li{
+	padding-left:1.3%;
+	overflow:visible;
+}
+.searchSportsItem li.li01{
+	padding-left:0;
+}
+.searchSportsItem li  .checkbox03 .checkboxText{
+	font-weight:normal;
+}
+.searchSportsItem .li01 .checkbox03 .checkboxIco{
+	border-color:#3bc4d8;
+	background-size: 0.813em;
+}
+.searchSportsItem .li01 .checkbox03 .checkboxText{
+	display:inline-block;
+	font-size:1.188em;
+	color:#3bc4d8;
+	font-weight:500;
+}
+.searchSportsItem .checkbox03{
+	margin-bottom:1.313em;
+}
+.searchSportsItem .li01 .checkbox03.checked .checkboxIco{
+	background:#3bc4d8 url(../images/common/check_ico_02.png) no-repeat center center;
+	background-size: 0.813em;
+}
+
+.calendarHeader{
+	text-align:center;
+	padding-top:1.688em;;
+	margin-bottom:1.188em;
+}
+.calendarHeaderDay{
+	display:inline-block;
+	padding:0 1em;
+}
+.calendarHeaderDay span,
+.calendarHeaderDay em{
+	font-size:1.313em;
+	color:#3b4650;
+	text-align:center;
+	font-style:normal;
+	vertical-align:middle;
+	font-weight:normal;
+}
+.calendarHeader .calendarBtn.btnL .btnIco{
+	background:url(../images/page/calendar_arr_l02.png) no-repeat center center;
+	background-size:0.5em;
+}
+.calendarHeader .calendarBtn.btnR .btnIco{
+	background:url(../images/page/calendar_arr_r02.png) no-repeat center center;
+	background-size:0.5em;
+}
+.calendarTable.type02{
+	padding:0 4%;
+}
+.searchWrap .tabcontainer{
+	padding:0 4.7%;
+}
+.searchBox01{
+	padding-top:1em;
+}
+.searchBox01Top{
+	padding-bottom:1em;
+	margin-bottom:1.125em;
+	border-bottom:1px solid #dee3e6;
+}
+.searchBox01Top .checkbox04 .checkboxText{
+	color:#9cadbd;
+}
+.searchBox01Top .radio02 .radioText{
+	color:#9cadbd;
+	font-weight:500;
+}
+.searchBox01Top.on .checkbox04 .checkboxText{
+	color:#3bc4d8;
+}
+.searchBox01Top.on .radio02 .radioText{
+	color:#3b4650;
+	font-weight:500;
+}
+.searchBox01Top.on .radio02.on .radioText{
+	color:#3b4650;
+	font-weight:500;
+}
+.searchBox01Top .checkbox04 .checkboxIco{
+    border: 0.125em solid #9cadbd;
+}
+.searchBox01Top.on .checkbox04 .checkboxIco{
+	border-color:#3bc4d8;
+	background: #3bc4d8 url(../images/common/check_ico_02.png) no-repeat center center;
+	background-size:0.813em;
+}
+.searchBox01_02{
+	padding-left:1.5%;
+}
+.searchBox01 .radio02{
+	margin-right:1.688em;
+}
+.accordionStyle{
+	overflow:hidden;
+	margin-bottom:1em;
+	border-radius:0.375em;	
+	border-style:solid;
+	border-color:#95a0aa;
+	border-width:1px;
+}
+.accordionStyle .accordionH6{
+	position:relative;
+	padding-left:0.688em;
+	border-bottom:1px solid #95a0aa;
+	line-height:3.563em;
+	cursor:pointer;
+}
+.accordionStyle .accordionH6.last{
+	border-bottom:none;
+}
+.accordionStyle .accordionH6.last.on{
+	border-bottom:1px solid #95a0aa;
+}
+.accordionStyle .accordionH6 .accordionIco{
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	width:3.313em;
+	height:100%;
+	background:url(../images/common/accordion_ico_off.png) no-repeat center center;
+	background-size:0.813em;
+}
+.accordionStyle .accordionH6.on .accordionIco{
+	background:url(../images/common/accordion_ico_on.png) no-repeat center center;
+	background-size:0.813em;
+}
+.accordionStyle .accordionH6 .checkbox{
+	background:#fff;
+}
+.accordionStyle .accordionDiv{
+	overflow:hidden;
+	padding:1.125em 0 0 3.6%;
+	border-bottom:1px solid #95a0aa;
+}
+.accordionStyle .accordionDiv.last{
+	border-bottom:none;
+}
+.accordionStyle .accordionDiv li{
+	display:inline-block;
+	float:left;	
+}
+.accordionStyle .accordionDiv .division02 li{
+	width:50%;
+}
+.accordionStyle .accordionDiv .division04 li{
+	width:25%;
+}
+.accordionStyle .accordionDiv .checkbox03{
+	margin-bottom:0;
+	height:2.5em;
+	width:100%;
+}
+.accordionStyle .accordionDiv .checkbox03 .checkboxIco{
+	top:0;
+	margin-top:0;
+}
+.accordionStyle .accordionDiv .checkbox03 .checkboxText{
+	position:absolute;
+	top:0.063em;
+	left:1.688em;
+	font-weight:normal;
+	padding:0;
+	display:inline;
+	height:10px;
+
+}
+.accordionStyle.on .checkbox05 .checkboxIco{
+	border-color:#3bc4d8;
+}
+.accordionStyle.on .checkbox05 .checkboxText{
+	color:#3bc4d8;
+}
+.searchBtnBox{
+	padding:20px 4%;
+}
+.accordionStyle .checkbox05{
+	line-height:3.438em;
+}
+/* 카테고리 */
+.chargeCon{
+	background:#f7f7f7;
+}
+.categorieCon{
+	padding:0 4.7%;
+}
+.categorieCon .sectionBox{
+	border-bottom:1px solid #dee3e6;
+}
+.categorieCon h4{
+	position:relative;
+	padding:1.25em 0;
+	line-height:100%;
+}
+.categorieCon h4 p{
+	font-size:1.125em;
+	color:#3bc4d8;
+	font-weight:500;
+}
+.categorieCon h4 button{
+	position:absolute;
+	right:0;
+	top:0.813em;
+}
+.categorieUl{
+	overflow:hidden;
+	padding-left:1.3%;
+}
+.categorieUl li{
+	display:inline-block;
+	float:left;
+	margin:0 2.250em 1.313em 0;
+}
+.categorieUl a{
+	font-size:1.063em;
+	color:#3b4650;
+}
+.chargeWrap{
+	background:#f7f7f7;
+}
+.chargeWrap #container{
+	padding-bottom:0;
+}
+.chargeSection{
+	padding:2.250em 3.9% 0 3.9%;
+}
+.chargeSection01{
+	background:#fff;
+}
+.chargeSection03{
+	background:#fff;
+	padding-bottom:2.250em;
+}
+.chargeCon h3{
+	padding-left:0.375em;
+	margin-bottom:0.625em;
+	border-left:0.5em solid #fe7e00;	
+}
+.chargeCon h3 span{
+	color:#fe7e00;
+	font-size:1.5em;
+	font-weight:normal;
+}
+.chargeCon h4{
+}
+.chargeCon h4 span{
+	font-size:0.938em;
+	color:#575757;
+	font-weight:normal;
+	line-height:130%;
+}
+.chargeUl01{
+	margin-bottom:1.125em;
+}
+.chargeUl01 li{
+	padding-left:0.800em;
+	font-size:0.938em;
+	color:#575757;
+	line-height:130%;
+	background:url(../images/ico/charge_ico_bar.png) no-repeat 0.267em 0.533em;
+	background-size:0.267em;
+}
+.chargeCon .chargeText01{
+	padding:0 3.3% 2.125em 3.3%;
+	color:#575757;
+	font-size:1.125em;
+	line-height:130%;
+}
+.chargeUl02{
+	overflow:hidden;
+	margin-bottom:1.625em;
+}
+.chargeUl02 li{
+	position:relative;
+	display:inline-block;
+	float:left;
+	width:50%;
+	margin-bottom:1.125em;
+}
+.chargeUl02 .dc50::before{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc50.png') no-repeat left top;
+    background-size:3.313em;
+	left:6%;
+	top:0;
+	width:3.313em;
+	height:60%;
+}
+.chargeUl02 .dc62::before{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc62.png') no-repeat left top;
+    background-size:3.313em;
+	left:6%;
+	top:0;
+	width:3.313em;
+	height:60%;
+}
+.chargeUl02 .dc66::before{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc66.png') no-repeat left top;
+    background-size:3.313em;
+	left:6%;
+	top:0;
+	width:3.313em;
+	height:60%;
+}
+.chargeUl02 .ac05::after{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/ac05.png') no-repeat right top;
+    background-size:3.313em;
+	right:6%;
+	top:0;
+	width:3.313em;
+	height:60%;
+}
+.chargeUl02 .div01{
+	text-align:center;
+	font-size:1.063em;
+	width:92%;
+	margin:0 auto;
+}
+.chargeUl02 .div01 span{
+	color:#fff;
+}
+.chargeUl02 .div01 .img01{
+	margin-bottom:0.125em;
+}
+.chargeUl02 .div01 .img01 img{
+	width:2.75em;
+}
+.chargeUl02In{
+	box-sizing:border-box;
+	width:92%;
+	margin:0 auto;
+	text-align:center;
+	padding-top:1.625em;
+	background:#fff;
+}
+.chargeUl02 .p00{
+	padding:0.625em 0 2.625em 0;
+}
+.chargeUl02 .p00 span{
+	font-size:1.063em;
+}
+.chargeUl02 .p01{
+	padding-bottom:1.625em;
+}
+.chargeUl02 .p01 span{
+	font-size:2.563em;
+	font-family:'Roboto';
+}
+.chargeUl02 .p01 .fontRow{
+	font-weight:lighter;
+}
+.chargeUl02 .p02{
+	display:none;
+	width:100%;
+	overflow:hidden;
+	padding-bottom:0.688em;
+}
+.chargeUl02 .p02 span{
+	font-size:0.813em;
+	font-family:'Roboto';
+	white-space: nowrap;
+}
+.chargeUl02In .p03{
+	margin-bottom:0.125em;
+}
+.chargeUl02In .p03 .num,
+.chargeUl02In .p03 .won{
+	font-size:1.313em;
+	font-family:'Roboto';
+}
+.chargeUl02In .p03 .cancel{
+	margin-right:0.438em;
+	color:#b9b9b9;
+	text-decoration:line-through;
+}
+.chargeUl02In .p03 .cancel .num,
+.chargeUl02In .p03 .cancel .won{
+	font-size:0.813em;
+	color:#b9b9b9;
+	font-family:'Roboto';
+}
+.chargeUl02In .p04{
+	padding-bottom:0.813em;
+}
+.chargeUl02In .p04 span{
+	font-size:0.813em;
+	font-family:'Roboto';
+	color:#b9b9b9;
+}
+.chargeUl02In .btnBox{
+	width:90%;
+	margin:0 auto;
+	height:3.500em;
+}
+.chargeUl02In .btnBox a{
+	display:block;
+	border-style:solid;
+	border-width:0.125em;
+	border-radius:100em;
+	line-height:2.375em;
+}
+.chargeUl02In .btnBox a span{
+	font-size:1.063em;
+	font-weight:bold;
+	color:#fff;
+}
+.chargeUl02 .li01 .div01{
+	background:#1bd7c3;
+	background-size:2.750em;
+}
+.chargeUl02 .li01 .chargeUl02In{
+	color:#1bd7c3;
+}
+.chargeUl02 .li01 .btnBox a{
+	border-color:#1bd7c3;
+}
+.chargeUl02 .li01 .btnBox span{
+	color:#1bd7c3;
+}
+.chargeUl02 .li02 .div01{
+	background:#3bd2d8;
+}
+.chargeUl02 .li02 .chargeUl02In{
+	color:#3bd2d8;
+}
+.chargeUl02 .li02 .btnBox a{
+	border-color:#3bd2d8;
+}
+.chargeUl02 .li02 .btnBox span{
+	color:#3bd2d8;
+}
+.chargeUl02 .li03 .div01,
+.chargeUl02 .li04 .div01{
+	background:#30d1f4;
+}
+.chargeUl02 .li03 .chargeUl02In,
+.chargeUl02 .li04 .chargeUl02In{
+	color:#30d1f4;
+}
+.chargeUl02 .li03 .btnBox a,
+.chargeUl02 .li04 .btnBox a{
+	border-color:#30d1f4;
+}
+.chargeUl02 .li03 .btnBox span,
+.chargeUl02 .li04 .btnBox span{
+	color:#30d1f4;
+}
+.chargeUl02 .li05 .div01,
+.chargeUl02 .li06 .div01{
+	background:#44494c;
+}
+.chargeUl02 .li05 .chargeUl02In,
+.chargeUl02 .li06 .chargeUl02In{
+	color:#44494c;
+}
+.chargeUl02 .li05 .btnBox a,
+.chargeUl02 .li06 .btnBox a{
+	border-color:#44494c;
+}
+.chargeUl02 .li05 .btnBox span,
+.chargeUl02 .li06 .btnBox span{
+	color:#44494c;
+}
+/* slide */
+.chargeTop{
+	width:100%;
+	margin:0 auto;
+	margin-bottom:1.125em;
+}
+.chargeTop ul{
+	overflow:hidden;
+}
+.chargeTop li{
+	width:20%;
+	float:left;
+	display:inline-block;
+	text-align:center;
+}
+.chargeTop li *{
+	-o-transition: all .2s, ease-out;
+	-ms-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-webkit-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+.chargeTop li button{
+	display:inline-block;
+	line-height:2.750em;
+	height:2.750em;
+	padding:0 0.75em;
+}
+.chargeTop li span{
+	color:#cdcdcd;
+	font-size:1.5em;
+	font-family:'Roboto';
+}
+.chargeTop li.on span{
+	font-size:1.750em;
+}
+.chargeTop li.on.charge1 button{
+	border-bottom:0.250em solid #3bd2d8;
+}
+.chargeTop li.on.charge1 span{
+	color:#3bd2d8;
+}
+
+.chargeTop li.on.charge2 button{
+	border-bottom:0.250em solid #30d1f4;
+}
+.chargeTop li.on.charge2 span{
+	color:#30d1f4;
+}
+
+.chargeTop li.on.charge3 button{
+	border-bottom:0.250em solid #30d1f4;
+}
+.chargeTop li.on.charge3 span{
+	color:#30d1f4;
+}
+
+.chargeTop li.on.charge4 button{
+	border-bottom:0.250em solid #44494c;
+}
+.chargeTop li.on.charge4 span{
+	color:#44494c;
+}
+.chargeTop li.on.charge5 button{
+	border-bottom:0.250em solid #44494c;
+}
+.chargeTop li.on.charge5 span{
+	color:#44494c;
+}
+.chargeSlide{
+	background:#fff;
+}
+.chargeSlideBox{
+	overflow:hidden;
+	height:17.5em;
+}
+.chargeSlideBoxIn{
+	position:relative;
+	width:88%;
+	height:14em;
+	margin:0 auto;
+}
+.chargeSlideBoxIn ul{
+	position:absolute;
+	left:0;
+	top:0;
+	width:600%;
+	height:14em;
+}
+.chargeSlideBoxIn li{
+	box-sizing:border-box;
+	display:inline-block;
+	position:relative;
+	float:left;
+	text-align:center;
+	margin-right:0.5em;
+	width:16.66%;
+}
+.chargeSlideBoxIn .on.dc50::after{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc50.png') no-repeat right top;
+    background-size: 3.5em;
+	right:3%;
+	top:2px;
+	width:3.5em;
+	height:60%;
+}
+.chargeSlideBoxIn .on.dc62::after{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc62.png') no-repeat right top;
+    background-size: 3.5em;
+	right:3%;
+	top:2px;
+	width:3.5em;
+	height:60%;
+}
+.chargeSlideBoxIn .on.dc66::after{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc66.png') no-repeat right top;
+    background-size: 3.5em;
+	right:3%;
+	top:2px;
+	width:3.5em;
+	height:60%;
+}
+.chargeSlideBoxIn .chargeLiIn{
+	overflow:hidden;
+	border:2px solid #e6e6e6;
+	border-radius:0.375em;	
+}
+.chargeSlideBoxIn li *{
+	-o-transition: all .10s, ease-out;
+	-ms-transition: all .10s ease-out;
+	-moz-transition: all .10s ease-out;
+	-webkit-transition: all .10s ease-out;
+	transition: all .10s ease-out;
+}
+.chargeSlideBoxIn .chargeST{
+	position:relative;
+	height:7.375em;
+	background:#e6e6e6;
+}
+.chargeSlideBoxIn .chargeSTT{
+	padding-top:0.75em;
+}
+.chargeSlideBoxIn .chargeSTT span{
+	font-size:1.188em;
+	font-weight:bold;
+	color:#e6e6e6;
+}
+.chargeSlideBoxIn .chargeST p{
+	position:absolute;
+	bottom:0.5em;
+	left:0;
+	width:100%;
+	font-family:'Roboto';
+}
+.chargeSlideBoxIn .chargeST .span01{
+	display:inline-block;
+	padding:1em 0 0 2.75em;
+}
+.chargeSlideBoxIn .chargeST .span01 span{
+	font-size:3.5em;
+	color:#e6e6e6;
+	letter-spacing:-0.06em;
+}
+.chargeSlideBoxIn .chargeST .span01 .fontRow{
+	font-weight:lighter;
+}
+.chargeSlideBoxIn .chargeSB{
+	position:relative;
+	height:7.75em;
+	background:#e6e6e6;
+	font-family:'Roboto';
+}
+.chargeSlideBoxIn .chargeSB p{
+	position:absolute;
+	bottom:1em;
+	left:0;
+	width:100%;
+}
+.chargeSlideBoxIn .chargeSB .span01,
+.chargeSlideBoxIn .chargeSB .span02,
+.chargeSlideBoxIn .chargeSB .span03{
+	display:block;
+	color:#e6e6e6;
+}
+.chargeSlideBoxIn .chargeSB .span01{
+	margin-bottom:0.750em;
+}
+.chargeSlideBoxIn .chargeSB .span01 .num,
+.chargeSlideBoxIn .chargeSB .span01 .won{
+	font-size:1.750em;
+}
+.chargeSlideBoxIn .chargeSB .span01 .cancel{
+	text-decoration: line-through;
+	margin-right:1.5em
+}
+.chargeSlideBoxIn .chargeSB .span01 .cancel .num,
+.chargeSlideBoxIn .chargeSB .span01 .cancel .won{
+	font-size:0.938em;
+}
+.chargeSlideBoxIn .chargeSB .span02 span{
+	font-size:0.938em;
+}
+.chargeSlideBoxIn .chargeSB .span03{
+	margin-bottom:0.188em;
+}
+.chargeSlideBoxIn .chargeSB .span03 span{
+	font-size:0.938em;
+	font-weight:bold;
+}
+.chargeSlideBoxIn .chargeSB02{
+	position:absolute;
+	width:100%;
+	bottom:0;
+	left:0;
+	opacity:0;
+	overflow:hidden;
+	text-align:center;
+}
+.chargeSlideBoxIn .chargeSB02 span{
+	font-size:1.063em;
+	white-space:nowrap;
+	color:#e6e6e6;
+}
+.chargeSlideBoxIn .charge1.on .chargeST{
+	background:transparent;
+}
+.chargeSlideBoxIn .on .chargeSB .span01,
+.chargeSlideBoxIn .on .chargeSB .span02,
+.chargeSlideBoxIn .on .chargeSB .span03{
+	color:#fff;
+}
+.chargeSlideBoxIn .charge1.on .chargeST .span01{
+	background:url(../images/ico/charge_ico002.png) no-repeat left bottom 0.625em;
+	background-size:2.250em;
+}
+.chargeSlideBoxIn .charge1.on .chargeSTT span,
+.chargeSlideBoxIn .charge1.on .chargeST .span01 span,
+.chargeSlideBoxIn .charge1.on .chargeSB02 span{
+	color:#3bd2d8;
+}
+.chargeSlideBoxIn .charge1.on .chargeSB{
+	background:#3bd2d8;
+}
+.chargeSlideBoxIn .charge2.on .chargeST{
+	background:transparent;
+}
+.chargeSlideBoxIn .charge2.on .chargeST .span01{
+	background:url(../images/ico/charge_ico003.png) no-repeat left bottom 0.625em;
+	background-size:2.250em;
+}
+.chargeSlideBoxIn .charge2.on .chargeSTT span,
+.chargeSlideBoxIn .charge2.on .chargeST .span01 span,
+.chargeSlideBoxIn .charge2.on .chargeSB02 span{
+	color:#30d1f4;
+}
+.chargeSlideBoxIn .charge2.on .chargeSB{
+	background:#30d1f4;
+}
+.chargeSlideBoxIn .charge3.on .chargeST{
+	background:transparent;
+}
+.chargeSlideBoxIn .charge3.on .chargeST .span01{
+	background:url(../images/ico/charge_ico003.png) no-repeat left bottom 0.625em;
+	background-size:2.250em;
+}
+.chargeSlideBoxIn .charge3.on .chargeSTT span,
+.chargeSlideBoxIn .charge3.on .chargeST .span01 span,
+.chargeSlideBoxIn .charge3.on .chargeSB02 span{
+	color:#30d1f4;
+}
+.chargeSlideBoxIn .charge3.on .chargeSB{
+	background:#30d1f4;
+}
+.chargeSlideBoxIn .charge4.on .chargeST{
+	background:transparent;
+}
+.chargeSlideBoxIn .charge4.on .chargeST .span01{
+	background:url(../images/ico/charge_ico004.png) no-repeat left bottom 0.625em;
+	background-size:2.250em;
+}
+.chargeSlideBoxIn .charge4.on .chargeSTT span,
+.chargeSlideBoxIn .charge4.on .chargeST .span01 span,
+.chargeSlideBoxIn .charge4.on .chargeSB02 span{
+	color:#44494c;
+}
+.chargeSlideBoxIn .charge4.on .chargeSB{
+	background:#44494c;
+}
+.chargeSlideBoxIn .charge5.on .chargeST{
+	background:transparent;
+}
+.chargeSlideBoxIn .charge5.on .chargeST .span01{
+	background:url(../images/ico/charge_ico004.png) no-repeat left bottom 0.625em;
+	background-size:2.250em;
+}
+.chargeSlideBoxIn .charge5.on .chargeSTT span,
+.chargeSlideBoxIn .charge5.on .chargeST .span01 span,
+.chargeSlideBoxIn .charge5.on .chargeSB02 span{
+	color:#44494c;
+}
+.chargeSlideBoxIn .charge5.on .chargeSB{
+	background:#44494c;
+}
+
+
+.c02T{
+	position:relative;
+	padding:1.250em 4.5% 3em 4.5%;
+	background:#fff;
+	text-align:center;
+	display:none;
+}
+.c02T.on{
+	display:block;
+}
+.c02T li{
+	box-sizing:border-box;
+	display:inline-block;
+	position:relative;
+	float:left;
+	text-align:center;
+	margin-right:0.5em;
+	background:#fff;
+}
+.c02T .chargeLiIn{
+	position:relative;
+	overflow:hidden;
+	border:1px solid #d6d6d6;
+	border-radius:0.375em;	
+}
+.c02T.dc50 .chargeLiIn::after{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc50.png') no-repeat right top;
+    background-size: 3.5em;
+	right:3%;
+	top:0;
+	width:3.5em;
+	height:100%;
+}
+.c02T.dc62 .chargeLiIn::after{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc62.png') no-repeat right top;
+    background-size: 3.5em;
+	right:3%;
+	top:0;
+	width:3.5em;
+	height:60%;
+}
+.c02T.dc66 .chargeLiIn::after{
+    content:"";
+	position:absolute;
+	background: url('../images/ico/dc66.png') no-repeat right top;
+    background-size: 3.5em;
+	right:3%;
+	top:0;
+	width:3.5em;
+	height:60%;
+}
+.c02T li *{
+	-o-transition: all .10s, ease-out;
+	-ms-transition: all .10s ease-out;
+	-moz-transition: all .10s ease-out;
+	-webkit-transition: all .10s ease-out;
+	transition: all .10s ease-out;
+}
+.c02T .chargeST{
+	position:relative;
+	height:7.375em;
+	background:#fff;
+}
+.c02T .chargeSTT{
+	padding-top:0.75em;
+}
+.c02T .chargeSTT span{
+	font-size:1.250em;
+	font-weight:bold;
+	color:#999;
+}
+.c02T .chargeST p{
+	position:absolute;
+	bottom:0.5em;
+	left:0;
+	width:100%;
+	font-family:'Roboto';
+}
+.c02T .chargeST .span01{
+	display:inline-block;
+	padding:1em 0 0 3.250em;
+}
+.c02T .chargeST .span01 span{
+	font-size:3.5em;
+	color:#e6e6e6;
+}
+.c02T .chargeST .span01 .fontRow{
+	font-weight:lighter;
+}
+.c02T .chargeSB{
+	position:relative;
+	height:7.75em;
+	font-family:'Roboto';
+}
+.c02T .chargeSB p{
+	position:absolute;
+	bottom:1em;
+	left:0;
+	width:100%;
+}
+.c02T .chargeSB .span01,
+.c02T .chargeSB .span02,
+.c02T .chargeSB .span03{
+	display:block;
+	color:#fff;
+}
+.c02T .chargeSB .span01{
+	margin-bottom:0.750em;
+}
+.c02T .chargeSB .span01 .won,
+.c02T .chargeSB .span01 .num{
+	font-size:1.750em;
+}
+.c02T .chargeSB .span01 .cancel {
+    text-decoration: line-through;
+    margin-right: 1.5em;
+}
+.c02T .chargeSB .span01 .cancel .won,
+.c02T .chargeSB .span01 .cancel .num{
+    font-size: 0.938em;
+}
+.c02T .chargeSB .span02 span{
+	font-size:1em;
+}
+.c02T .chargeSB .span03{
+	margin-bottom:0.25em;
+}
+.c02T .chargeSB .span03 span{
+	font-size:1em;
+}
+.c02T .chargeSB02{
+	position:absolute;
+	width:100%;
+	bottom:1.125em;
+	left:0;
+}
+.c02T .chargeSB02 span{
+	font-size:1.063em;
+	white-space:nowrap;
+}
+.c02T.case01 .chargeST .span01{
+	background:url(../images/ico/charge_ico001.png) no-repeat left bottom 0.25em;
+	background-size:2.750em;
+}
+.c02T.case01 .chargeSTT span,
+.c02T.case01 .chargeST .span01 span,
+.c02T.case01 .chargeSB02 span{
+	color:#1bd7c3;
+}
+.c02T.case01 .chargeSB{
+	background:#1bd7c3;
+}
+
+.c02T.case02 .chargeST .span01{
+	background:url(../images/ico/charge_ico002.png) no-repeat left bottom 0.25em;
+	background-size:2.750em;
+}
+.c02T.case02 .chargeSTT span,
+.c02T.case02 .chargeST .span01 span,
+.c02T.case02 .chargeSB02 span{
+	color:#3bd2d8;
+}
+.c02T.case02 .chargeSB{
+	background:#3bd2d8;
+}
+.c02T.case03 .chargeST .span01{
+	background:url(../images/ico/charge_ico003.png) no-repeat left bottom 0.25em;
+	background-size:2.750em;
+}
+.c02T.case03 .chargeSTT span,
+.c02T.case03 .chargeST .span01 span,
+.c02T.case03 .chargeSB02 span{
+	color:#30d1f4;
+}
+.c02T.case03 .chargeSB{
+	background:#30d1f4;
+}
+.c02T.case04 .chargeST .span01{
+	background:url(../images/ico/charge_ico003.png) no-repeat left bottom 0.25em;
+	background-size:2.750em;
+}
+.c02T.case04 .chargeSTT span,
+.c02T.case04 .chargeST .span01 span,
+.c02T.case04 .chargeSB02 span{
+	color:#30d1f4;
+}
+.c02T.case04 .chargeSB{
+	background:#30d1f4;
+}
+.c02T.case05 .chargeST .span01{
+	background:url(../images/ico/charge_ico004.png) no-repeat left bottom 0.25em;
+	background-size:2.750em;
+}
+.c02T.case05 .chargeSTT span,
+.c02T.case05 .chargeST .span01 span,
+.c02T.case05 .chargeSB02 span{
+	color:#44494c;
+}
+.c02T.case05 .chargeSB{
+	background:#44494c;
+}
+.c02T.case06 .chargeST .span01{
+	background:url(../images/ico/charge_ico004.png) no-repeat left bottom 0.25em;
+	background-size:2.750em;
+}
+.c02T.case06 .chargeSTT span,
+.c02T.case06 .chargeST .span01 span,
+.c02T.case06 .chargeSB02 span{
+	color:#44494c;
+}
+.c02T.case06 .chargeSB{
+	background:#44494c;
+}
+
+.c02B{
+	padding:1em 4.7%;
+}
+
+.c02BT{
+	padding-top:0.625em;
+	padding-bottom:1.750em;
+	margin-bottom:1.750em;
+	border-bottom:1px solid #ededed;
+}
+.c02BT .c02BT01{
+	margin-right:0.75em;;
+}
+.c02BT .c02BT01 span{
+	font-size:1.375em;
+	color:#000;
+}
+.c02BT .c02BT02{
+	margin-right:0.25em;;
+}
+.c02BT .c02BT02 span{
+	font-family:"Roboto";
+	font-size:1.438em;
+	color:#fe7e00;
+}
+.c02BT .c02BT03{
+}
+.c02BT .c02BT03 span{
+	font-size:1.313em;
+	color:#fe7e00;
+	font-weight:500;
+}
+.chargeUl03{
+	padding-bottom:0.75em;
+	margin-bottom:0.938em;
+	border-bottom:1px solid #ededed;
+}
+.chargeUl03 li{
+	overflow:hidden;
+	line-height:2.250em;
+}
+.chargeUl03 .fL,
+.chargeUl03 .fR{
+	display:inline-block;
+}
+.chargeUl03 .fL{
+	width:30%;
+	float:left;
+}
+.chargeUl03 .fL span{
+	font-size:1.250em;
+	color:#979797;
+	
+}
+.chargeUl03 .fR{
+	width:69%;
+	float:right;
+	text-align:right;
+}
+.chargeUl03 .fR .num,
+.chargeUl03 .fR .won{
+	color:#000;
+	font-size:1.250em;
+	font-weight:500;
+}
+.chargeUl03 .fR .num{
+	font-family:"Roboto";
+	letter-spacing:0;
+}
+.chargeUl03 .fR .won{
+}
+.chargeUl03 .li03 .fR .num,
+.chargeUl03 .li03 .fR .won{
+	color:#3bc4d8;
+}
+.chargeUl03 .li04{
+	margin-bottom:0.625em;
+	line-height:120%;
+}
+.chargeUl03 .li04 .fR .text01{
+	color:#6f6f6f;
+	font-size:1em;
+	line-height:100%;
+}
+.chargeUl03 .li05 .fR .num,
+.chargeUl03 .li05 .won{
+	color:#fe7e00;
+	font-size:1.250em;
+}
+.chargeBtn01{
+	border:0.125em solid #3bc4d8;
+	border-radius:0.25em;
+}
+.chargeBtn01 span{
+	display:ilnine-block;
+	padding:0 1.125em;
+	color:#3bc4d8;
+}
+.chargeUl04{
+	overflow:hidden;
+}
+.chargeUl04_02{
+	margin-bottom:0.5em;
+}
+.chargeUl04 button{
+	display:block;
+	width:100%;
+	text-align:center;
+	line-height:3.5em;
+	height:3.5em;
+}
+
+.chargeUl04 li{
+	border-color:#e2e2e2;
+	border-style:solid;
+	border-width:0 1px 1px 1px;	
+}
+
+.chargeUl04 li:first-child{
+	border-width:1px;
+}
+.chargeUl04 button span{
+	font-size:1.125em;
+	color:#000;
+}
+.chargeUl04 button:hover,
+.chargeUl04 button.on{
+	background:#3b4650;	
+	
+}
+.chargeUl04 button:hover span,
+.chargeUl04 button.on span{
+	color:#fff;
+}
+.chargeUl04 .chargeUl04Btn05 button{
+	background:#fff url(../images/page/charge_btn_05_off.png) no-repeat center center;
+	background-size:5.625em;
+}
+.chargeUl04 .chargeUl04Btn05 button.on,
+.chargeUl04 .chargeUl04Btn05 button:hover{
+	background:#3b4650 url(../images/page/charge_btn_05_on.png) no-repeat center center;
+	background-size:5.625em;
+}
+.chargeH3{
+	margin-bottom:1.5em;
+}
+.chargeH3 span{
+	color:#000;
+	font-size:1.375em;
+	font-weight:normal;
+}
+
+.c02BCuponBox{
+	padding-bottom:1.75em;
+	margin-bottom:1.75em;
+	border-bottom:1px solid #ededed;
+}
+
+.c02BCuponUl{
+	overflow:hidden;
+}
+.c02BCuponUl li{
+	position:relative;
+	line-height:1.563em;
+	margin-bottom:1.125em;
+}
+.c02BCuponUl .c02BCuponUlL{
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-block;
+	padding-left:2.25em;
+}
+.c02BCuponUl .c02BCuponUlL button span{
+	font-size:1.188em;
+	color:#979797;
+}
+.c02BCuponUl .c02BCuponUlLIco{
+	position:absolute;
+	display:inline-block;
+	left:0;
+	top:0;
+	height:100%;
+	width:1.5em;
+	background:url(../images/ico/ico_radio_off.png) no-repeat;
+	background-size:100%;
+}
+.c02BCuponUl .c02BCuponUlR{
+	display:block;
+	box-sizing:border-box;
+	width:100%;
+	padding:0 1.438em 0 9em ;
+}
+.c02BCuponUl .c02BCuponUlRText{
+	display:block;
+	text-overflow:ellipsis; 
+	width:100%; 
+	overflow:hidden;
+	white-space: nowrap;
+	text-align:right;
+}	
+.c02BCuponUl .c02BCuponUlRText span{
+	font-size:1.188em;
+	color:#979797;
+}
+
+.c02BCuponUl .c02BCuponUlRIco{
+	position:absolute;
+	right:0;
+	top:0;
+	width:1em;
+	height:100%;
+	background:url(../images/ico/charge_ico_arr.png) no-repeat center center;
+	background-size:100%;
+}
+
+.c02BCuponUl .on .c02BCuponUlLIco{
+	background:url(../images/ico/ico_radio_on.png) no-repeat center center;
+	background-size:100%;
+}
+.c02BCuponUl .on .c02BCuponUlL button span{
+	color:#000;
+}
+
+
+
+
+.calendarTitle{
+	display:inline-block;
+	vertical-align:top;
+}
+.calendarTitle em{
+	font-style:normal;
+}
+.calendarBtn{
+	position:relative;
+	display:inline-block;
+	width:17px;
+	height:1em;
+	vertical-align:middle;
+}
+.calendarBtn .btnIco{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.calendarBtn .btnBg{
+	display:none;
+	width:100%;
+	height:100%;
+	background:#fff;
+	opacity:0.7;
+	border-radius:0.125em;
+}
+.calendarBtn.btnL .btnIco{
+	background:url(../images/page/calendar_arr_l.png) no-repeat center center;
+	background-size:7px;
+}
+.calendarBtn.btnR .btnIco{
+	background:url(../images/page/calendar_arr_r.png) no-repeat center center;
+	background-size:7px;
+}
+.detailPopup .detailPopupCloseBtn{
+	position:absolute;
+	right:0;
+	top:0;
+	height:3.25em;
+	width:3.125em;
+	background:url(../images/page/popup_close_btn.png) no-repeat center center;
+	background-size:1.188em;
+	z-index:200;
+}
+.popupBot{
+	box-sizing:border-box;
+	padding:0.625em 1.9%;
+}
+.popupBotIn{
+	box-sizing:border-box;
+	padding:0.625em 2.2%;
+	width:100%;
+	height:4.875em;
+	background:#fff;	
+}
+.popupBot button{
+	display:inline-block;
+	width:49%;
+	height:100%;
+	float:left;
+	border-radius:0.375em;
+}
+.popupBot button span{
+	color:#fff;
+	font-size:1.250em;
+	font-weight:500;
+}
+.popupBot .btn01{
+	background:#3b4650;
+}
+.popupBot .btn02{
+	float:right;
+	background:#fe7e00;
+}
+.popupBot .btn03{
+	width:100%;
+	background:#fe7e00;
+}
+/*
+.calendarTable{
+}
+.calendarTable th,
+.calendarTable td{
+	text-align:center;
+	color:#3b4650;
+}
+.calendarTable td{
+	position:relative;
+	vertical-align:middle;
+	font-family:"Roboto Lt";
+	height:4.125em;
+}
+.calendarTable th{
+	padding-top:0.125em;
+	height:2em;
+	vertical-align:middle;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-size:0.875em;
+	line-height:100%;
+	background:#eff3f5;
+	letter-spacing:0;
+}
+.calendarTable .sat,
+.calendarTable .sun,
+.calendarTable .sat button,
+.calendarTable .sun button{
+	color:#fbbd28;
+}
+.calendarTable td.toDay:after{
+	position:absolute;
+	left:0;
+	bottom:0.8em;
+	width:100%;
+	text-align:center;
+	content:'TODAY';
+	font-family:"Roboto Lt";
+	font-size:0.688em;
+	color:#3b4650;
+	letter-spacing:0;
+}
+.calendarTable td.sun.toDay:after,
+.calendarTable td.sat.toDay:after{
+	color:#9caebe;
+}
+.calendarTable td.toDay.checked:after{
+	bottom:-0.25em;
+}
+.calendarTable td button{
+	display:inline-block;
+	width:2.750em;
+	height:2.750em;
+	border-radius:2.750em;
+}
+.calendarTable td.checked button{
+	background:#3bc4d8;
+	color:#fff;
+	text-align:center;
+}
+.sectionBox{
+	padding:0 2.2%;
+}
+.popupScrollBox .sectionBox{
+	padding-bottom:1em;
+}
+.popupMo h4{
+	position:relative;
+	padding:1.125em 0 0.688em 0;
+}
+.popupMo h4 p{
+	font-size:1.125em;
+	color:#3b4650;
+	font-weight:500;
+}
+.popupScrollBox{
+	box-sizing:border-box;
+	border-top:1px solid #dee3e6;
+	overflow-y:auto;
+}
+*/
+.calendarTable{
+	margin-bottom:0.75em;
+}
+.calendarTable th,
+.calendarTable td{
+	text-align:center;
+	color:#3b4650;
+}
+.calendarTable td{
+	position:relative;
+	vertical-align:middle;
+	font-family:"Roboto Lt";
+	height:52px;
+}
+.calendarTable th{
+	padding-top:1px;
+	height:22px;
+	vertical-align:middle;
+	font-family:"Roboto";
+	font-weight:normal;
+	font-size:0.875em;
+	line-height:100%;
+	background:#eff3f5;
+	letter-spacing:0;
+}
+.calendarTable .sat,
+.calendarTable .sun,
+.calendarTable .sat button,
+.calendarTable .sun button{
+	color:#fbbd28;
+}
+.calendarTable td.toDay:after{
+	position:absolute;
+	left:0;
+	top:37px;
+	width:100%;
+	text-align:center;
+	content:'TODAY';
+	font-family:"Roboto Lt";
+	font-size:11px;
+	color:#3b4650;
+	letter-spacing:0;
+}
+.calendarTable td.sun.toDay:after,
+.calendarTable td.sat.toDay:after{
+	color:#9caebe;
+}
+.calendarTable td.toDay.checked:after{
+	top:43px;
+}
+.calendarTable td button{
+	display:inline-block;
+	width:2.750em;
+	height:2.750em;
+	border-radius:2.750em;
+}
+.calendarTable td.checked button{
+	background:#3bc4d8;
+	color:#fff;
+	text-align:center;
+}
+.sectionBox{
+	padding:0 2.2%;
+}
+.popupScrollBox .sectionBox{
+	padding-bottom:1em;
+}
+.popupMo h4{
+	position:relative;
+	padding:1.125em 0 0.688em 0;
+}
+.popupMo h4 p{
+	font-size:1.125em;
+	color:#3b4650;
+	font-weight:500;
+}
+.popupScrollBox{
+	box-sizing:border-box;
+	border-top:1px solid #dee3e6;
+	overflow-y:auto;
+}
+
+/* 로그인 */
+.loginPop{
+	background:#fe7e00;
+}
+#loginBox{
+	padding:20px 2% 0 2%;
+}
+.loginWrap #header{
+	position:absolute;
+}
+.loginWrap #content{
+	padding:4em 4.7% 0 4.7%;
+}
+#loginBox .loginLogo{
+	text-align:center;
+	margin-bottom:5.250em;
+}
+#loginBox .loginLogo img{
+	width:50%;
+}
+#loginBox .loginInputBox input[type="text"],
+#loginBox .loginInputBox input[type="email"],
+#loginBox .loginInputBox input[type="password"]{
+	box-sizing:border-box;
+	padding:0 3%;
+	height:3.118em;
+	margin-bottom:0.471em;
+	background:#fff;
+	border:none;
+	width:100%;
+	font-size:1.063em;
+	color:#fe7e00;
+	letter-spacing:-0.05em;
+}
+#loginBox .li02{
+	margin-bottom:0.438em;
+}
+#loginBox .li03{
+	margin-bottom:0.938em;
+}
+#loginBox .li04{
+	overflow:hidden;
+	height:6.563em;
+}
+#loginBox .loginBtn{
+	display:block;
+	border-radius:0.375em;
+	background:#fbbd28;
+	height:3.625em;
+	line-height:3.625em;
+	text-align:center;
+}
+#loginBox .loginBtn span{
+	font-size:1.250em;
+	font-weight:500;
+	color:#000;
+}
+#loginBox .li04 .checkbox{
+	float:left;
+}
+#loginBox .li04 a{
+	display:inline-block;
+	min-width:49%;
+	text-align:right;
+	float:right;
+	padding-right:0.824em;
+	font-size:1.063em;
+	color:#fff;
+	background:url(../images/page/login_ico_arr.png) no-repeat right center;
+	background-size:auto 0.588em;
+}
+#loginBox .li05{
+	margin-bottom:0.5em;
+	text-align:center;
+}
+#loginBox .li05 img{
+	width:72%;
+}
+#loginBox .li06{
+	overflow:hidden;
+}
+#loginBox .li05 a,
+#loginBox .li06 a{
+	display:inline-block;
+	width:49%;
+	text-align:center;
+	border-radius:0.375em;
+	height:3.625em;
+	line-height:3.625em;
+}
+#loginBox .li05 a span,
+#loginBox .li06 a span{
+	font-size:1.250em;
+	font-weight:500;
+	color:#fff;
+}
+#loginBox .li05 .loginBtn02{
+	width:100%;
+	background:#3b4650;
+}
+#loginBox .li06 .loginBtn03{
+	float:right;
+	background:#3d5a9a;
+	vertical-align:middle;
+}
+#loginBox .li06 .loginBtn03 img{
+	width:1.125em;
+	margin-right:0.188em;
+}
+#loginBox .li06 .loginBtn04{
+	background:#23b100;
+	vertical-align:middle;
+}
+#loginBox .li06 .loginBtn04 img{
+	width:0.875em;
+	margin-right:0.188em;
+}
+
+/* 비밀번호 변경 */
+.cpSection{
+	padding:1.25em 4.7% 0.188em 4.7%;
+	margin-bottom:0.625em;
+	background:#fff;
+}
+.cpUl li{
+	margin-bottom:0.688em;
+}
+
+/* 아이디 패스워드 찾기 */
+body.case01{
+	background:#fff !important;
+}
+body.case02{
+	background:#e3e7ea !important;
+}
+
+.findWrap #header{
+	position:absolute;
+}
+.findWrap #content{
+	padding-left:0;
+	padding-right:0;
+}
+.findTab .tabHeader{
+	padding-top:1.188em;
+	height:3.125em;
+	background:#fff;
+}
+.findTab .tabHeader li{
+	box-sizing:border-box;
+	width:50%;
+	float:left;
+	display:inline-block;
+	background:#f2f5f8;
+	border-top:1px solid #dfe3e5;	
+	border-bottom:2px solid #dfe3e5;	
+}
+.findTab .tabHeader button{
+	display:block;
+	width:100%;
+	color:#9caebe;
+	height:2.938em;
+	line-height:2.938em;
+	font-size:1.063em;
+	font-weight:500;
+}
+.findTab .tabHeader li:hover,
+.findTab .tabHeader li.on{
+	background:#fff;
+	border-bottom:2px solid #fff;
+}
+.findTab .tabHeader li:hover button,
+.findTab .tabHeader li.on button{
+	color:#3b4650;
+	font-weight:700;
+}
+.findTab .tabHeader li:nth-child(1){
+	border-right:2px solid #dfe3e5;
+}
+.findTab .tabHeader li:nth-child(2){
+	border-left:2px solid #dfe3e5;
+}
+.findTab .tabHeader li:nth-child(1).on{
+	border-right:none;
+}
+.findTab .tabHeader li:nth-child(2).on{
+	border-left:none;
+}
+
+.findSection01{
+	padding:1.5em 4.7% 0.625em 4.7%;
+	background:#fff;
+}
+.findSection01 .findText01{
+	font-size:1em;
+	color:#3bc4d8;
+	letter-spacing:-0.05em;
+}
+.findTab .tabCon li{
+	margin-bottom:0.750em;
+}
+.findSection02{
+	padding:1.375em 4.7% 0 4.7%;
+}
+.findClear{
+	padding:4.875em 0;
+	margin-bottom:0.625em;
+	background:#7e8c98;
+	border:1px solid #a6b0b8;
+}
+.findClear.type02{
+	padding:1.750em 0 1em 0;
+}
+.findClear .findLogo{
+	margin-bottom:1.750em;
+	text-align:center;
+}
+.findClear .findLogo img{
+	width:9.375em;
+}
+.findClear p{
+	text-align:center;
+	color:#fff;
+	letter-spacing:-0.05em;
+}
+.findClear .findClearText01{
+	margin-bottom:0.75em;
+	font-size:1.063em;
+}
+.findClear .findClearText02{
+	font-size:1.063em;
+	font-weight:bold;
+}
+.findClear li{
+	margin-bottom:0.75em;
+	text-align:left;
+	background:url(../images/page/findclear_ico_dot.png) no-repeat 1.375em 0.625em;
+	padding-left:2.063em;
+}
+.findClear li p{
+	text-align:left;
+	font-size:1.063em;
+	color:#fff;
+	letter-spacing:-0.05em;
+	line-height:150%;
+}
+.findWrap .findBtnBox{
+	height:3em;
+}
+.findSection01 .ul04 li{
+	margin-bottom:0.75em;	
+}
+.findInput02.checked,
+.findInput03.checked{
+	background:none;
+}
+/* 입장권 팝업 */
+/* 레이아웃 */
+.ticketPopup{
+	display:none;
+	overflow:hidden;
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	z-index:3000;
+}
+.ticketConBg{
+	position:absolute;
+	box-sizing:border-box;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.6;
+}
+.ticketCon{
+	position:absolute;
+	box-sizing:border-box;
+	width:430px;
+	margin-left:-215px;
+	left:50%;
+	top:50%;
+	padding:1.9% 1.9% 1.9% 1.9%;
+}
+.ticketConIn{
+	position:relative;
+	box-sizing:border-box;
+	height:100%;
+	width:100%;
+	overflow:auto;
+	background: #283036 url(../images/page/ticket_bg_01.png) no-repeat left top;
+	background-size:8.375em;
+}
+.ticketSection{
+	padding:0 4.8%;
+}
+.ticketFoot{	
+	box-sizing:border-box;
+	background:url(../images/page/ticket_bg05.gif) repeat;
+	z-index:999;
+}
+.ticketFootTop{
+	box-sizing:border-box;
+	width:100%;
+}
+.ticketFootTop p{
+	text-align:center;
+}
+.ticketFootTop p span{
+	font-size:0.938em;
+	color:#fe7e00;
+}
+.ticketFootIn{
+	box-sizing:border-box;
+	padding:0 1.9%;
+}
+.ticketFootIn p{
+	margin-bottom:0.5em;
+	text-align:center;
+}
+.ticketFootIn p span{
+	font-size:0.938em;
+	color:#fe7e00;	
+	line-height:130%;
+}
+.ticketBtnBox{
+	padding:0 4.8%;
+	margin-bottom:1.375em;
+}
+.ticketBtnBox .ticketBtn01{
+	display:inline-block;
+	line-height:3.625em;
+	width:100%;
+	background:#fe7e00;
+	border-radius:0.375em;
+}
+.ticketBtnBox .ticketBtn01 span{
+	font-size:1.250em;
+	font-weight:500;
+	color:#fff;
+}
+.ticketFootBgIn{
+	box-sizing:border-box;
+	height:100%;
+	width:100%;
+	border-style:solid;
+	border-color:#6e7983;
+	border-width:0 0.438em 0.438em 0.438em;	
+}
+/* 내용 */
+.ticketCloseBtn{
+	position:absolute;
+	right:0.938em;
+	top:0.938em;
+	width:1.188em;
+	height:1.188em;
+	background:url(../images/page/popup_close_btn.png) no-repeat center center;
+	background-size:1.188em;
+}
+.ticketText01{
+	padding-top:3.375em;
+	margin-bottom:0.375em;
+	text-align:center;
+}
+.ticketText01 span{
+	font-size:1.375em;
+	color:#fe7e00;
+	font-weight:500;
+}
+.ticketText03{
+	margin-bottom:2em;
+	text-align:center;
+}
+.ticketText03 span{
+	font-size:1.313em;
+	color:#fff;
+	font-weight:500;
+}
+.ticketText02{
+	display:none;
+	margin-bottom:2em;
+	text-align:center;
+}
+.ticketText02 span{
+	font-size:1.188em;
+	font-weight:500;
+	color:#3b4650;
+}
+.ticketImgBox{
+	margin-bottom:0.563em;
+	height:14em;	
+}
+.ticketUl li{
+	overflow:hidden;
+}
+.ticketUl dt,
+.ticketUl dd{
+	box-sizing:border-box;
+	display:inline-block;
+}
+.ticketUl dt{
+	float:left;
+	width:27%;
+	padding-left:0.938em;
+	background:url(../images/page/ticket_ico_dot.png) no-repeat 0.125em center;
+	background-size:0.25em;
+}
+.ticketUl dd{
+	float:right;
+	width:73%;
+	padding-left:0.75em;
+	background:url(../images/page/ticket_ico_dot02.png) no-repeat left 0.688em;
+	background-size:0.188em;
+}
+.ticketUl dt span,
+.ticketUl dd span{
+	font-size:1em;
+	font-weight:500;
+	color:#fff;
+	line-height:190%;
+	letter-spacing:0;
+}
+.ticketUl .li02{
+	min-height:3.188em;
+	padding-top:0.25em;
+	margin-bottom:2em;
+}
+.ticketPopup .icoType{
+	box-sizing:border-box;
+	display:inline-block;
+	width:2.688em;
+	height:2.688em;
+	margin:0 0.375em 0.375em 0 ;
+	border:0.125em solid #fff;
+	border-radius:2.688em;
+	vertical-align:middle;
+}
+.ticketPopup .ico01{
+	background:url(../images/ico/ticket_ico_01_01.png) no-repeat center center;
+	background-size:1.813em;
+}
+.ticketPopup .ico02{
+	background:url(../images/ico/ticket_ico_01_02.png) no-repeat 0.875em center;
+	background-size:0.875em;
+}
+.ticketPopup .ico03{
+	background:url(../images/ico/ticket_ico_01_03.png) no-repeat center center;
+	background-size:1.625em;
+}
+.ticketPopup .ico04{
+	background:url(../images/ico/ticket_ico_01_04.png) no-repeat center center;
+	background-size:1.188em;
+}
+.ticketPopup .ico05{
+	background:url(../images/ico/ticket_ico_01_05.png) no-repeat center center;
+	background-size:1.250em;
+}
+.ticketPopup .ico06{
+	background:url(../images/ico/ticket_ico_01_06.png) no-repeat center center;
+	background-size:1.250em;
+}
+.ticketPopup .ico07{
+	background:url(../images/ico/ticket_ico_01_07.png) no-repeat center center;
+	background-size:1.063em;
+}
+.ticketPopup .ico08{
+	background:url(../images/ico/ticket_ico_01_08.png) no-repeat center center;
+	background-size:0.688em;
+}
+.ticketPopup .ico09{
+	background:url(../images/ico/ticket_ico_01_09.png) no-repeat center center;
+	background-size:1.125em;
+}
+.ticketPopup .ico10{
+	background:url(../images/ico/ticket_ico_01_10.png) no-repeat center center;
+	background-size:1.438em;
+}
+.ticketPopup .ico11{
+	background:url(../images/ico/ticket_ico_01_11.png) no-repeat center center;
+	background-size:1.313em;
+}
+.ticketPopup .ico12{
+	background:url(../images/ico/ticket_ico_01_12.png) no-repeat center center;
+	background-size:1.313em;
+}
+.ticketPopup .ico13{
+	background:url(../images/ico/ticket_ico_01_13.png) no-repeat center center;
+	background-size:0.875em;
+}
+
+.ticketComplete{
+	box-sizing:border-box;
+	padding-top:3.313em;
+	margin-bottom:1.688em;
+	background:url(../images/page/ticket_logo.png) no-repeat center top;
+	background-size:8.375em;
+}
+.ticketComplete p{
+	text-align:center;
+}
+.ticketComplete p span{
+	font-size:1em;
+	color:#fff;
+	font-weight:500;
+	line-height:140%;
+}
+.ticketComplete p em{
+	color:#fe7e00;
+	font-style:normal;
+}
+
+/* 지정센터 일때 type02 */
+.ticketPopup.type02 .ticketText02{
+	display:block;
+}
+.ticketPopup.type02 .ticketText03{
+	margin-bottom:0.188em;
+}
+.ticketPopup.type02 .ticketText03 span{
+	color:#3b4650;
+}
+.type02 .ticketConIn {
+    background: #fff url(../images/page/ticket_bg_03.png) no-repeat left top;
+    background-size: 8.375em;
+}
+.type02 .ticketText03 span,
+.type02 .ticketUl dt span,
+.type02 .ticketUl dd span,
+.type02 .ticketComplete p span{
+	color:#3b4650;
+}
+.ticketPopup.type02 .icoType{
+	border-color:#3b4650;	
+}
+.type02 .ticketCloseBtn{
+	    background: url(../images/page/ticket_btn_close02.png) no-repeat center center;
+    background-size: 1.375em;
+}
+
+.ticketPopup.type02 .ico01{
+	background:url(../images/ico/ticket_ico_02_01.png) no-repeat center center;
+	background-size:1.813em;
+}
+.ticketPopup.type02 .ico02{
+	background:url(../images/ico/ticket_ico_02_02.png) no-repeat 0.875em center;
+	background-size:0.875em;
+}
+.ticketPopup.type02 .ico03{
+	background:url(../images/ico/ticket_ico_02_03.png) no-repeat center center;
+	background-size:1.625em;
+}
+.ticketPopup.type02 .ico04{
+	background:url(../images/ico/ticket_ico_02_04.png) no-repeat center center;
+	background-size:1.188em;
+}
+.ticketPopup.type02 .ico05{
+	background:url(../images/ico/ticket_ico_02_05.png) no-repeat center center;
+	background-size:1.250em;
+}
+.ticketPopup.type02 .ico06{
+	background:url(../images/ico/ticket_ico_02_06.png) no-repeat center center;
+	background-size:1.250em;
+}
+.ticketPopup.type02 .ico07{
+	background:url(../images/ico/ticket_ico_02_07.png) no-repeat center center;
+	background-size:1.063em;
+}
+.ticketPopup.type02 .ico08{
+	background:url(../images/ico/ticket_ico_02_08.png) no-repeat center center;
+	background-size:0.688em;
+}
+.ticketPopup.type02 .ico09{
+	background:url(../images/ico/ticket_ico_02_09.png) no-repeat center center;
+	background-size:1.125em;
+}
+.ticketPopup.type02 .ico10{
+	background:url(../images/ico/ticket_ico_02_10.png) no-repeat center center;
+	background-size:1.438em;
+}
+.ticketPopup.type02 .ico11{
+	background:url(../images/ico/ticket_ico_02_11.png) no-repeat center center;
+	background-size:1.313em;
+}
+.ticketPopup.type02 .ico12{
+	background:url(../images/ico/ticket_ico_02_12.png) no-repeat center center;
+	background-size:1.313em;
+}
+.ticketPopup.type02 .ico13{
+	background:url(../images/ico/ticket_ico_02_13.png) no-repeat center center;
+	background-size:0.875em;
+}
+
+/* 회원가입 */
+.join{
+	padding:1.25em 2% 0 2%;	
+}
+.joinWrap{
+	background:#fff;
+}
+.join ul{
+	margin-bottom:2.063em;
+}
+.join .ul02{
+	margin-bottom:1.438em;
+}	
+.join li{
+	margin-bottom:0.688em;
+}
+.join .date01,
+.join .date02,
+.join .date03{
+	display:inline-block;
+	box-sizing:border-box;
+	height:2.813em;
+	border:1px solid #bbc7d2;
+	color:#9caebe;
+	text-align:right;
+}
+.join .date01 select,
+.join .date02 select,
+.join .date03 select{
+	box-sizing:border-box;
+	display:inline-block;
+	background:transparent;
+	border:none;
+	height:2.688em;
+	width:100%;
+	padding:0 0 0 1.250em;
+	font-size:1em;
+	font-weight:500;
+	color:#9caebe;
+}
+.join .date01 select:hover,
+.join .date02 select:hover,
+.join .date03 select:hover{
+	color:#3b4650;
+}
+.join .date01{
+	width:43%;
+	margin-right:1%;
+}
+.join .date01 select{
+	padding-left:5.563em;
+}
+.join .date02,
+.join .date03{
+	width:27%;
+	text-align:right;
+}	
+.join .date03{
+	float:right;
+}
+.join .ul01 .li03{
+	height:3.563em;
+}
+.join .ul01 .li07{
+	overflow:hidden;
+}
+.joinClearImg01{
+	padding-top:3.250em;
+	margin-bottom:4.563em;
+	text-align:center;
+}
+.joinClearImg01 img{
+	width:50%;
+}
+.joinClearText01{
+	margin-bottom:2.813em;
+	text-align:center;
+}
+.joinClearText01 img{
+	width:80%;
+}
+.radioSex{
+	height:3.563em;
+	width:49%;
+	background:#dee4e9;
+	border-radius:0.375em;
+	color:#9caebe;
+	line-height:3.438em;
+	text-align:center;
+}
+.radioSex span{
+	vertical-align:middle;
+}
+.radioSex .icon{
+	display:inline-block;
+	height:100%;
+	margin-right:0.5em;
+}
+.radioSex .text{
+	font-size:1.063em;
+}
+.radioSex.man{
+	float:left;
+}
+.radioSex.woman{
+	float:right;
+}
+.radioSex.man .icon{
+	width:1.563em;
+	background:url(../images/page/join_ico_man.png) no-repeat center center;
+	background-size:100%;
+}
+.radioSex.woman .icon{
+	width:2.063em;
+	background:url(../images/page/join_ico_woman.png) no-repeat center center;
+	background-size:100%;
+}
+.radioSex.man.checked .icon{
+	background:url(../images/page/join_ico_man_on.png) no-repeat center center;
+	background-size:100%;
+}
+.radioSex.woman.checked .icon{
+	background:url(../images/page/join_ico_woman_on.png) no-repeat center center;
+	background-size:100%;
+}
+.radioSex.right{
+	float:right;
+}
+.radioSex.type02 {
+    height:2.75em;
+    line-height:2.5em;
+}
+.radioSex.type02 .icon {
+	height:2.75em;
+}
+.radioSex.type02.man .icon{
+	width:1.188em;
+}
+.radioSex.type02.woman .icon{
+	width:1.625em;
+}
+.radioSex.checked{
+	color:#fff;
+	background:#3bc4d8;
+}
+.join .ul01 .li05 p{
+	font-size:1em;
+	font-weight:500;
+	color:#3bc4d8;
+	line-height:125%;
+	letter-spacing:-0.05em;
+}
+.join .checkWrap{
+	position:relative;
+	height:8.063em;
+	line-height:2em;
+}
+.join .checkWrap .btnDetail{
+	position:absolute;
+	right:0;
+	top:0;
+	display:inline-block;
+	height:1.875em;
+	background:#acb1b6;
+	border-radius:0.25em;
+	padding:0 0.625em;	
+	min-width:4.313em;
+}
+.join .checkWrap .btnDetail span{
+	font-size:0.875em;
+	color:#fff;
+	line-height:1.875em;
+	font-weight:500;
+}
+.join .ul02 .li04{
+	margin-bottom:1em;
+}
+.joinClearBtn{
+	box-sizing:border-box;
+	width:100%;
+	padding:1.188em 4.7%;
+}
+.codeInputBox{
+	position:relative;
+}	
+.codeInputSpan{
+	display:block;
+	padding-right:5.063em;
+}
+.codeBtn{
+	position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    background:#fe7e00;
+    border-radius: 0.25em;
+    padding: 0 0.625em;
+	min-width:4.313em;
+	line-height:2.563em;
+}
+.codeBtn span {
+    font-size:0.875em;
+    color: #fff;
+    font-weight: 500;
+}
+.moviePopup .popupColseBtn{
+	display:inline-block;
+	position:absolute;
+	right:0;
+	top:-38px;
+	width:34px;
+	height:34px;
+	background:url(../images/ico/movie_close.png) no-repeat center center;
+	background-size:100%;
+}
+.popupIframe .popupMoIn{
+	box-sizing:border-box;
+	margin:0 0 0 -440px;
+	padding:50px 0 0 0;
+	top:0;
+	height:101%;
+}
+.popupIframe .popupMoIn02{
+	height:100%;
+	width:880px;
+	background:transparent;
+}
+.popupIframe iframe{
+	height:99%;
+}
+
+.popupImg img
+,.popupImg a{
+	display:block;
+	padding:0;
+	margin:0;
+	border:none;
+}
+
+/* 쿠폰함 */
+.cardPopupBot{
+	box-sizing:border-box;
+	width:100%;
+	padding:0.625em 1.9%;
+}
+.cardPopupBotIn{
+	box-sizing:border-box;
+	padding:0.625em 2.2%;
+	width:100%;
+	height:4.875em;
+	background:#fff;	
+}
+.cardPopupBot button{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	border-radius:0.375em;
+}
+.cardPopCon{
+	padding:0 2.2% 1em 2.2%;
+}
+.cardRadio{
+	margin-bottom:0.563em;
+}
+.cardRadio li{
+	position:relative;
+	height:4.250em;
+	padding-left:1.875em;
+	border-bottom:1px solid #a6b2bc;
+}
+.cardRadio .radioText{
+	height:4.250em;
+	padding-left:5em;
+	background:url(../images/ico/ico_coupon_off.png) no-repeat 0.375em center;
+	background-size:3.750em;
+}
+.cardRadio .checked .radioText{
+	background:url(../images/ico/ico_coupon.png) no-repeat 0.375em center;
+	background-size:3.750em;
+}
+.cardRadio .radioText .noneText{
+	line-height:4.250em;
+}
+.cardRadio .radioText .noneText span{
+	font-size:1.250em;
+	color:#898989;
+	letter-spacing:0;
+}
+.cardRadio .p01{
+	padding:0.75em 0 0.313em 0;
+}
+.cardRadio .p01 span{
+	font-size:1.25em;
+	color:#898989;
+	letter-spacing:0;
+}
+.cardRadio .p01 .span01{
+	font-family:"Roboto";
+}
+.cardRadio .p01 .span02{
+	font-weight:normal;
+}
+.cardRadio .p02 span{
+	font-size:1em;
+	font-weight:lighter;
+	color:#898989;
+	letter-spacing:0;
+}
+.cardRadio .radioIco{
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-block;
+	width:1.875em;
+	height:100%;
+	background:url(../images/common/radio_off.png) no-repeat center center;
+	background-size:1em;
+	vertical-align:middle;
+}
+.cardRadio .checked .radioIco{
+	background:url(../images/common/radio_on02.png) no-repeat center center;
+	background-size:1em;	
+}
+.cardRadio .none .radioText{
+	background:none;
+	padding-left:0.375em;
+	color:#636363;
+}
+.cardRadio .checked .radioIco span{
+	background:#3bc4d8;
+}
+.cardRadio .checked .p01 span,
+.cardRadio .checked .p02 span,
+.cardRadio .checked .radioText .noneText span{
+	color:#636363;
+}
+.cardComent{
+	text-align:right;
+	font-size:1em;
+	color:#636363;
+}
+
+/* 내정보관리 */
+.managementWrap{
+	background:#e3e7ea;
+}
+.managementSection{
+	padding:1.188em 4.7% 0.25em 4.7%;
+	margin-bottom:0.625em;
+	background:#fff;
+}
+.managementSection.typeTop{
+	padding-top:0;
+}
+.managementSection h3{
+	margin-bottom:1em;
+}
+.managementSection h3 span{
+	color:#3b4650;
+	font-size:1.188em;
+	font-weight:500;
+}
+.managementTable th{
+	padding-bottom:1.133em;
+	text-align:left;
+	font-size:0.938em;
+	color:#3b4650;
+	font-weight:500;
+	vertical-align:middle;
+}
+.managementTable td{
+	padding-bottom:0.667em;
+	font-size:0.938em;
+	color:#000;
+	vertical-align:middle;
+}
+.managementTable .tr02 td,
+.managementTable .tr02 th{
+	padding-bottom:0.625em;
+}
+.managementBtn01{
+	box-sizing:border-box;
+	display:inline-block;
+	width:90%;
+	background:#acb1b6;
+    line-height: 2.813em;
+	vertical-align:middle;
+	border-radius:0.25em;
+}
+.managementBtn01 span{
+	font-size:0.813em;
+	color:#fff;
+}
+.managementBtnBox{
+	padding-bottom:1em;
+}
+.managementBtn04,
+.managementBtn05{
+	display:block;
+	width:49%;
+	text-align:center;
+	line-height:3.625em;
+	border-radius:0.375em;
+	font-size:1.067em;
+}
+.managementBtn04 span,
+.managementBtn05 span{
+	font-size:1.250em;
+	font-weight:500;
+	color:#fff;
+}
+.managementBtn04{
+	float:left;
+	background:#3b4650;
+}
+.managementBtn05{
+	float:right;
+	background:#fe7e00;
+}
+.menagementText01,
+.menagementText02{
+	display:inline-block;
+	width:49%;
+}
+.menagementText01 span{
+	font-size:0.938em;
+	font-weight:500;
+	color:#3bc4d8;
+}
+.menagementText02{
+	text-align:right;
+}
+.menagementText02 span{
+	font-size:0.938em;
+	font-weight:500;	
+}
+.menagementText02 .text01{
+	color:#3b4650;
+}
+.menagementText02 .text02{
+	color:#3bc4d8;
+}
+
+
+
+@media all and (max-width:1024px){
+	.popupIframe .popupMoIn{
+		margin-left: -375px;
+	}
+	.popupIframe .popupMoIn02{
+		width:750px;
+	}
+}
+@media all and (max-width:999px){
+	.popupIframe .popupMoIn{
+		box-sizing:border-box;
+		margin:0;
+		padding:5px 5px 0 5px;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+	}
+	.popupIframe .popupMoIn02{
+		width:100%;
+		height:100%;
+	}
+	.popupIframe iframe{
+		height:99%;
+	}
+
+}
+@media all and (max-width:767px){
+	.ticketCon{
+		position:absolute;
+		box-sizing:border-box;
+		width:100%;
+		height:100%;
+		margin-left:0;
+		left:0;
+		top:0;
+		padding:1.9% 1.9% 1.9% 1.9%;
+	}	
+	.moviePopup .popupColseBtn{
+		width:26px;
+		height:26px;
+		top:-29px; 
+		right:1.9%
+	}
+}

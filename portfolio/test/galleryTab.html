@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/js/jquery.bxslider.css">
+	<script src="./static/js/jquery-2.1.1.min.js"></script>
+	<script src="./static/js/jquery.bxslider.js"></script>
+	<script src="http://connect.facebook.net/ko_KR/all.js"></script>
+
+	<script> 
+		$(document).ready(function(){
+
+    $(".filter").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.fil').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".fil").not('.'+value).hide('3000');
+            $('.fil').filter('.'+value).show('3000');
+            
+        }
+    });
+
+});
+	</script>
+	<style>
+		.content div {
+			width:300px;
+			height:300px;
+			float:left;
+		}
+		.tab:after {
+			content:"";
+			display:block;
+			clear:both;
+		}
+		.filter {
+			float:left;
+			margin-right:15px;
+		}
+		.content div img {
+			width:100%;
+			height:100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="gallery">
+		<div class="tab">
+			<div class="filter" data-filter="all">all</div>
+			<div class="filter" data-filter="category-1">로고디자인</div>
+			<div class="filter" data-filter="category-2">제품디자인</div>
+			<div class="filter" data-filter="category-3">웹디자인</div>
+			<div class="filter" data-filter="category-4">편집디자인</div>
+			<div class="filter" data-filter="category-5">컴퓨터그래픽스</div>
+		</div>
+		<div class="content">
+			<div class="fil category-1"><img src="./static/images/main1.png"></div>
+			<div class="fil category-2"><img src="./static/images/main2.png"></div>
+			<div class="fil category-4"><img src="./static/images/main2.png"></div>
+			<div class="fil category-4"><img src="./static/images/main2.png"></div>
+			<div class="fil category-4"><img src="./static/images/main2.png"></div>
+		</div>
+	</div>
+</body>
+</html>

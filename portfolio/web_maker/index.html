@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link type="text/css" rel="stylesheet" href="./static/css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/css/common.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/css/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".designList li").click(function(){
+        var num = $(this).index();
+        $(".galleryBox").show();
+        $(".bg").show();
+        $(".bg").click(function(){
+          $(this).hide();
+          $(".galleryBox").hide();
+        });
+        $(".reqBox .closeBtn").click(function(){
+          $(".reqForm").hide();
+        });
+        $(".stBox3 .reqBtn").click(function(){
+          $(".reqForm").fadeIn();
+        });
+      });
+    });
+    $(window).scroll(function(){
+      var winH = $(window).scrollTop();
+      console.log(winH);
+      if(winH > 0){
+        $(".header").addClass("headOn");
+      } else if(winH == 0){
+        $(".header").removeClass("headOn");
+      }
+    });
+  </script>
+ </head>
+ <body>
+   <div id="wrap">
+     <div class="header">
+       <div class="headInner">
+         <div class="headL">
+           <h1><a href="#">Design</a></h1>
+           <ul class="gnb">
+             <li><a href="#">포트폴리오</a></li>
+             <li><a href="#">디자인제안</a></li>
+             <li><a href="#">디자인의뢰</a></li>
+             <li><a href="#">홍보센터</a></li>
+             <li><a href="#">고객센터</a></li>
+           </ul>
+        </div>
+        <div class="headR">
+          <div class="searchBox">
+            <input type="text" name="" value="">
+            <a href="#" class="searchBtn">검색</a>
+          </div>
+          <div class="loginBox">
+            <a href="#">로그인</a>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="visual">
+       <p>다양한 포트폴리오를 만나보세요.</p>
+     </div>
+     <div class="container">
+       <ul class="category">
+         <li><a href="#" class="on">그래픽 디자인</a></li>
+         <li><a href="#">편집 디자인</a></li>
+         <li><a href="#">일러스트레이션</a></li>
+         <li><a href="#">제품 디자인</a></li>
+         <li><a href="#">패션 디자인</a></li>
+         <li><a href="#">웹/모바일 디자인</a></li>
+         <li><a href="#">환경 디자인</a></li>
+         <li><a href="#">영상 디자인</a></li>
+         <li><a href="#">게임 디자인</a></li>
+         <li><a href="#">공예 디자인</a></li>
+         <li><a href="#">순수 미술</a></li>
+       </ul>
+       <div class="main">
+         <ul class="designList">
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio01.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio02.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio03.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio04.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio05.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio06.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio07.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio08.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio09.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio10.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio02.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+           <li class="listBox">
+             <div class="imgBox">
+               <a href="#"><img src="./static/images/main/portfolio11.png" alt=""/></a>
+             </div>
+             <div class="title">비행기와 하늘</div>
+             <ul class="infoBox">
+               <li class="fav"><span>2199</span></li>
+               <li class="cmnt"><span>17</span></li>
+               <li class="views"><span>300</span></li>
+             </ul>
+             <div class="user">
+               <a href="#">Kim dong ki</a>
+             </div>
+           </li>
+         </ul>
+         <div class="galleryBox">
+           <div class="innerBox">
+             <div class="portfolio">
+               <div class="top">
+                 <div class="titleL">
+                   <h2>비행기와 하늘</h2>
+                   <p>1개월 전 / 그래픽 디자인</p>
+                 </div>
+                 <div class="infoR">
+                   <ul class="infoBox">
+                     <li class="fav"><span>2199</span></li>
+                     <li class="cmnt"><span>17</span></li>
+                     <li class="views"><span>300</span></li>
+                   </ul>
+                 </div>
+               </div>
+               <div class="contents">
+                 <img src="./static/images/main/portfolio_view01.jpg" alt=""/>
+                 <img src="./static/images/main/portfolio_view02.jpg" alt=""/>
+                 <img src="./static/images/main/portfolio_view03.jpg" alt=""/>
+                 <img src="./static/images/main/portfolio_view04.jpg" alt=""/>
+               </div>
+             </div>
+             <div class="profile">
+               <div class="pfTop">
+                 <p class="pfIcon">
+                   <img src="./static/images/main/profile_icon01.gif" alt=""/>
+                 </p>
+                 <p class="pfName">
+                   김동기
+                 </p>
+                 <p class="pfDesign">
+                   그래픽 디자인 · 일러스트레이션
+                 </p>
+               </div>
+               <div class="pfBot">
+                 <div class="stBox1">
+                   <h3 class="pfTitle">비행기와 하늘</h3>
+                   <p class="pfCg">그래픽 디자인 · 일러스트레이션</p>
+                 </div>
+                 <div class="stBox2">
+                   <h3>CCL</h3>
+                   <p><img src="./static/images/main/ccl_icon.jpg" alt=""/></p>
+                 </div>
+                 <div class="stBox3">
+                   <h3>제안</h3>
+                   <a href="#" class="reqBtn">의뢰하기</a>
+                 </div>
+                 <div class="stBox4">
+                   <h3>다른 작품</h3>
+                   <p>
+                    <a href="#"><img src="./static/images/main/portfolio01.png" alt=""/></a>
+                    <a href="#"><img src="./static/images/main/portfolio02.png" alt=""/></a>
+                    <a href="#"><img src="./static/images/main/portfolio03.png" alt=""/></a>
+                    <a href="#"><img src="./static/images/main/portfolio04.png" alt=""/></a>
+                    <a href="#"><img src="./static/images/main/portfolio05.png" alt=""/></a>
+                    <a href="#"><img src="./static/images/main/portfolio06.png" alt=""/></a>
+                   </p>
+                 </div>
+                 <div class="stBox5">
+                   <h3>공유하기</h3>
+                   <p class="social">
+                     <a href="#" class="fa fa-facebook"></a>
+                     <a href="#" class="fa fa-vimeo"></a>
+                     <a href="#" class="fa fa-rss"></a>
+                     <a href="#" class="fa fa-github"></a>
+                   </p>
+                 </div>
+               </div>
+             </div>
+             <div class="reqForm">
+               <div class="reqInner">
+                 <form class="reqBox" action="#" method="post">
+                   <a href="#" class="closeBtn">x</a>
+                   <h4>의뢰하기</h4>
+                   <p>
+                     <label for="company">회사명</label>
+                     <input type="text" name="company" value="">
+                   </p>
+                   <p>
+                     <label for="email">이메일</label>
+                     <input type="text" name="email" value="">
+                   </p>
+                   <p>
+                     <label for="phone">연락처</label>
+                     <input type="text" name="phone" value="">
+                   </p>
+                   <p>
+                     <label for="req">의뢰내용</label>
+                     <textarea name="req" rows="8" cols="80"></textarea>
+                   </p>
+                   <p class="submit">
+                     <a href="#" class="submitBtn">보내기</a>
+                   </p>
+                 </form>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="bg"></div>
+       </div>
+     </div>
+   </div>
+ </body>
+</html>

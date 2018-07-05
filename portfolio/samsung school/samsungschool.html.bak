@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>samsung school</title>
+<link rel="stylesheet" type="text/css" href="css/samsungschool.css" />
+</head>
+ <body>
+ <div id="wrapper">
+	<div id="content">
+		<div class="visual">
+			<img src="images/visual1.jpg" alt=""/>
+			<h2>Samsung School v2.0</h2>
+			<p>Samsung School v2.0 helps schools build connected learning environments <br/> 
+			that empower teachers, inspire students, and engage parents.</p>
+		</div>
+		<div class="works">
+			<h3>HOW IT WORKS</h3>
+			<ul class="works_inner">
+				<li><a href="#"><img src="images/video1.jpg" alt=""/>
+					<p class="work_text">Before Class</p>
+				</a></li>
+				<li><a href="#"><img src="images/video2.jpg" alt=""/>
+					<p class="work_text">During Class</p>
+				</a></li>
+				<li><a href="#"><img src="images/video3.jpg" alt=""/>
+					<p class="work_text">After Class</p>
+				</a></li>
+			</ul>
+		</div>
+		<div class="developed">
+			<h3>Why We Developed It</h3>
+			<ul class="developed_inner">
+				<li>
+					<a href="#">
+					<img src="images/content01.jpg" alt=""/>
+					<strong>Large class sizes</strong>
+					<p>Teachers are dealing with large numbers in many classes, 
+					yet are still required to provide individualized learning 
+					programs for each student. </p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img src="images/content02.jpg" alt=""/>
+					<strong>Outdated Infrastructure</strong>
+					<p>Teachers have moved away from lecturing and now strive to create a learning environment built around continuous 
+					interaction with students. Outdated infrastructure and 
+					facilities may make it difficult to accommodate new 
+					teaching styles.  </p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img src="images/content03.jpg" alt=""/>
+					<strong>Low parent interaction</strong>
+					<p>Students are more successful if they get support outside 
+					the classroom, but teachers do not have a way to 
+					systematically provide parents with regular, detailed 
+					updates on student performance and participation. </p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="benefits">
+			<h3>KEY BENEFITS</h3>
+			<ul class="benefits_inner">
+				<li><button type="button">Interactive Learning</button></li>
+				<li><button type="button">Connecting Beyond</button></li>
+				<li><button type="button">Cost Effective Management</button></li>
+			</ul>
+			<div class="inner_item1">
+				<ul class="item1_img">
+					<li><img src="images/Learning1.jpg" alt="" /></li>
+					<li><img src="images/Learning2.jpg" alt="" /></li>
+					<li><img src="images/Learning3.jpg" alt="" /></li>
+				</ul>
+				<div class="item_wrap">
+					<div class="item1_text">
+						<h4>Teachers can</h4>
+						<ul class="inner_text">
+							<li>
+								<strong>Monitor</strong>
+								<p>Monitor students, answer private questions, and share 
+								screens for individual help.</p>
+							</li>
+							<li>
+								<strong>Engage</strong>
+								<p>Conduct on-the-fly polls to see if students are 
+								engaged and demonstrate understanding.</p>
+							</li>
+							<li>
+								<strong>Track</strong>
+								<p>Create online quizzes to track learning progress.</p>
+							</li>
+							<li>
+								<strong>Share</strong>
+								<p>Post course materials that can be accessed anywhere 
+							so that students can work on assignments and review 
+							materials in and out of class.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="item1_text text2">
+						<h4>Students can</h4>
+						<ul class="inner_text">
+							<li>
+								<strong>Collaborate</strong>
+								<p>Work together effectively on group activities or 
+								projects with sharing and communication tools.</p>
+							</li>
+							<li>
+								<strong>Share</strong>
+								<p>Students can view presentations that the teacher 
+								shares.</p>
+							</li>
+							<li>
+								<strong>Provide feedback</strong>
+								<p>Ask teachers private questions and respond to class polls.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="inner_item1">
+				<ul class="item1_img">
+					<li><img src="images/Beyond1.jpg" alt="" /></li>
+					<li><img src="images/Beyond2.jpg" alt="" /></li>
+					<li><img src="images/Beyond3.jpg" alt="" /></li>
+				</ul>
+				<div class="item_wrap">
+					<div class="item1_text">
+						<h4>Students can</h4>
+						<ul class="inner_text">
+							<li>
+								<strong>Prepare</strong>
+								<p>Access course material from home to review before or 
+								after class. </p>
+							</li>
+							<li>
+								<strong>Review</strong>
+								<p>Review daily work to help cement understanding.</p>
+							</li>
+							<li>
+								<strong>Interact</strong>
+								<p>Engage with classmates in the Student Forum to 
+								discuss assignments. </p>
+							</li>
+						</ul>
+					</div>
+					<div class="item1_text text2">
+						<h4>Parents can</h4>
+						<ul class="inner_text">
+							<li>
+								<strong>Help</strong>
+								<p>Access course materials to help their child be 
+								prepared to participate in class. </p>
+							</li>
+							<li>
+								<strong>Review</strong>
+								<p>See what their child completed during their school day. </p>
+							</li>
+							<li>
+								<strong>Develop</strong>
+								<p>Access report cards and performance reports to 
+								track their child’s learning progress and put 
+								together a plan for future learning activities.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="features">
+			<h3>Features</h3>
+			<p class="top_text">With enhanced and brand new features, Samsung School v2.0 makes extending learning 
+			in the classroom and beyond more possible than ever.</p>
+			<button type="button" class="more"><span>See More</span></button>
+			<ul class="features_inner">
+				<li>
+					<img src="images/phone1.jpg" alt=""/>
+					<strong>Lesson Planner</strong>
+					<p class="inner_text">Lesson Planner helps teachers better prepare for class by enabling them to quickly
+					plan, organize, and access their course materials.</p>
+				</li>
+				<li>
+					<img src="images/phone2.jpg" alt=""/>
+					<strong>Student Screen Monitoring</strong>
+					<p class="inner_text">Teacher can keep track of student progress during lessons and provide individual 
+					help more quickly. Also the ability to monitor each student’s network connection 
+					has been added to the solution.</p>
+				</li>
+				<li>
+					<img src="images/phone3.jpg" alt=""/>
+					<strong>Forum & Assignment</strong>
+					<p class="inner_text">Students can join a forum discussion anytime, anywhere about topics created by 
+					teachers or other students. They can also submit their assignments online using the 
+					cloud server library.</p>
+				</li>
+				<li>
+					<img src="images/phone4.jpg" alt=""/>
+					<strong>Students Report</strong>
+					<p class="inner_text">Both students and parents can review the results of rewards, quizzes, assignments 
+					and performance using the “report card” feature. They can then set learning goals 
+					together to help the student achieve better grades.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+ </div>
+ <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+ </body>
+</html>

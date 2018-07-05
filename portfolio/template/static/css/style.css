@@ -1,0 +1,161 @@
+@charset "utf-8";
+.content:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+#container {
+  width:100%;
+}
+#container .content{
+  width:1170px;
+  margin:50px auto;
+  padding:50px 0;
+}
+.uploadWrap {
+  width:70%;
+  float:left;
+}
+.infoSlideBar {
+  width:30%;
+  float:left;
+  padding-left:50px;
+  box-sizing:border-box;
+}
+.uploadWrap .title label {
+  width:100%;
+  font-size:30px;
+}
+.uploadWrap .title {
+  margin-bottom:10px;
+  border-bottom:1px solid #ddd;
+  padding-bottom:10px;
+}
+.uploadWrap .title input {
+  width:100%;
+  border:none;
+  height:35px;
+  outline:none;
+  font-size:24px;
+  color:#2a2a2a;
+  padding-bottom:5px;
+}
+.uploadWrap #holder {
+  width:100%;
+  margin-bottom:20px;
+  min-height:500px;
+}
+.uploadWrap #holder img {
+  display:block;
+  margin:30px auto;
+}
+.uploadList li {
+  display:inline-block;
+}
+.uploadList {
+  text-align:center;
+  border-bottom:1px solid #ddd;
+  padding-bottom:20px;
+}
+.uploadList .fileBtn input[type="file"]{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  border:0;
+}
+.uploadList .fileBtn label, .uploadList .textAdd {
+  display:inline-block;
+  padding:15px 25px;
+  color:#999;
+  font-size:inherit;
+  line-height:normal;
+  vertical-align:middle;
+  background-color:#fdfdfd;
+  cursor:pointer;
+  border:1px solid #ebebeb;
+  border-radius:.25em;
+  background-color:#337ab7;
+  color:#fff;
+}
+.uploadList .fileBtn label i, .uploadList .textAdd i {
+  font-size:20px;
+}
+.uploadWrap .submitBox {
+  text-align:center;
+  padding-top:30px;
+}
+.uploadWrap .submitBox .uploadBtn {
+  display:inline-block;
+  width:150px;
+  padding:15px 20px;
+  background-color:#333;
+  color:#fff;
+}
+.uploadWrap .text {
+  padding-top:10px;
+  font-size:14px;
+  color:#777;
+}
+.infoSlideBar .cgTitle {
+  width:100%;
+  text-align:center;
+  padding:15px 0;
+  background-color:#337ab7;
+  color:#fff;
+  cursor:pointer;
+}
+.infoSlideBar ul li {
+  padding:10px 0px 0px 10px;
+  cursor:pointer;
+  font-size:14px;
+}
+.infoSlideBar .cgMenu {
+  padding-bottom:10px;
+}
+.infoSlideBar .cgMenu li {
+  position:relative;
+}
+.infoSlideBar .cgMenu i {
+  position:absolute;
+  top:9px;
+  right:25px;
+  display:none;
+}
+.infoSlideBar .cgMenu .on i {
+  display:block;
+}
+.controlOpen {
+  padding:20px 0;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+.controlOpen .controlTitle {
+  font-weight:900;
+  display:inline-block;
+}
+.controlOpen .controlBox {
+  float:right;
+}
+.controlOpen .controlBox label {
+  font-size:12px;
+  padding:0 5px;
+}
+@media all and (max-width:1028px) {
+  #container .content {
+    width:100%;
+    padding:0 15px;
+  }
+  .uploadWrap {
+    width:100%;
+  }
+  .infoSlideBar {
+    display:none;
+  }
+  .uploadWrap #holder {
+    min-height:250px;
+  }
+}

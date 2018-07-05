@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.color.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+	$(document).ready(function(){
+		mainHeight();
+		itemOn();
+		fight();
+		topBtn();
+		leaved();
+		$( "input:disabled" ).val( "this is it" );
+	});
+	$(window).resize(function(){
+		mainHeightR();
+	});
+	$(window).load(function(){
+		
+	});
+	google.charts.load('current', {packages: ['corechart', 'bar']});
+	google.charts.setOnLoadCallback(drawStacked);
+
+	function drawStacked() {
+	  var data = google.visualization.arrayToDataTable([
+		['City', '2010 Population', '2000 Population'],
+		['New York City, NY', 8175000, 8008000],
+		['Los Angeles, CA', 3792000, 3694000],
+		['Chicago, IL', 2695000, 2896000],
+		['Houston, TX', 2099000, 1953000],
+		['Philadelphia, PA', 1526000, 1517000]
+	  ]);
+
+	  var options = {
+		title: 'Population of Largest U.S. Cities',
+		chartArea: {width: '100%'},
+		isStacked: true,
+		hAxis: {
+		  title: 'Total Population',
+		  minValue: 0,
+		},
+		vAxis: {
+		  title: 'City'
+		}
+	  };
+	  var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+	  chart.draw(data, options);
+    }
+	function mainHeight() {
+		var fullH = $(window).height();
+		var headH = $(".header").height();
+		$(".mainImg").height(fullH-headH);
+	}
+	function mainHeightR() {
+		var fullH = $(window).height();
+		var headH = $(".header").height();
+		$(".mainImg").animate({"height":fullH-headH}, 100, function(){});
+	}
+	function itemOn() {
+		$(".itemBox").hover(function(){
+			$(this).stop().animate({"background-color":"blue"});
+		}, function(){
+			$(this).stop().animate({"background-color":"#ddd"});
+		});
+	}
+	function fight() {
+		var speed = 1000;
+		var wrapWidth;
+		$(window).resize(function(){
+			var wrapWidth = $(window).width();
+		});
+	}
+	function topBtn() {
+		$(document).scroll(function(){
+			var wrapHeight = $(window).scrollTop();	
+			console.log(wrapHeight);
+			$(".topBtn").css({"position":"absolute","left":"0"});
+			$(".topBtn").animate({"bottom":-wrapHeight}, 50);
+		});
+		$(".topBtn").click(function(){
+			$("html, body").stop().animate({scrollTop : 0});
+		});
+	}
+	function newTest() {
+		$(window).resize(function(){
+			var sizeR = $(window).width();
+		});
+	}
+	function lastOption() {
+		
+	}
+	function move() {
+		var elem = document.getElementById("myBar"); 
+		var width = 10;
+		var id = setInterval(frame, 10);
+		function frame() {
+			if (width >= 100) {
+				clearInterval(id);
+			} else {
+				width++; 
+				elem.style.width = width + '%'; 
+				elem.innerHTML = width * 1 + '%';
+			}
+		}
+	}
+	function leaved() {
+		$(".footer").click(function(){
+			$(this).slideToggle("slow");
+		});
+	}
+
+  </script>
+  <style type="text/css">
+		.header { width:100%; height:80px; background-color:#000; }
+		.mainImg { width:100%; height:1000px; background:url("./static/css/images/main_visual01.jpg") no-repeat center; background-size:cover; }
+		.contentWrap { height:2000px; width:1000px; margin:0 auto; }
+		.content { width:1000px; margin:0 auto; }
+		.content:after { content:""; display:block; clear:both; }
+		.content .itemBox { box-sizing:border-box; width:24%; height:300px; float:left; background-color:#ddd; margin-left:1%  }
+		.content .on { background-color:blue; }
+		.topBtn { 
+			width:80px; 
+			height:40px; 
+			background-color:#000; 
+			color:#fff; 
+			text-align:center;
+			line-height:40px;
+			cursor:pointer;
+		}
+		.footer {
+			width:100%;
+			height:80px; background-color:#ddd;
+			border:0px solid rgba(0,0,0,0.2);
+		}
+		#myProgress {
+		  width: 100%;
+		  background-color: #ddd;
+		}
+		#myBar {
+			width:10%;
+			height:30px;
+			background-color:#4CAF50;
+			text-align:center;
+			line-height:30px;
+			color:white;
+		}
+		@media screen and (max-width:1000px){
+			.content { 
+				width:100%; 
+			}
+			.content .itemBox {
+				width:50%;
+				margin-left:0;
+			}
+		}
+
+  </style> 
+ </head>
+ <body>
+	<div class="header"></div>
+	<div class="mainImg">
+	</div>
+	<div class="contentWrap">
+		<div class="content">
+			<div class="itemBox">
+			</div>
+			<div class="itemBox">
+			</div>
+			<div class="itemBox">
+			</div>
+			<div class="itemBox">
+			</div>
+		</div>
+		<div class="topBtn">
+			Top
+		</div>
+		<div id="myProgress">
+			<div id="myBar">10%</div>	
+		</div>
+		<button onclick="move()">Click</button>
+	</div>
+	<div id="chart_div" style="width:100%"></div>
+	<div class="footer">
+		
+	</div>
+	<form>
+		<input name="email" disabled="disabled">
+		<input name="id">
+	</form>
+ </body>
+</html>

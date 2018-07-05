@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>SAMSUNG NEWSROOM</title>
+<link rel="stylesheet" type="text/css" href="css/samsungnewroom.css" />
+</head>
+ <body>
+ <div id="wrapper">
+	<div id="header">
+		<h1><a href="index.html"><img src="images/logo.png" alt="SAMSUNG NEWSROOM"/></a></h1>
+		<div class="header_inner">
+			<ul class="gnb">
+				<li><a href="#none">CoRporate</a>
+					<ul class="products_gnb">
+						<li><a href="#none">sub menu1</a></li>
+						<li><a href="#none">sub menu2</a></li>
+						<li><a href="#none">sub menu3</a></li>
+					</ul>
+				</li>
+				<li><a href="#none">Products</a>
+					<ul class="products_gnb">
+						<li><a href="#none">MOBILE</a></li>
+						<li><a href="#none">TV&AUDIO</a></li>
+						<li><a href="#none">HOME APPLIANCES</a></li>
+						<li><a href="#none">CAMERA & COMPUTING</a></li>
+						<li><a href="#none">PRINTING SOLUTIONS</a></li>
+						<li><a href="#none">B2B</a></li>
+						<li><a href="#none">SEMICONDUCTORS</a></li>
+						<li><a href="#none">OTHERS</a></li>
+					</ul>
+				</li>
+				<li><a href="#none">Press Resources</a>
+					<ul class="products_gnb">
+						<li><a href="#none">sub menu1</a></li>
+						<li><a href="#none">sub menu2</a></li>
+						<li><a href="#none">sub menu3</a></li>
+					</ul>
+				</li>
+				<li><a href="#none">Views</a>
+					<ul class="products_gnb">
+						<li><a href="#none">sub menu1</a></li>
+						<li><a href="#none">sub menu2</a></li>
+						<li><a href="#none">sub menu3</a></li>
+					</ul>
+				</li>
+				<li><a href="#none">About Us</a>
+					<ul class="products_gnb">
+						<li><a href="#none">sub menu1</a></li>
+						<li><a href="#none">sub menu2</a></li>
+						<li><a href="#none">sub menu3</a></li>
+					</ul>
+				</li>
+				<li class="m_link">
+					<a href="#"><span>Samsung.com</span>  </a>
+				</li>
+			</ul>
+			<div class="search_box">
+				<input class="search" type="search"/>
+				<button type="button" class="search_btn"></button>
+			</div>
+		</div>
+
+		<a href="#" class="link">SAMSUNG.COM </a>
+		<div class="m_gnb_btn">
+			<div>
+				<button type="button" class="search">search</button>
+			</div>
+			<div>
+				<button type="button" class="gnb_btn">gnb</button>
+			</div>
+		</div>
+	</div>
+	<div id="visual">
+		<div class="swipe_box">
+			<ul class="swipe">
+				<li>
+					<img src="images/swipe_img02.jpg" alt=""/>
+					<p class="sw_text">Samsung Serif TV Transforms Television, Inside and Out1</p>
+				</li>
+				<li class="sw_first">
+						<img src="images/swipe_img01.jpg" alt=""/>
+						<p class="sw_text">Samsung Serif TV Transforms Television, Inside and Out2</p>
+						<button type="button" class="video">video strat</button>
+				</li>
+				<li>
+					<img src="images/swipe_img03.jpg" alt="">
+					<p class="sw_text">Samsung Serif TV Transforms Television, Inside and Out3</p>
+				</li>
+				<li>
+					<img src="images/swipe_img04.jpg" alt="">
+					<p class="sw_text">Samsung Serif TV Transforms Television, Inside and Out4</p>
+				</li>
+				<li>
+					<img src="images/swipe_img05.jpg" alt="">
+					<p class="sw_text">Samsung Serif TV Transforms Television, Inside and Out5</p>
+				</li>
+			</ul>
+			<div class="swipe_btn_item">
+				<ul class="swipe_btn">
+					<li><button type="button" class="btn"></button></li>
+					<li class="choice"><button type="button" class="btn on"></button></li>
+					<li><button type="button" class="btn"></button></li>
+					<li><button type="button" class="btn"></button></li>
+					<li><button type="button" class="btn"></button></li>
+				</ul>
+				<button type="button" class="stop">stop</button>
+			</div>
+		</div>
+		<div class="img_box1">
+			<img src="images/visual_img1.jpg" alt=""/>
+			<p class="img_text">Samsung Smart Signage to Transform the Way We Shop</p>
+		</div>
+		<div class="img_box2">
+			<img src="images/visual_img2.jpg" alt=""/>
+			<p class="img_text">Samsung Honors Brad Pitt’s Make It Right Foundation at 14th Annual Hope for Chil-</p>
+		</div>
+	</div>
+	<div id="content">
+		<div class="content_inner">
+			<div class="content_box">
+				<div class="inner_box">
+					<h2>Corporate</h2>
+					<button type="button" class="more">more</button>
+					<a href="#" class="inner_img pd_l">
+
+						<img src="images/content_img1.jpg" alt=""/>
+						<div class="text_box">
+							<p class="inner_text">Samsung Opens New State-of-the-Art Device Solutions Headquarters in Sili</p>
+							<span>September 15, 2015</span>
+						</div>
+					</a>
+					<a href="#" class="inner_img">
+						<img src="images/content_img2.jpg" alt=""/>
+						<div class="text_box">
+							<p class="inner_text">Startups: The Secret Ingredient of Samsung’s Open Innovation</p>
+							<span>September 15, 2015</span>
+						</div>
+					</a>
+				</div>
+				<div class="inner2_box">
+					<h2>Press Release</h2>
+					<button type="button" class="more">more</button>
+					<a href="#" class="inner_img pd_l">
+						<img src="images/content_img3.jpg" alt=""/>
+						<div class="text_box">
+							<p class="inner_text">Samsung Electronics Collaborates With Thomson Reuters to Explore Joint Op</p>
+							<p class="p_scale"><strong>Korea</strong> | <span>October 16.2015</span></p>
+						</div>
+					</a>
+					<a href="#" class="inner_img">
+						<img src="images/content_img4.jpg" alt=""/>
+						<div class="text_box">
+							<p class="inner_text">Mobile App Academy Brings Real-world App Developer Experience to High </p>
+							<p class="p_scale"><strong>USA</strong> | <span>April 16.2015</span></p>
+						</div>
+					</a>
+				</div>
+				<ul class="banner">
+					<li><a href="#"><img src="images/galaxynote5.jpg" alt=""/></a></li>
+					<li><a href="#"><img src="images/ifa2015.jpg" alt=""/></a></li>
+					<li><a href="#"><img src="images/samsungnewsroom.jpg" alt=""/></a></li>
+					<li><a href="#"><img src="images/Subscribe.jpg" alt=""/></a></li>
+				</ul>
+				<div class="section">
+					<div class="section_head">
+						<div class="head_btn">				
+							<button type="button" class="choice">Most Recent</button>
+							<button type="button" >Most Popular</button>
+						</div>
+					</div>
+					<div class="section_inner text1">
+						<ul class="section_box">
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section01.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Timeless Partners for the Samsung Gear S2</p>
+										<span class="year">October 12, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section02.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Samsung Printing Solutions at IFA 2015: A New Printing Paradigm</p>
+										<span class="year">September 4, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section03.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Samsung Gear S2 Hits Shelves Today</p>
+										<span class="year">October 2, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li class="text3">
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section04.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Samsung Serif TV Redefines TV Design, Thanks to Collaboration with Bouroullec Bgrothers</p>
+										<span class="year">September 22, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section05.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Tips and Tricks for the Perfect Stay-at- Home Date Night</p>
+										<span class="year">September 4, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section06.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Corporate </strong>
+										<p class="text_title">Inspiring Low Energy Lifestyles Through IoT</p>
+										<span class="year">September 4, 2015</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="section_inner text2">
+						<ul class="section_box">
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section05.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Samsung Printing Solutions at IFA 2015: A New Printing Paradigm</p>
+										<span class="year">September 4, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section04.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Samsung Gear S2 Hits Shelves Today</p>
+										<span class="year">October 2, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section06.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Timeless Partners for the Samsung Gear S2</p>
+										<span class="year">October 12, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li class="text3">
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section03.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Samsung Serif TV Redefines TV Design, Thanks to Collaboration with Bouroullec Bgrothers</p>
+										<span class="year">September 22, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section02.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Products</strong>
+										<p class="text_title">Tips and Tricks for the Perfect Stay-at- Home Date Night</p>
+										<span class="year">September 4, 2015</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="box_item">
+									<div class="s_img">
+										<img src="images/section01.jpg" alt=""/>
+									</div>
+									<div class="s_text">
+										<strong class="text_top">Corporate </strong>
+										<p class="text_title">Inspiring Low Energy Lifestyles Through IoT</p>
+										<span class="year">September 4, 2015</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="common">
+						<ul class="common_inner">
+							<li><button type="button" class="prev">prev</button></li>
+							<li><button type="button">1</button></li>
+							<li><button type="button" class="on">2</button></li>
+							<li><button type="button">3</button></li>
+							<li><button type="button">4</button></li>
+							<li><button type="button">5</button></li>
+							<li class="num_btn"><button type="button" >6</button></li>
+							<li class="num_btn"><button type="button" >7</button></li>
+							<li class="num_btn"><button type="button" >8</button></li>
+							<li class="num_btn"><button type="button" >9</button></li>
+							<li class="num_btn"><button type="button" >10</button></li>
+							<li ><button type="button" class="next">next</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aside">
+			<ul class="banner">
+				<li><a href="#"><img src="images/galaxynote5.jpg" alt=""/></a></li>
+				<li><a href="#"><img src="images/ifa2015.jpg" alt=""/></a></li>
+				<li><a href="#"><img src="images/samsungnewsroom.jpg" alt=""/></a></li>
+			</ul>
+			<div class="Newsletter">
+				<a href="#"><img src="images/Subscribe.jpg" alt=""/>
+				</a>
+			</div>
+			<div class="view">
+				<h2>Views</h2>
+				<button type="button" class="more">more</button>
+				<ul class="view_inner">
+					<li>
+						<a href="#">
+							<strong class="view_text">The Brightness of Stars: The Making of the SUHD TV</strong>
+							<span class="by">by NewsRoom</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<strong class="view_text">Samsung’s Endless Pursuit to Achieve Organic Sound with Galaxy Smartphones</strong>
+							<span class="by">by NewsRoom</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<strong class="view_text">Samsung Electronics Demonstrates Sub- titling Format at IFA and IBC That Delivers Acc..</strong>
+							<span class="by">by NewsRoom</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="inforgraphics">
+				<h2>inforgraphics</h2>
+				<button type="button" class="more">more</button>
+				<div class="info_inner">
+					<img src="images/info1.jpg" alt=""/>
+					<div class="info_text">
+						<strong class="info_title">Wireless Audio 360: 360 Sound. All Around You</strong>
+						<span class="info_year">September 8, 2015</span>
+					</div>
+				</div>
+			</div>
+			<div class="video">
+				<h2>Video</h2>
+				<div class="swipe_aside">
+					<button type="button" class="stop">stop</button>
+					<ul class="btn_box">
+						<li class="select"><button type="button" class="btn on">swipe_button</button></li>
+						<li><button type="button" class="btn">swipe_button</button></li>
+						<li><button type="button" class="btn">swipe_button</button></li>
+					</ul>
+				</div>
+				<ul class="img_box">
+					<li class="on"><a href="#"><img src="images/aside_video.jpg" alt=""/></a></li>
+					<li><a href="#"><img src="images/aside_video2.jpg" alt=""/></a></li>
+					<li><a href="#"><img src="images/aside_video3.jpg" alt=""/></a></li>
+				</ul>
+			</div>
+			<div class="photo">
+				<h2>Photo Library</h2>
+				<div class="swipe_aside">
+					<button type="button" class="stop">stop</button>
+					<ul class="btn_box">
+						<li class="select"><button type="button" class="btn on">swipe_button</button></li>
+						<li><button type="button" class="btn">swipe_button</button></li>
+						<li><button type="button" class="btn">swipe_button</button></li>
+					</ul>
+				</div>
+				<ul class="img_box">
+					<li class="on"><a href="#"><img src="images/aside_phone.jpg" alt=""/></a></li>
+					<li><a href="#"><img src="images/aside_phone2.jpg" alt=""/></a></li>
+					<li><a href="#"><img src="images/aside_phone3.jpg" alt=""/></a></li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="top"><strong>Top</strong></button>
+	</div>
+	<div id="footer">
+		<div class="pc_foot">
+			<div class="footer_text">
+				<ul class="top_title">
+					<li><a href="#" class="f_title">Careers </a><span>|</span></li>
+					<li><a href="#" class="f_title">Sitemap </a><span>|</span></li>
+					<li><a href="#" class="f_title">Contact Us </a></li>
+				</ul>
+				<div class="term">
+					<a href="#">Teams of use</a> <span>|</span> <a href="#">Privacy and Cookies</a>
+				</div>
+				<div class="copyright">
+					© 2011-2015 Samsung Electronics Co,.Ltd. All Rights Reserved.
+
+				</div>
+			</div>
+			<div class="footer_icon">
+				<ul class="sns_icon">
+					<li class="tw"><a href="#" class="icon">twitter</a></li>
+					<li class="yb"><a href="#" class="icon">youtube</a></li>
+					<li class="in"><a href="#" class="icon">instagram</a></li>
+					<li class="ra"><a href="#" class="icon">radius</a></li>
+					<li class="di"><a href="#" class="icon">disk</a></li>
+					<li class="wf"><a href="#" class="icon">wife</a></li>
+				</ul>
+			</div>
+			<div class="selection">
+				<div class="select_box">
+					<ul class="s_item s_menu1">
+						<li><a href="#">Family Site</a></li>
+						<li><a href="#">Family Site</a></li>
+						<li><a href="#">Family Site</a></li>
+						<li><a href="#">Family Site</a></li>
+					</ul>
+					<button type="button" class="s_box1">
+						<span>Family Site</span>
+					</button>
+				</div>
+				<div class="select_box">
+					<ul class="s_item s_menu2">
+						<li><a href="#">Country</a></li>
+						<li><a href="#">Country</a></li>
+						<li><a href="#">Country</a></li>
+						<li><a href="#">Country</a></li>
+					</ul>
+					<button type="button" class="s_box2 country">
+						<span>Country</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="m_foot">
+			<div class="footer_icon">
+				<ul class="sns_icon">
+					<li class="tw"><a href="#" class="icon">twiter</a></li>
+					<li class="yb"><a href="#" class="icon">youtube</a></li>
+					<li class="in"><a href="#" class="icon">insragram</a></li>
+					<li class="ra"><a href="#" class="icon">radius</a></li>
+					<li class="di"><a href="#" class="icon">disk</a></li>
+					<li class="wf"><a href="#" class="icon">wife</a></li>
+				</ul>
+			</div>
+			<div class="selection">
+				<div class="select_box">
+					<ul class="s_item s_menu1">
+						<li><a href="#">Family Site</a></li>
+						<li><a href="#">Family Site</a></li>
+						<li><a href="#">Family Site</a></li>
+						<li><a href="#">Family Site</a></li>
+					</ul>
+					<button type="button" class="s_box1">
+						<span>Family Site</span>
+					</button>
+				</div>
+				<div class="select_box">
+					<ul class="s_item s_menu2">
+						<li><a href="#">Country</a></li>
+						<li><a href="#">Country</a></li>
+						<li><a href="#">Country</a></li>
+						<li><a href="#">Country</a></li>
+					</ul>
+					<button type="button" class="s_box2">
+						<span>Country</span>
+					</button>
+				</div>
+			</div>
+			<div class="footer_text">
+				<ul class="top_title">
+					<li><a href="#" class="f_title">Careers </a><span>|</span></li>
+					<li><a href="#" class="f_title">Sitemap </a><span>|</span></li>
+					<li><a href="#" class="f_title">Contact Us </a></li>
+				</ul>
+				<div class="term">
+					<a href="#">Teams of use</a> <span>|</span> <a href="#">Privacy and Cookies</a>
+				</div>
+				<div class="copyright">
+					© 2011-2015 Samsung Electronics Co,.Ltd. All Rights Reserved.
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="overlay">
+	</div>
+ </div>
+ 
+ <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript" src="js/SamsungNewsroom.js"></script>
+ </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link type="text/css" rel="stylesheet" href="./static/css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static/css/common.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function(){
+      var winH = $(window).scrollTop();
+      console.log(winH);
+      if(winH > 0){
+        $(".header").addClass("headOn");
+      } else if(winH == 0){
+        $(".header").removeClass("headOn");
+      }
+    });
+  </script>
+ </head>
+ <body>
+   <div id="wrap">
+     <div class="header">
+       <div class="headInner">
+         <div class="headL">
+           <h1><a href="#">Design</a></h1>
+           <ul class="gnb">
+             <li><a href="#">포트폴리오</a></li>
+             <li><a href="#">디자인제안</a></li>
+             <li><a href="#">디자인의뢰</a></li>
+             <li><a href="#">홍보센터</a></li>
+             <li><a href="#">고객센터</a></li>
+           </ul>
+        </div>
+        <div class="headR">
+          <div class="searchBox">
+            <input type="text" name="" value="">
+            <a href="#" class="searchBtn">검색</a>
+          </div>
+          <div class="loginBox">
+            <a href="#">로그인</a>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="container">
+        <title>File API (simple)</title>
+        <article>
+        <p id="status">File API & FileReader API not supported</p>
+        <p><input type=file></p>
+        <p>Select an image from your machine to read the contents of the file without using a server</p>
+        <div id="holder"></div>
+        </article>
+     </div>
+
+   </div>
+ </body>
+ <script>
+var upload = document.getElementsByTagName('input')[0],
+    holder = document.getElementById('holder'),
+    state = document.getElementById('status');
+
+if (typeof window.FileReader === 'undefined') {
+  state.className = 'fail';
+} else {
+  state.className = 'success';
+  state.innerHTML = 'File API & FileReader available';
+}
+
+upload.onchange = function (e) {
+  e.preventDefault();
+
+  var file = upload.files[0],
+      reader = new FileReader();
+  reader.onload = function (event) {
+    var img = new Image();
+    img.src = event.target.result;
+    // note: no onload required since we've got the dataurl...I think! :)
+    if (img.width > 560) { // holder width
+      img.width = 560;
+    }
+    holder.innerHTML = '';
+    holder.appendChild(img);
+  };
+  reader.readAsDataURL(file);
+
+  return false;
+};
+</script>
+</html>

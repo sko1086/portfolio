@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/dmz.css"/>
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.color.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="./static/js/jquery.bxslider.min.js"></script>
+  <!-- bxSlider CSS file -->
+  <link href="./static/js/jquery.bxslider.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    var mySlide = $('.slide').bxSlider({
+      auto:true,
+      mode:'fade',
+      pause: 5000
+    });
+    $(".mNav").click(function(){
+      $(".nav").slideToggle();
+    });
+    navBtn();
+
+  });
+  $(window).resize(function(){
+    var Mwidth = $(window).width();
+    if(Mwidth > 1170){
+      $(".nav").show();
+    }
+  });
+  $(window).load(function(){
+
+  });
+  function navBtn(){
+    $(".nav > li ").click(function(){
+  		var Mwidth = $(window).width();
+  		if(Mwidth <= 1170){
+        $(".nav > li .navInner").stop().slideUp();
+  			$(this).children(".navInner").stop().slideDown();
+  		}
+  	});
+  	$(".nav > li").mouseover(function(){
+  		var Mwidth = $(window).width();
+  		if(Mwidth > 1170){
+  			$(this).children(".navInner").show();
+  		}
+  	});
+  	$(".nav > li").mouseout(function(){
+  		var Mwidth = $(window).width();
+  		if(Mwidth > 1170){
+  				$(this).children(".navInner").hide();
+  		}
+  	});
+  }
+  </script>
+  <style type="text/css">
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body, html{
+  height: 100%;
+}
+.bx-viewport, .bx-wrapper{
+  position:relative;
+  width:100%;
+  height:500px !important;
+  top:0;
+  left:0;
+}
+.bxslider, .bxslider li{
+  height: 100% !important;
+}
+.bxslider li{
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.bx-wrapper .bx-viewport{
+  border: none !important;
+}
+  </style>
+ </head>
+ <body>
+   <div id="wrap">
+    <div class="headerWrap">
+      <div class="header">
+        <h1><img src="./static/images/logo.jpg" alt=""/></h1>
+        <div class="mNav">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="#">대회안내</a>
+            <ul class="navInner">
+              <li><a href="#">대회요강</a></li>
+              <li><a href="#">대회장안내도</a></li>
+              <li><a href="#">시상안내</a></li>
+              <li><a href="#">기념품안내</a></li>
+              <li><a href="#">참가자유의사항</a></li>
+              <li><a href="#">찾아오시는길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">대회코스</a>
+            <ul class="navInner">
+              <li><a href="#">대회코스도안내</a></li>
+              <li><a href="#">코스내 주요관광지</a></li>
+              <li><a href="#">레져/음식/숙박</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">참가신청/조회</a>
+            <ul class="navInner">
+              <li><a href="#">참가신청안내</a></li>
+              <li><a href="#">개인참가신청</a></li>
+              <li><a href="#">단체참가신청</a></li>
+              <li><a href="#">참가신청/조회</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">기록실</a>
+          </li>
+          <li>
+            <a href="#">대회화보/영상</a>
+            <ul class="navInner">
+              <li><a href="#">대회화보</a></li>
+              <li><a href="#">대회동영상</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">커뮤니티</a>
+            <ul class="navInner">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">자유게시판</a></li>
+              <li><a href="#">SUB-3 도전글</a></li>
+              <li><a href="#">참가수기</a></li>
+              <li><a href="#">대회에 바라는 한마디</a></li>
+              <li><a href="#">자주묻는질문</a></li>
+              <li><a href="#">태라클</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">셔틀버스신청</a>
+            <ul class="navInner">
+              <li><a href="#">셔틀버스안내</a></li>
+              <li><a href="#">셔틀버스신청</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+  	 <ul class="slide">
+  	  <li style="background:url('./static/images/main-carousel1.jpg') no-repeat center; background-size:cover;"></li>
+      <li style="background:url('./static/images/main-carousel2.jpg') no-repeat center; background-size:cover;"></li>
+      <li style="background:url('./static/images/main-carousel3.jpg') no-repeat center; background-size:cover;"></li>
+      <li style="background:url('./static/images/main-carousel4.jpg') no-repeat center; background-size:cover;"></li>
+  	 </ul>
+    <div class="container">
+      <div class="section1">
+        <div class="innerBox">
+          <div class="stL">
+            <h2><span>2017년 9월 24일</span>철원DMZ 국제평화마라톤대회</h2>
+            <p>2017년 9월 29일(일요일) 오전9시 <span>철원 고석정</span></p>
+          </div>
+          <div class="stR">
+            <button type="button" name="button" class="stBtn1">개인참가신청</button>
+            <button type="button" name="button" class="stBtn2">단체참가신청</button>
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="innerBox">
+          <div class="stL">
+            <h3>대회정보</h3>
+            <p><span class="small">대회일시</span> 2017년 9월 24일 9시</p>
+            <p><span class="small">대회장소</span> 철원 고석정</p>
+            <p><span class="small">대회코스</span> Full,Half,10km,5km</p>
+          </div>
+          <div class="stC">
+            <h3>임금계좌</h3>
+            <p><span class="small">입금은행</span> 농혁</p>
+            <p><span class="small">계좌번호</span> 317014-51-096062</p>
+            <p><span class="small">예금주</span> 철원군체육회</p>
+          </div>
+          <div class="stR">
+            <h3>문의안내</h3>
+            <p><span class="small">문의전화</span> 031-821-9902</p>
+            <p><span class="small">운영시간</span> AM 9시 ~ PM 6시</p>
+            <p><span class="small">문의메일</span> sko1086@naver.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+        <div class="innerBox">
+          <div class="stL">
+            <div class="hWrap">
+              <h3>Foreigner Support</h3>
+            </div>
+            <div class="stItem1">
+              <div class="stH">
+                SNB TOUR
+              </div>
+              <p>02-755-1009</p>
+              <p>+82 2-755-1009</p>
+              <p>snbtour@daum.net</p>
+            </div>
+          </div>
+          <div class="stC">
+            <div class="hWrap">
+              <h3>기념품안내</h3>
+            </div>
+            <img src="./static/images/souvenir-.jpg" alt=""/>
+          </div>
+          <div class="stR">
+            <div class="hWrap">
+              <h3>공지사항</h3>
+            </div>
+            <ul>
+              <li>개인 무료 셔틀버스 제공안내</li>
+              <li>단체 40인이상 50개팀 선착순 전세버스 무료제공</li>
+              <li>제14회 철원DMZ국제평화마라톤대회 접수시작!</li>
+              <li>=============2017년===============</li>
+              <li>기록증 발송 및 웹기록증 등록안내</li>
+              <li>정규입상자 안내</li>
+            </ul>
+            <p>
+              참가선수들 간의 우정을 나누고 친선을 다지는 그 어느대회 보다도 아름다운 추억을 많이 간직하는 풍성한 대회가 되기를 바랍니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section4">
+        <div class="innerBox">
+          <div class="hWrap">
+            <h3>대회안내</h3>
+          </div>
+          <ul class="boxList">
+            <li><img src="./static/images/2.jpg" alt=""></li>
+            <li><img src="./static/images/3.jpg" alt=""></li>
+            <li><img src="./static/images/5.jpg" alt=""></li>
+            <li><img src="./static/images/6.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ </body>
+</html>

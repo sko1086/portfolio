@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> 테스트 페이지 </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/layer.css"/>
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <![endif]-->
+  <script>
+  	$(document).ready(function(){
+      $(".acc dt").click(function(){
+        var acc = $(this).next("dd");
+        $(".acc dd").stop().slideUp();
+        acc.stop().slideDown();
+        if(acc.length) // acc에 값이 있으면 if 안에 값 실행
+        {
+          acc.children();
+        }
+      });
+  	});
+  </script>
+  <style type="text/css">
+    .acc {
+      width:300px;
+    }
+    .acc dt, .acc dd {
+      background:#F81E69;
+      width:100%;
+      padding:10px 0 10px 30px;
+      color:#fff;
+    }
+    .acc dd {
+      width:100%;
+      background:#aaffff;
+      color:#000;
+      display:none;
+    }
+  </style>
+</head>
+ <body>
+   <div id="wrap">
+     <dl class="acc">
+       <dt>Hello</dt>
+       <dd>Hello sir</dd>
+       <dt>section1</dt>
+       <dd>gigigigigi</dd>
+       <dt>section2</dt>
+       <dd>gigigigigi</dd>
+       <dt>section3</dt>
+       <dd>gigigigigi</dd>
+     </dl>
+   </div>
+   <div class="subContainer">
+     <div></div>
+   </div>
+ </body>
+</html>
