@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+	<script src="./static/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=iaEeoaqt783EK1PuevJE"></script>
+	<style>
+
+	</style>
+	<script>
+		var oMap;
+		function navermap()
+		{
+			var mapOptions = {
+				center: new naver.maps.LatLng(37.5456934,126.9162080),
+				zoom: 11
+			};
+			var map = new naver.maps.Map('map', mapOptions);
+			var marker = new naver.maps.Marker({
+				position: new naver.maps.LatLng(37.5456934,126.9162080),
+				map: map
+			});
+			var contentString = [
+					'<div class="iw_inner">',
+					'   <h3>아이유아이</h3>',
+					'   <p>서울특별시 마포구 토정로 47 (합정동) 서일빌딩 203호<br />',
+					'   </p>',
+					'</div>'
+				].join('');
+
+			var infowindow = new naver.maps.InfoWindow({
+				content: contentString
+			});
+
+			naver.maps.Event.addListener(marker, "click", function(e) {
+				if (infowindow.getMap()) {
+					infowindow.close();
+				} else {
+					infowindow.open(map, marker);
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<div class="skipNav">
+		<div><a href="#content">skip to the menu</a></div>
+	</div>
+	<!-- 오시는길 시작-->
+	<div id="contact2" class="section">
+		<!-- 맵 삽입 -->
+		<div class="sectionIn" id="map" >
+
+		</div>
+		<!-- // 맵 삽입 -->
+	</div>
+	<!-- 오시는길 끝 -->
+	<script>
+$(document).ready(function () {
+	var screenWidth = $(window).width();
+	var screenheight = $(window).height();
+	var parallax1 = $('.section').eq(0).offset().top;
+	var parallaxH1 = $('.section').eq(0).height();
+	var parallax2 = $('.section').eq(1).offset().top;
+	var parallaxH2 = $('.section').eq(1).height();
+	scrollReset();
+	navermap();
+
+	// 패럴렉스 스크롤
+	var scrollPosition = $(window).scrollTop();
+	$(window).scroll(function() {
+		scrollReset();
+	});
+	$( window ).resize(function(){
+		screenWidth = $(window).width();
+		screenheight = $(window).height();
+		scrollPosition = $(window).scrollTop(); // 현재 스크롤의 위치
+		parallax1 = $('.section').eq(0).offset().top;
+		parallaxH1 = $('.section').eq(0).height();
+		parallax2 = $('.section').eq(1).offset().top;
+		parallaxH2 = $('.section').eq(1).height();
+		scrollReset();
+		mapStart();
+
+
+	});
+	// rnb about version
+	var rnbStyle = 1;
+	function rnbBtnBgChange(){
+		if(rnbStyle == 1){
+			$('#rnbOpenBtn a').css({
+				'background-image':'url(./static/images/common/rnb_btn_bg.png)',
+				'color':'#fff'
+			});
+		}else{
+			$('#rnbOpenBtn a').css({
+				'background-image':'url(./static/images/common/rnb_btn_bg02.png)',
+				'color':'#000'
+			});
+		};
+	};
+	function rnbBtnBgChangeReves(){
+		setTimeout(function(){
+			if(rnbStyle == 2){
+				$('#rnbOpenBtn a').css({
+					'background-image':'url(./static/images/common/rnb_btn_bg.png)',
+					'color':'#fff'
+				});
+			}
+		},300);
+	};
+	var rnbBoolean = false;
+	$('#rnbOpenBtn a').on('click', function(){
+		if(!rnbBoolean){
+			rnbBtnBgChangeReves();
+			rnbBoolean = true;
+		}else{
+			rnbBtnBgChange();
+			rnbBoolean = false;
+		};
+		if(scrollPosition <= parallax1){
+			rnbStyle = 1;
+		}else if(scrollPosition <= parallax2){
+			rnbStyle = 2;
+		}else{
+			rnbStyle = 1;
+		};
+	});
+	function scrollReset(){
+		scrollPosition = $(window).scrollTop();
+
+		/* 이벤트 조건 */
+		if(scrollPosition <= parallax1){
+			rnbStyle = 1;
+		}else if(scrollPosition <= parallax2){
+			rnbStyle = 2;
+		}else{
+			rnbStyle = 1;
+		};
+		rnbBtnBgChange();
+	};
+
+	// action 01
+	contactSpeed01 = 200;
+	contactSpeed02 = 100;
+	$('#contact1 .contact1BtnBox li .mask').fadeOut(0);
+	$('#contact1 .contact1BtnBox li a').on('mouseenter',function(){
+		$(this).find('span').animate({
+			'top' : '55%'
+		},contactSpeed01,function(){
+			$(this).fadeOut(contactSpeed02,function(){
+				$(this).parent('a').prev('.mask').fadeIn(contactSpeed02,function(){
+					$(this).animate({
+						'top' : 0
+					},contactSpeed01);
+				});
+			});
+		});
+	});
+	$('#contact1 .contact1BtnBox li a').on('mouseleave',function(){
+		$(this).prev('.mask').animate({
+			'top' : '5%'
+		},contactSpeed01,function(){
+			$(this).fadeOut(contactSpeed02,function(){
+				$(this).next('a').find('span').fadeIn(contactSpeed02,function(){
+					$(this).animate({
+						'top' : '50%'
+					},contactSpeed01);
+				});
+			});
+		});
+	});
+
+	// action 02
+	var mapSize = 0.36;
+
+//	function mapStart(){
+//		var oWidth = $("#contact2").width();
+//		var oHeight = $("#contact2").height();
+//		oMap.setSize(new nhn.api.map.Size(oWidth, oHeight));
+//		oMap.setCenter(oPoint,15);
+//		if(screenWidth <= 768 && screenWidth < screenheight){
+//			mapSize = 0.8;
+//		}else{
+//			mapSize = 0.36;
+//		};
+//		$('#contact2').height($('#contact2').width() * mapSize);
+//	};
+
+//mapStart();
+});
+</script>
+</body>
+
+</html>

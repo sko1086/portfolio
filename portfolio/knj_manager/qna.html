@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/common.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/page.css"/>
+  <link href="./static/css/jquery.bxslider.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.color.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="./static/js/jquery.bxslider.min.js"></script>
+  <script src="./static/js/jquery_publisher.js"></script>
+  <script src="./static/js/jquery_publisher_sub.js"></script>
+  <!-- bxSlider CSS file -->
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <!--스킨 네비게이션-->
+  <div id="skipNav">
+	<a href="#contents">Skip to the menu / 본문가기</a>
+  </div>
+  <!--// 스킨 네비게이션-->
+  <!-- 전체 레이아웃 -->
+  <div id="wrap">
+	<!--container-->
+    <div class="container">
+      <div class="ctInner">
+        <div class="sideMenu">
+          <h3>고객지원</h3>
+          <ul class="lnb">
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="qna.html" class="on">Q&amp;A</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h4>Q&amp;A</h4>
+          <div class="board">
+            <form class="" action="index.html" method="post">
+              <div class="search">
+                <select class="stTitle" name="stTitle">
+                  <option value="1">제목</option>
+                  <option value="1">내용</option>
+                  <option value="1">글쓴이</option>
+                </select>
+                <input type="text" name="stText" class="stText">
+                <button type="button" name="button" class="stBtn">검색</button>
+              </div>
+              <table>
+                <colgroup>
+                  <col width="15%"/>
+                  <col width="*"/>
+                  <col width="15%"/>
+                  <col width="15%"/>
+                </colgroup>
+                <thead>
+        					<tr>
+        					  <th class="number">No.</th>
+        					  <th class="title">제목</th>
+        					  <th class="date">날짜</th>
+        					  <th class="hits">조회</th>
+        					</tr>
+                </thead>
+                <tbody>
+                  <tr class="boadBg">
+                    <td>10</td>
+                    <td><a href="./qna_view.html">대회장안내도 및 부스배치도 안내</a></td>
+                    <td>2017-06-01</td>
+                    <td>10</td>
+                  </tr>
+        				  <tr class="boadBg answer">
+                    <td></td>
+                    <td class="answerIcon"><a href="./qna_view.html">답변입니다.</a></td>
+                    <td>2017-06-05</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pageing">
+                <button type="button" name="button" class="prev1">&lt;&lt; </button>
+                <button type="button" name="button" class="prev2">&lt;</button>
+                <button type="button" name="button" class="pageNum"> 1 </button>
+                <button type="button" name="button" class="next1"> &gt; </button>
+                <button type="button" name="button" class="next2"> &gt;&gt; </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!--// container-->
+  </div>
+  <!-- // 전체 레이아웃 -->
+ </body>
+</html>

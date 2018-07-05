@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./static//css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/admin.css"/>
+  <link type="text/css" rel="stylesheet" href="./static//css/summernote.css"/>
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/summernote.js"></script>
+  <script type="text/javascript" src="./static/js/summernote-ko-KR.js"></script>
+  <script type="text/javascript" src="./static/js/admin.js"></script>
+ </head>
+ <body>
+   <div id="wrap">
+     <div class="header">
+       <div class="headerIn">
+         <h1><a href="/"><img src="./static/images/admin/logo.gif" alt=""/></a></h1>
+         <div class="innerBox">
+           <div class="desc">
+            KNJ 관리자 페이지입니다.
+           </div>
+           <div>
+             <a href="#" class="log">login</a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="container">
+       <div class="lnb">
+         <ul>
+           <li><a href="admin_product.html">제품관리</a></li>
+           <li><a href="admin_notice.html">공지사항</a></li>
+           <li><a href="admin_qna.html">Q&amp;A</a></li>
+           <li><a href="admin_recruit.html">채용공고</a></li>
+           <li class="on"><a href="admin_popup.html">팝업관리</a></li>
+         </ul>
+       </div>
+       <div class="content">
+         <h2>팝업관리</h2>
+         <div class="board">
+           <form class="" action="" method="post" class="pro">
+             <div class="search">
+               <select class="stTitle" name="stTitle">
+                 <option value="1">제목</option>
+                 <option value="1">내용</option>
+               </select>
+               <input type="text" name="stText" class="stText">
+               <button type="button" name="button" class="stBtn">검색</button>
+             </div>
+             <table>
+               <colgroup>
+                 <col width="10%"/>
+                 <col width="*"/>
+                 <col width="15%"/>
+                 <col width="15%"/>
+               </colgroup>
+               <thead>
+                <tr>
+                  <th class="number">No.</th>
+                  <th class="title">제목</th>
+                  <th class="hit">게시여부</th>
+                  <th class="date">날짜</th>
+                </tr>
+               </thead>
+               <tbody>
+                 <tr class="boadBg">
+                   <td>10</td>
+                   <td><a href="admin_popup_view.html">팝업1</a></td>
+                   <td>게시</td>
+                   <td>2017-06-01</td>
+                 </tr>
+               </tbody>
+             </table>
+             <div class="pageing">
+               <button type="button" name="button" class="prev1">&lt;&lt; </button>
+               <button type="button" name="button" class="prev2">&lt;</button>
+               <button type="button" name="button" class="pageNum"> 1 </button>
+               <button type="button" name="button" class="next1"> &gt; </button>
+               <button type="button" name="button" class="next2"> &gt;&gt; </button>
+             </div>
+             <div class="write"><a href="admin_popup_write.html">팝업 등록</a></div>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+ </body>
+</html>

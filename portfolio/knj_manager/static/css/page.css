@@ -1,0 +1,430 @@
+/* 비주얼 영역  */
+.visual {
+  width:100%;
+  height:140px;
+  background:url("../images/common/sub_visual_01.jpg") no-repeat;
+  background-size:cover;
+  margin-top:78px;
+}
+.visualInner {
+  width:1140px;
+  margin:0 auto;
+}
+.visualInner h2 {
+  font-size:42px;
+  color:#fff;
+  padding-top:60px;
+  font-weight:900;
+  line-height:44px;
+  font-style:italic;
+}
+/* 페이지 영역 */
+.container {
+	padding-top:50px;
+}
+.container .ctInner {
+  width:1140px;
+  margin:0 auto;
+  background-color:#f1f1f1;
+}
+.container .ctInner:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+.container .ctInner .sideMenu {
+  width:280px;
+  float:left;
+  padding:30px 25px;
+  box-sizing:border-box;
+}
+.container .sideMenu h3 {
+  color:#01633a;
+  font-size:24px;
+  font-weight:900;
+  border-bottom:1px solid #cccbcb;
+  padding-bottom:25px;
+}
+.container .lnb li a {
+  display:block;
+  padding:18px 0;
+  border-bottom:1px solid #cccbcb;
+}
+.container .lnb .on {
+  color:#000;
+  background:url("../images/icon/side_on_icon.png") no-repeat right;
+  font-weight:700;
+}
+.container .lnb a {
+  font-size:18px;
+  color:#898989;
+}
+.container .ctInner .content {
+  float:left;
+  width:860px;
+  padding-left:45px;
+  background-color:#fff;
+  min-height:800px;
+}
+.container .content {
+  padding-bottom:65px;
+  box-sizing:border-box;
+}
+.container .content h4 {
+  font-size:48px;
+  font-weight:700;
+  color:#010101;
+  border-bottom:1px solid #bfbfbf;
+  padding-bottom:15px;
+}
+.container .tab:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+.container .tab {
+  border:1px solid #ececec;
+}
+.container .tab li {
+  float:left;
+  width:25%;
+  text-align:center;
+  padding:20px 0;
+  color:#7d7d7d;
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+}
+.container .tab li.on {
+  background-color:#01633a;
+  color:#fff;
+  cursor:pointer;
+  position:relative;
+}
+.container .tab li.on:after {
+  content:"";
+  display:block;
+  border-left:7px solid transparent;
+  border-right:7px solid transparent;
+  border-bottom:8px solid #fff;
+  position:absolute;
+  bottom:-1px;
+  left:50%;
+  margin-left:-7px;
+}
+.content .board {
+  padding-top:50px;
+}
+.content .board .search {
+  float:right;
+  padding-bottom:15px;
+}
+.content .board .search .stTitle {
+  width:102px;
+  height:31px;
+  border:1px solid #cccccc;
+}
+.content .board .search .stText {
+  width:146px;
+  height:29px;
+  border:1px solid #cccccc;
+  text-indent:3px;
+}
+.content .board .search .stBtn {
+  color:#fff;
+  width:59px;
+  height:31px;
+  background-color:#1672bf;
+}
+.content .board thead {
+  padding-top:15px;
+}
+.content .board tr {
+  border-bottom:1px solid #dddddd;
+}
+.content .board .bor {
+  border-bottom:none;
+}
+.content .board tr td:nth-child(1) {
+  text-align:center;
+  padding-left:8px;
+}
+.content .board .qnaView tr td:nth-child(1) {
+  text-align:left;
+}
+.content .board .gaNotice tr td:nth-child(1) {
+	padding:14px;
+}
+.content .board tr td:nth-child(3), .content .board tr td:nth-child(4) {
+  text-align:center;
+}
+.content .board .boadBg {
+  /*background-color:#f5f5f5;*/
+}
+.bbsWrite {
+  border:1px solid #eee;
+}
+.content .board th {
+  font-weight:700;
+  padding:14px;
+  background-color:#1672bf;
+  color:#fff;
+  border:1px solid #eee;
+  text-align:center;
+  vertical-align:middle;
+}
+.content .board td {
+  padding:14px;
+  color:#4f4f4f;
+}
+.content .board td a {
+  color:#4f4f4f;
+}
+.content .board td:hover a{
+  color:#01633a;
+}
+.content .board .pageing {
+  text-align:center;
+  padding-top:40px;
+}
+.content .board .pageing button {
+  margin:0 5px;
+  font-size:12px;
+}
+.content .board .pageing .pageNum {
+  font-size:14px;
+  color:#01633a;
+  font-weight:700;
+}
+.accodian {
+  margin-top:50px;
+}
+.accodian dt {
+  padding:24px 15px;
+  font-weight:700;
+  color:#4f4f4f;
+  border-bottom:1px solid #ddd;
+  cursor:pointer;
+}
+.accodian dt:first-child {
+  border-top:1px solid #ddd;
+}
+.accodian dd {
+  display:none;
+  padding:15px;
+  border-bottom:1px solid #ddd;
+  font-size:14px;
+  color:#4f4f4f;
+}
+.accodian dt.on {
+  background:#f7f7f7 url("../images/icon/acc_icon.png") no-repeat 98% 26.5px;
+  color:#01633a;
+}
+.board .write {
+	text-align:right;
+}
+.board .write a {
+	background-color:#1672bf;
+	padding:5px 10px;
+	color:#fff;
+}
+.content .board .answer {
+	background-color:#fff;
+}
+.board .answer .answerIcon {
+	font-size:14px;
+	padding-left:20px;
+	background:url("../images/icon/icon-reply.png") no-repeat 0;
+	font-weight:700;
+}
+#page th {
+	vertical-align:middle;
+}
+#page td input{
+	width:200px;
+	height:30px;
+}
+#page td textarea {
+	width:100%;
+	height:250px;
+	text-indent:2px;
+}
+#page .btnBox {
+	text-align:right;
+	padding:20px 0 35px;
+}
+#page .btnBox .btn03 {
+	background-color:#3D5A98;
+	color:#fff;
+	padding:5px 10px;
+}
+#page .btnBox .btn04 {
+	background-color:#bbb;
+	color:#fff;
+	padding:5px 10px;
+}
+.qnaView .bbsView thead th, .bbsView tfoot th{
+	padding:11px 0;
+}
+.qnaView .bbsView thead td, .bbsView tfoot td {
+	padding:11px 20px;
+}
+.qnaView .bbsView thead th, .bbsView thead td, .bbsView tfoot th, .bbsView tfoot td {
+	border:1px solid #cacaca;
+}
+.qnaView .bbsView {
+	margin-bottom:10px;
+}
+.content .board .qnaView  thead {
+	border:none;
+}
+.qnaView .bbsView tbody td {
+	padding:30px;
+	line-height:150%;
+}
+.qnaView .bbsComment01 {
+	margin-bottom:35px;
+	border:1px solid #dcdbdb;
+	border-top:1px solid #6e92a1;
+}
+.qnaView .bbsComment01 textarea {
+	width:99%;
+	height:97px;
+	margin-bottom:14px;
+	border:1px solid #dvdbdb;
+	overflow-y:scroll;
+}
+.qnaView a.btn06 {
+	display:inline-block;
+	padding:7px 22px 0 22px;
+	height:22px;
+	background:#666;
+	color:#fff;
+	font-weight:bold;
+}
+.qnaView .taR {
+	text-align:right;
+}
+.qnaView .bbsComment01 .bbsComment01In {
+	padding:22px 22px 22px 29px;
+	border-top:2px solid #80a4b3;
+}
+.qnaView .bbsComment02Box .bbsCommentItem {
+	padding:13px 0 22px 0;
+	border-top:1px solid #dcdbdb;
+}
+.qnaView .bbsComment02Box .bbsCommentItem  .commentTop {
+	overflow:hidden;
+	margin-bottom:18px;
+}
+.qnaView .bbsComment02Box .bbsCommentItem p {
+	color:#666;
+	font-size:14px;
+}
+.qnaView .bbsComment02Box .bbsCommentItem .commentName {
+	display:inline-block;
+	float:left;
+	width:85px;
+	color:#666;
+	font-size:14px;
+	font-weight:bold;
+}
+.qnaView .bbsComment02Box .bbsCommentItem .commentDate {
+	float:left;
+	font-size:14px;
+}
+.gaNotice {
+	text-align:left;
+}
+.gaNotice tr td {
+	cursor:pointer;
+}
+.gaNotice .listImg {
+	overflow:hidden;
+	height:120px;
+	position:relative;
+}
+.gaNotice .listImg img {
+	width:100%;
+	height:100%;
+}
+.gaNotice .gaBg {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.gaNotice .listImg:hover img{
+	transition:all 1s;
+	transform:scale(1.4) rotate(5deg);
+}
+.gaNotice .listImg:hover .gaBg {
+	display:block;
+}
+.gaNotice .title{
+	display:block;
+	text-align:left;
+	font-size:14px;
+	padding:5px 0;
+	font-weight:700;
+}
+.gaNotice .hit {
+	font-size:13px;
+	margin-right:10px;
+	float:left;
+}
+.gaNotice .date {
+	font-size:13px;
+	float:left;
+}
+#qnaWriteForm td input {
+  width:100%;
+}
+@media all and (max-width:1140px){
+  .container .ctInner {
+    width:100%;
+  }
+  .container .ctInner .sideMenu {
+    display:none;
+  }
+  .container .ctInner .content {
+    width:100%;
+    padding:0px 10px 65px 10px;
+  }
+  .visualInner {
+    width:100%;
+  }
+  .visualInner h2 {
+    padding-left:10px;
+    font-size:30px;
+  }
+}
+@media all and (max-width:768px){
+  .visual {
+    display:none;
+  }
+  .container {
+	margin-top:78px;
+  }
+  .container .tab li {
+    width:100%;
+  }
+}
+@media all and (max-width:480px){
+  .content .board th {
+    padding:8px;
+    font-size:14px;
+  }
+  .content .board td {
+    font-size:12px;
+  }
+  .content .board .search .stTitle {
+    width:92px;
+  }
+  .content .board .search .stText {
+    width:136px;
+  }
+}

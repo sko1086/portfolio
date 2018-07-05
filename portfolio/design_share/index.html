@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="./static/css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/common.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/main.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/jquery.bxslider.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/font.css" />
+  <!--[if lt IE 9]>
+	<link type="text/css" rel="stylesheet" href="./static/css/ie9.css"/>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<script src="./static/js/selectivizr-min.js"></script>
+  <script type="text/javascript" src="./static/js/respond.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script type="text/javascript" src="./static/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery_publisher.js"></script>
+  <script type="text/javascript" src="./static/js/jquery_publisher_main.js"></script>
+  <script type="text/javascript" src="./static/js/PIE.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <style>
+    .no-js { display: none; }
+  </style>
+</head>
+<body>
+  <!-- 스킵네비게이션 -->
+  <div id="skipNav">
+    <div><a href="#container">skip to the menu</a></div>
+  </div>
+  <!-- 스킵네비게이션 END -->
+  <div id="wrap" data-ng-app="">
+    <!-- 헤더 영역 -->
+    <div id="header">
+      <div class="headInner">
+        <div class="headL">
+          <h1><a href="index.html"><img src="./static/images/main/logo.png" alt="design share"/></a></h1>
+          <ul class="gnb">
+            <li><a href="portfolio">포트폴리오</a></li>
+            <li><a href="confirm">제안의뢰</a></li>
+            <li><a href="torrent">디자인공유</a></li>
+            <li><a href="news">디자인소식</a></li>
+            <li><a href="faq">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="headR">
+          <div class="mainMenu">
+            <ul>
+              <li><a href="#">제안의뢰</a>
+                <ul class="subMenu">
+                  <li><a href="#">0원 제안</a></li>
+                  <li><a href="#">무료 의뢰</a></li>
+                  <li><a href="#">공모전</a></li>
+                </ul>
+              </li>
+              <li><a href="#">포트폴리오</a>
+                <ul class="subMenu">
+                  <li><a href="#">디자인 분류별</a></li>
+                  <li><a href="#">디자이너별</a></li>
+                </ul>
+              </li>
+              <li><a href="#">회원기업정보</a>
+              </li>
+              <li><a href="#">디자인 소식</a>
+                <ul class="subMenu">
+                  <li><a href="#">디자인 뉴스</a></li>
+                  <li><a href="#">TOP 디자이너</a></li>
+                  <li><a href="#">디자인 홍보</a></li>
+                  <li><a href="#">무료공유</a></li>
+                  <li><a href="#">자유게시판</a></li>
+                </ul>
+              </li>
+              <li><a href="#">고객센터</a>
+                <ul class="subMenu">
+                  <li><a href="#">공지게시판</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">문의게시판</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="searchBox">
+            <select>
+              <option>전체</option>
+              <option>디자이너</option>
+              <option>기업</option>
+            </select>
+            <input type="text" id="search" name="search" value="search" />
+            <label for="search"><a href="검색버튼" class="searchBtn"><img src="./static/images/common/searchBtn.png" alt="검색버튼"/></a></label>
+          </div>
+          <div class="logCon">
+            <!--비로그인-->
+            <div class="logOff">
+              <div class="loginBox">
+                <a href="#">로그인<i class="fa fa-user"></i></a>
+              </div>
+              <div class="signUp">
+                <a href="#">회원가입<i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+            <!--비로그인 END-->
+            <!--로그인-->
+            <div class="logOn">
+              <div class="pcBell">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <div class="bellBox">
+                  ------------------------------<br/> 알림사항
+                </div>
+              </div>
+              <div class="myInformation">
+                <div><a href="#none" class="myInfoBtn">홍길동 님<i class="fa fa-caret-down" aria-hidden="true"></i></a></div>
+                <ul class="myInfoList">
+                  <li><a href="#">프로필</a></li>
+                  <li><a href="#">포트폴리오</a></li>
+                  <li><a href="#">관심자료</a></li>
+                  <li><a href="#">의뢰참여</a></li>
+                  <li><a href="#">지정제의</a></li>
+                  <li><a href="#">업로드</a></li>
+                  <li><a href="#">로그아웃</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--로그인 END-->
+          </div>
+          <div class="m_loginBox">
+          </div>
+          <div class="m_signUp">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="m_menu_btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="m_bell">
+          <i class="fa fa-bell-o" aria-hidden="true"></i>
+        </div>
+        <div class="m_search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <!-- 헤더 영역 END -->
+    <!-- 메인슬라이드 영역 -->
+    <div id="visual">
+      <div class="visualBox">
+        <ul class="bxslider">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 메인슬라이드 영역 END -->
+    <!-- 본문영역 -->
+    <div id="container">
+      <div class="section1">
+        <div class="stWrap">
+          <div class="stBoxL">
+            <h2><i class="fa fa-chevron-right" aria-hidden="true"></i>무료의뢰 리스트 <a href=""><i class="fa fa-plus" aria-hidden="true"></i></a></h2>
+            <ul class="reqWrap">
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>메인사이트 웹디자인</span>
+                  <span class="kinds">웹/앱 디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>3D WINDOW 제품디자인</span>
+                  <span class="kinds">제품디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>모비츠 BI 디자인 의뢰</span>
+                  <span class="kinds">로고디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>CI 디자인</span>
+                  <span class="kinds">로고디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>도깨비 골드바 디자인</span>
+                  <span class="kinds">기타 디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>풀무원샘물 달력 디자인</span>
+                  <span class="kinds">기타 디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>대학연합 창업보육모델 솔로건</span>
+                  <span class="kinds">로고 디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>Bonebre 앱디자인</span>
+                  <span class="kinds">모바일 앱</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>치과 로고 디자인 의뢰</span>
+                  <span class="kinds">로고디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="title"><i class="fa fa-caret-right" aria-hidden="true"></i>액상 철분 패키지 디자인</span>
+                  <span class="kinds">패키지 디자인</span>
+                  <span class="date">10명</span>
+                  <span class="user">D-10</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="stBoxR">
+            <div class="newsWrap">
+              <h2><i class="fa fa-chevron-right" aria-hidden="true"></i>디자인 홍보 리스트<a href=""><i class="fa fa-plus" aria-hidden="true"></i></a></h2>
+              <ul class="newsSlider">
+                <li>
+                  <div class="newImg" style="background:url('./static/images/main/news01.jpg') no-repeat">
+                  </div>
+                  <div class="newText">
+                    <p class="newTitle">내 가족을 지키는 심폐소생술, 압박의 정석 디자인 공모전</p>
+                    <p class="dc">주최:보건복지부 / 분야 시각디자인/ 일정:2017.08.14~2017.09.15</p>
+                    <p class="text">
+                      공모 일정<br/> -2017.08.01~09.10 자정까지 이메일 접수 <br/> -1차 발표 : 2017.09.15 <br/> -1차 현장 PT 자료 마감일 : 2017.09.27 이메일 제출 (1차 합격자에 한함)<br/> -현장 PT : 2017.09.29 한국제지 본사<br/> -최종 발표 : 2017.10.12<br/> -시상 일정 : 2017.10.12 한국제지 본사
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="newImg" style="background:url('./static/images/main/news02.jpg') no-repeat">
+                  </div>
+                  <div class="newText">
+                    <p class="newTitle">2017 한국제지 miilk 아이디어 공모전</p>
+                    <p class="dc">주최:한국제지 / 분야:디자인, UCC / 일정:2017.08.01 ~ 2017.09.10</p>
+                    <p class="text">
+                      ● 응모 자격<br/> - 대한민국 국민 누구나 (개인 및 5인 이내 팀)<br/><br/> ● 응모 주제<br/> - 일상생활에서 접하는 아이템(티셔츠/손수건/머그컵 중 택1)을 통해 심폐소생술 방법을 쉽고 정확하게 알릴 수 있도록 창의적인 아이디어를 담은 디자인 제시
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="newImg" style="background:url('./static/images/main/news03.jpg') no-repeat">
+                  </div>
+                  <div class="newText">
+                    <p class="newTitle">꽃 소비 생활화 브랜드 명 및 슬로건 대국민 공모전</p>
+                    <p class="dc">주최:농림축산식품부 / 분야:네이밍공모전 / 일정:2017.08.14~2017.09.15</p>
+                    <p class="text">
+                      ● 응모 주제 <br/> “ 생활 속 꽃 소비확대를 위한 브랜드 명 및 슬로건” <br/> - 기존 1 Table 1 Flower 운동을 대체 할 브랜드 명(10자 내외) 및 설명자료(200자 내외)<br/> - 위 브랜드 명과 부합되는 슬로건(10자 내외) 및 설명자료(200자 내외)<br/> - 친근하고 부르기 쉬운 꽃 생활화 운동을 주제로 작성<br/> - 향후 대국민 꽃 생활화 홍보 시 어필 할 수
+                      있는 작품
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="category secondBox">
+          <div class="cgInner"><i class="fa fa-chevron-right" aria-hidden="true"></i>TOP 디자이너
+            <div class="add">
+              <a href="#"><span>자세히보기</span><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="stBox">
+          <div class="topUser">
+            <a href="#none">
+              <div class="ptImg">
+                <img src="./static/images/main/top_designer_01.jpg" alt="" />
+              </div>
+              <div class="ptName">Kim dong ki</div>
+              <div class="school">홍익대 시각디자인</div>
+              <div class="kinds">웹/앱 디자인</div>
+              <div class="win">우승횟수 <span>1회</span></div>
+              <div class="rangking">
+                <img src="./static/images/main/ranking_1.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="topUser">
+            <a href="#none">
+              <div class="ptImg">
+                <img src="./static/images/main/top_designer_02.jpg" alt="" />
+              </div>
+              <div class="ptName">Kim dong ki</div>
+              <div class="school">홍익대 시각디자인</div>
+              <div class="kinds">로고디자인</div>
+              <div class="win">우승횟수 <span>1회</span></div>
+              <div class="rangking">
+                <img src="./static/images/main/ranking_2.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="topUser">
+            <a href="#">
+              <div class="ptImg">
+                <img src="./static/images/main/top_designer_03.png" alt="" />
+              </div>
+              <div class="ptName">Kim dong ki</div>
+              <div class="school">홍익대 시각디자인</div>
+              <div class="kinds">로고디자인</div>
+              <div class="win">우승횟수 <span>1회</span></div>
+              <div class="rangking">
+                <img src="./static/images/main/ranking_3.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="topUser">
+            <a href="#">
+              <div class="ptImg">
+                <img src="./static/images/main/top_designer_04.jpg" alt="" />
+              </div>
+              <div class="ptName">Kim dong ki</div>
+              <div class="school">홍익대 시각디자인</div>
+              <div class="kinds">제품디자인</div>
+              <div class="win">우승횟수 <span>1회</span></div>
+            </a>
+          </div>
+          <div class="topUser">
+            <a href="#">
+              <div class="ptImg">
+                <img src="./static/images/main/top_designer_05.jpg" alt="" />
+              </div>
+              <div class="ptName">Kim dong ki</div>
+              <div class="school">홍익대 시각디자인</div>
+              <div class="kinds">기타디자인</div>
+              <div class="win">우승횟수 <span>1회</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+        <div class="category secondBox">
+          <div class="cgInner">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>포트폴리오
+            <div class="add">
+              <a href="#"><span>자세히보기</span><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <ul class="designList">
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio01.png" alt="이미지01"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio02.png" alt="이미지02"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio03.png" alt="이미지03"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio04.png" alt="이미지04"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#"><img src="./static/images/main/portfolio05.png" alt="이미지05"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#"><img src="./static/images/main/portfolio06.png" alt="이미지06"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#"><img src="./static/images/main/portfolio07.png" alt="이미지07"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio08.png" alt="이미지08"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio09.png" alt="이미지09"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio10.png" alt="이미지10"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio11.png" alt="이미지11"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/portfolio01.png" alt="이미지12"/></a>
+                </div>
+                <div class="title">비행기와 하늘</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="galleryBox">
+            <div class="innerBox">
+              <div class="portfolio">
+                <div class="top">
+                  <div class="titleL">
+                    <h2>비행기와 하늘</h2>
+                    <p>1개월 전 / 그래픽 디자인</p>
+                  </div>
+                  <div class="infoR">
+                    <ul class="infoBox">
+                      <li class="fav"><span>2199</span></li>
+                      <li class="cmnt"><span>17</span></li>
+                      <li class="views"><span>300</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="contents">
+                  <img src="./static/images/main/portfolio_view01.jpg" alt="뷰이미지01" />
+                  <img src="./static/images/main/portfolio_view02.jpg" alt="뷰이미지02" />
+                  <img src="./static/images/main/portfolio_view03.jpg" alt="뷰이미지03" />
+                  <img src="./static/images/main/portfolio_view04.jpg" alt="뷰이미지04" />
+                </div>
+              </div>
+              <div class="profile">
+                <div class="pfTop">
+                  <p class="pfIcon">
+                    <img src="./static/images/main/profile_icon01.gif" alt="프로필이미지" />
+                  </p>
+                  <p class="pfName">
+                    김동기
+                  </p>
+                  <p class="pfDesign">
+                    그래픽 디자인 · 일러스트레이션
+                  </p>
+                </div>
+                <div class="pfBot">
+                  <div class="stBox1">
+                    <h3 class="pfTitle">비행기와 하늘</h3>
+                    <p class="pfCg">그래픽 디자인 · 일러스트레이션</p>
+                  </div>
+                  <div class="stBox2">
+                    <h3>CCL</h3>
+                    <p><img src="./static/images/main/ccl_icon.jpg" alt="ccl아이콘" /></p>
+                  </div>
+                  <div class="stBox3">
+                    <h3>제안</h3>
+                    <a href="#" class="reqBtn">의뢰하기</a>
+                  </div>
+                  <div class="stBox4">
+                    <h3>다른 작품</h3>
+                    <p>
+                      <a href="#"><img src="./static/images/main/portfolio01.png" alt="다른이미지01"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio02.png" alt="다른이미지02"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio03.png" alt="다른이미지03"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio04.png" alt="다른이미지04"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio05.png" alt="다른이미지05"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio06.png" alt="다른이미지06"/></a>
+                    </p>
+                  </div>
+                  <div class="stBox5">
+                    <h3>공유하기</h3>
+                    <p class="social">
+                      <a href="#" class="fa fa-facebook"><span style="display:none">facebook</span></a>
+                      <a href="#" class="fa fa-vimeo"><span style="display:none">facebook</span></a>
+                      <a href="#" class="fa fa-rss"><span style="display:none">facebook</span></a>
+                      <a href="#" class="fa fa-github"><span style="display:none">facebook</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reqForm">
+                <div class="reqInner">
+                  <form class="reqBox" action="#" method="post">
+                    <a href="#" class="closeBtn">x</a>
+                    <h4>의뢰하기</h4>
+                    <p>
+                      <label for="company">회사명</label>
+                      <input type="text" name="company" value="" id="company" />
+                    </p>
+                    <p>
+                      <label for="email">이메일</label>
+                      <input type="text" name="email" value="" id="email" />
+                    </p>
+                    <p>
+                      <label for="phone">연락처</label>
+                      <input type="text" name="phone" value="" id="phone" />
+                    </p>
+                    <p>
+                      <label for="req">의뢰내용</label>
+                      <textarea name="req" rows="8" cols="80" id="req"></textarea>
+                    </p>
+                    <p class="submit">
+                      <a href="#" class="submitBtn">보내기</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category secondBox">
+          <div class="cgInner">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>회원기업 정보
+            <div class="add">
+              <a href="#"><span>자세히보기</span><i class="fa fa-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main company">
+          <div class="freeRequest">
+
+          </div>
+          <ul class="designList">
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company01.jpg" alt="회사이미지01"/></a>
+                </div>
+                <div class="title">LG</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Kim dong ki</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company02.jpg" alt="회사이미지02"/></a>
+                </div>
+                <div class="title">facebook</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">facebook</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company03.jpg" alt="회사이미지03"/></a>
+                </div>
+                <div class="title">SAMSUNG</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">SAMSUNG</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company04.jpg" alt="회사이미지04"/></a>
+                </div>
+                <div class="title">한화생명</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">한화생명</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company05.jpg" alt="회사이미지05"/></a>
+                </div>
+                <div class="title">Google</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">Google</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company06.jpg" alt="회사이미지06"/></a>
+                </div>
+                <div class="title">HYUNDAI</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">HYUNDAI</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company07.jpg" alt="회사이미지07"/></a>
+                </div>
+                <div class="title">쉐보레</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">쉐보레</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company08.jpg" alt="회사이미지08"/></a>
+                </div>
+                <div class="title">넥슨</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">넥슨</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company09.jpg" alt="회사이미지09"/></a>
+                </div>
+                <div class="title">nc 소프트</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">nc 소프트</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company10.jpg" alt="회사이미지10"/></a>
+                </div>
+                <div class="title">대한항공</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">대한항공</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company11.jpg" alt="회사이미지11"/></a>
+                </div>
+                <div class="title">넷마블</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">넷마블</a>
+                </div>
+              </div>
+            </li>
+            <li class="listBox">
+              <div class="innerItem">
+                <div class="imgBox">
+                  <a href="#none"><img src="./static/images/main/company12.jpg" alt="회사이미지12"/></a>
+                </div>
+                <div class="title">네오플</div>
+                <ul class="infoBox">
+                  <li class="fav"><span>2199</span></li>
+                  <li class="cmnt"><span>17</span></li>
+                  <li class="views"><span>300</span></li>
+                </ul>
+                <div class="user">
+                  <a href="#">네오플</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="galleryBox">
+            <div class="innerBox">
+              <div class="portfolio">
+                <div class="top">
+                  <div class="titleL">
+                    <h2>비행기와 하늘</h2>
+                    <p>1개월 전 / 그래픽 디자인</p>
+                  </div>
+                  <div class="infoR">
+                    <ul class="infoBox">
+                      <li class="fav"><span>2199</span></li>
+                      <li class="cmnt"><span>17</span></li>
+                      <li class="views"><span>300</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="contents">
+                  <img src="./static/images/main/portfolio_view01.jpg" alt="뷰이미지01" />
+                  <img src="./static/images/main/portfolio_view02.jpg" alt="뷰이미지02" />
+                  <img src="./static/images/main/portfolio_view03.jpg" alt="뷰이미지03" />
+                  <img src="./static/images/main/portfolio_view04.jpg" alt="뷰이미지04" />
+                </div>
+              </div>
+              <div class="profile">
+                <div class="pfTop">
+                  <p class="pfIcon">
+                    <img src="./static/images/main/profile_icon01.gif" alt="프로필이미지" />
+                  </p>
+                  <p class="pfName">
+                    김동기
+                  </p>
+                  <p class="pfDesign">
+                    그래픽 디자인 · 일러스트레이션
+                  </p>
+                </div>
+                <div class="pfBot">
+                  <div class="stBox1">
+                    <h3 class="pfTitle">비행기와 하늘</h3>
+                    <p class="pfCg">그래픽 디자인 · 일러스트레이션</p>
+                  </div>
+                  <div class="stBox2">
+                    <h3>CCL</h3>
+                    <p><img src="./static/images/main/ccl_icon.jpg" alt="ccl아이콘" /></p>
+                  </div>
+                  <div class="stBox3">
+                    <h3>제안</h3>
+                    <a href="#none" class="reqBtn">의뢰하기</a>
+                  </div>
+                  <div class="stBox4">
+                    <h3>다른 작품</h3>
+                    <p>
+                      <a href="#"><img src="./static/images/main/portfolio01.png" alt="다른작품01"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio02.png" alt="다른작품02"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio03.png" alt="다른작품03"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio04.png" alt="다른작품04"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio05.png" alt="다른작품05"/></a>
+                      <a href="#"><img src="./static/images/main/portfolio06.png" alt="다른작품06"/></a>
+                    </p>
+                  </div>
+                  <div class="stBox5">
+                    <h3>공유하기</h3>
+                    <p class="social">
+                      <a href="#" class="fa fa-facebook"><span style="display:none">facebook</span></a>
+                      <a href="#" class="fa fa-vimeo"><span style="display:none">facebook</span></a>
+                      <a href="#" class="fa fa-rss"><span style="display:none">facebook</span></a>
+                      <a href="#" class="fa fa-github"><span style="display:none">facebook</span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reqForm">
+                <div class="reqInner">
+                  <form class="reqBox" action="#" method="post">
+                    <a href="#" class="closeBtn">x</a>
+                    <h4>의뢰하기</h4>
+                    <p>
+                      <label for="company2">회사명</label>
+                      <input type="text" name="company" value="" id="company2" />
+                    </p>
+                    <p>
+                      <label for="email2">이메일</label>
+                      <input type="text" name="email" value="" id="email2" />
+                    </p>
+                    <p>
+                      <label for="phone2">연락처</label>
+                      <input type="text" name="phone" value="" id="phone2" />
+                    </p>
+                    <p>
+                      <label for="req2">의뢰내용</label>
+                      <textarea name="req" rows="8" cols="80" id="req2"></textarea>
+                    </p>
+                    <p class="submit">
+                      <a href="#" class="submitBtn">보내기</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 본문영역 END-->
+    <!-- 푸터 영역 -->
+    <div id="footer">
+      <div class="ftInner">
+        <p>회사명 : ㈜아이유아이 ㅣ 대표이사 : 박상균 ㅣ 개인정보관리책임자 : 최원제</p>
+        <p>주소 : 서울시 마포구 토정로47 (합정도) 서일빌딩 203호 ㅣ 사업자등록번호 : 105-86-53688 </p>
+        <p class="copylight">©Copyright DesignShare</p>
+      </div>
+    </div>
+    <!-- 푸터 영역 END -->
+    <!-- 모바일 메뉴 영역 -->
+    <div class="m_mainMenu">
+      <ul>
+        <li><a href="#" class="m_nav_btn">Home</a>
+          <ul class="homeMenu">
+            <li class="m_home">
+              <div class="homeBox">
+                <div class="homeL">
+                  <img src="./static/images/main/top_designer_01.jpg" alt="" />
+                </div>
+                <div class="homeR">
+                  <p>홍길동 님</p>
+                  <p class="dy">웹/앱 디자인</p>
+                  <p class="homeBtn">
+                    하위메뉴보기 ▼
+                  </p>
+                </div>
+              </div>
+              <ul class="deph">
+                <li><a href="#">프로필</a></li>
+                <li><a href="#">포트폴리오</a></li>
+                <li><a href="#">관심자료</a></li>
+                <li><a href="#">의뢰참여</a></li>
+                <li><a href="#">지정제의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="m_nav_btn">제안의뢰</a>
+          <ul class="subMenu">
+            <li><a href="#">0원 제안</a></li>
+            <li><a href="#">무료 의뢰</a></li>
+            <li><a href="#">공모전</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="m_nav_btn">포트폴리오</a>
+          <ul class="subMenu">
+            <li><a href="#">디자인 분류별</a></li>
+            <li><a href="#">디자이너별</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">회원기업정보</a>
+        </li>
+        <li><a href="#" class="m_nav_btn">디자인 소식</a>
+          <ul class="subMenu">
+            <li><a href="#">디자인 뉴스</a></li>
+            <li><a href="#">TOP 디자이너</a></li>
+            <li><a href="#">디자인 홍보</a></li>
+            <li><a href="#">무료공유</a></li>
+            <li><a href="#">자유게시판</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="m_nav_btn">고객센터</a>
+          <ul class="subMenu">
+            <li><a href="#">공지게시판</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">문의게시판</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- 모바일 메뉴 영역 END-->
+    <!-- 모바일 알림 영역 -->
+    <div class="m_know">
+      <p class="title">알림(<span class="num">0</span>)</p>
+      <p class="ht">알림 내역이 없습니다.</p>
+    </div>
+    <!-- 모바일 알림 영역 END-->
+    <!--로그인 팝업-->
+    <div class="loginWrap">
+      <!-- 로그인 -->
+      <div class="loginInner step1">
+        <div class="title">로그인<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="contentBox">
+          <div class="naver"><a href="#">naver</a></div>
+          <div class="facebook"><a href="#">facebook</a></div>
+          <div class="br">또는</div>
+          <div class="form">
+            <form>
+              <div class="id"><input type="text" placeholder="이메일주소" /></div>
+              <div class="password"><input type="password" placeholder="비밀번호" /></div>
+              <a href="#" class="logBtn">로그인</a>
+            </form>
+            <div class="find">
+              <a href="#" class="pw_find">비밀번호 찾기</a>
+              <a href="#" class="sign">회원가입</a>
+            </div>
+          </div>
+        </div>
+        <div class="state">
+          <input type="checkbox" id="state" /><label for="state">로그인 상태 유지</label>
+        </div>
+      </div>
+      <!-- 로그인 END -->
+      <!-- 비밀번호 찾기 -->
+      <div class="loginInner step2">
+        <div class="title pwTitle">비밀번호 찾기<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="contentBox">
+          <div>
+            <p>가입하신 이메일을 입력하고 비밀번호 설정 버튼을 눌러주세요.</p>
+            <div class="email">
+              <input type="text" placeholder="이메일" />
+            </div>
+            <div class="set">
+              <a href="#">비밀번호 설정</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 찾기 END-->
+      <!-- 비밀번호 설정 -->
+      <div class="loginInner step3">
+        <div class="title">비밀번호 설정<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="contentBox">
+          <div>
+            <p>입력하신 이메일 주소로 비밀번호 설정하는 방법을 보내드렸습니다. 지금 확인해 보세요.
+            </p>
+            <div class="close">
+              <a href="#">닫기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 설정 END -->
+    </div>
+    <!--로그인 팝업 END-->
+    <!--회원가입 팝업-->
+    <div class="signForm">
+      <!-- 회원가입 -->
+      <div class="loginInner signStep1">
+        <div class="title">회원가입<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="signWrap">
+          <div class="userSlect">
+            <a href="#none" class="design" onclick="signUp_form();">디자이너 회원</a>
+            <a href="#none" class="company" onclick="company_signUp_form();">기업 회원</a>
+          </div>
+          <div class="ct">
+            <div class="naver"><a href="#none" onclick="">네이버로 회원가입</a></div>
+            <div class="facebook"><a href="#none" onclick="">페이스북으로 회원가입</a></div>
+            <div class="normal"><a href="#none" onclick="">전용 E-mail / PW로 회원가입</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- 회원가입 END -->
+      <!-- 디자이너 회원가입 -->
+      <div class="loginInner signStep2">
+        <div class="title">회원가입<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="signWrap">
+          <form action="#">
+            <div class="email">
+              <input type="text" id="signUpEmail" placeholder="이메일" />
+            </div>
+            <div class="password">
+              <input type="password" id="signUpPw" placeholder="비밀번호" />
+            </div>
+            <div class="pwConfirm">
+              <input type="password" id="signUpIdRePw" placeholder="비밀번호 확인" />
+            </div>
+            <div class="name">
+              <input type="text" id="signUpIdReName" placeholder="이름(기입명)" />
+            </div>
+            <div class="urlValue">
+              www.designshare.co.kr/{{email}}
+            </div>
+            <div class="url">
+              <input id="url" type="text" data-ng-model="email" placeholder="개인 URL(4자이상 영문, 숫자)" />
+            </div>
+            <div class="like">
+              <div class="likeTitle">관심분야 (최대 3개까지 선택)</div>
+              <ul class="checkBox">
+                <li><input type="checkbox" /><label>그래픽 디자인</label></li>
+                <li><input type="checkbox" /><label>영상 디자인</label></li>
+                <li><input type="checkbox" /><label>편집 디자인</label></li>
+                <li><input type="checkbox" /><label>타이포그래피</label></li>
+                <li><input type="checkbox" /><label>일러스트레이션</label></li>
+                <li><input type="checkbox" /><label>포토그래피</label></li>
+                <li><input type="checkbox" /><label>만화/게임 디자인</label></li>
+                <li><input type="checkbox" /><label>제품 디자인</label></li>
+                <li><input type="checkbox" /><label>패션 디자인</label></li>
+                <li><input type="checkbox" /><label>공예 디자인</label></li>
+                <li><input type="checkbox" /><label>웹/모바일 디자인</label></li>
+                <li><input type="checkbox" /><label>환경 디자인</label></li>
+                <li><input type="checkbox" /><label>캐릭터 디자인</label></li>
+                <li><input type="checkbox" /><label>순수 미술</label></li>
+              </ul>
+            </div>
+            <div class="check">
+              <div class="box1">
+                <input type="checkbox" checked />
+                <label class="">이용약관, 개인정보 수집 모두 동의</label>
+              </div>
+              <div class="box2">
+                <input type="checkbox" checked />
+                <label class="">이메일 수신동의</label>
+                <div class="detail"><a href="#" target="_blank">상세보기</a></div>
+              </div>
+            </div>
+            <div class="signUpBtn">
+              <a href="" class="submit" onclick="value_check();">회원가입</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- 디자이너 회원가입 END-->
+      <!-- 기업 회원가입 -->
+      <div class="loginInner signStep3">
+        <div class="title">회원가입<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="signWrap">
+          <form action="#">
+            <div class="email">
+              <input type="text" id="signUpEmail2" placeholder="이메일" />
+            </div>
+            <div class="password">
+              <input type="password" id="signUpPw2" placeholder="비밀번호" />
+            </div>
+            <div class="pwConfirm">
+              <input type="password" id="signUpIdRePw2" placeholder="비밀번호 확인" />
+            </div>
+            <div class="name">
+              <input type="text" id="signUpIdReName2" placeholder="기업명" />
+            </div>
+            <div class="sectors">
+              <p class="stTitle">기업분류</p>
+              <div class="deph1">
+                <select id="deph1">
+                  <option value="0">1차 분류 선택</option>
+                  <option value="1">교육서비스</option>
+                  <option value="2">방송/광고/문화 서비스</option>
+                  <option value="3">도매/소매</option>
+                  <option value="4">금융/보험</option>
+                  <option value="5">IT/정보통신</option>
+                  <option value="6">공공/의료/사회기반 사업</option>
+                  <option value="7">제조업</option>
+                  <option value="8">유통/물류/무역/운수</option>
+                  <option value="9">건설업</option>
+                </select>
+              </div>
+              <div class="deph2">
+                <select id="deph2">
+                  <option>2차 분류 선택</option>
+                </select>
+              </div>
+            </div>
+            <div class="check">
+              <div class="box1">
+                <input type="checkbox" checked />
+                <label class="">이용약관, 개인정보 수집 모두 동의</label>
+              </div>
+              <div class="box2">
+                <input type="checkbox" checked />
+                <label class="">이메일 수신동의</label>
+                <div class="detail"><a href="#" target="_blank">상세보기</a></div>
+              </div>
+            </div>
+            <div class="signUpBtn">
+              <a href="" class="submit" onclick="value_check();">회원가입</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- 기업 회원가입 END-->
+    </div>
+    <!--회원가입 팝업 END-->
+    <div class="bg"></div>
+  </div>
+  <!-- 브라우저 안내 -->
+  <div class="browserBox">
+    <div class="browserBg"></div>
+    <div class="browserCon">
+      <div class="browserConIn">
+        <button class="browserCloseBtn"><img src="./static/images/main/browser_btn04.png" alt="닫기" /></button>
+        <p class="p01">권장 브라우저 안내</p>
+        <p class="p02">
+          해당 사이트는 Internet Explorer 9 이상의 브라우저에 최적화 되어 있습니다. 편리한 사이트를 이용을 위하여 최신 버전의 익스플로러 또는 크롬 브라우저 이용을 권장합니다.
+        </p>
+        <div class="browserBtnBox">
+          <a href="https://support.microsoft.com/ko-kr/help/17621/internet-explorer-downloads" target="_blank" class="fL">
+            <img src="./static/images/main/browser_btn01.png" alt=""/>
+          </a>
+          <a href="https://www.google.co.kr/chrome/browser/desktop/" target="_blank" class="fR">
+          <img src="./static/images/main/browser_btn02.png" alt=""/>
+          </a>
+        </div>
+        <div class="browserBtnBox02">
+          <button><img src="./static/images/main/browser_btn03.jpg" alt=""/></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // 브라우저 안내 END -->
+  <script>
+    $('html').removeClass('no-js');
+  </script>
+</body>
+
+</html>

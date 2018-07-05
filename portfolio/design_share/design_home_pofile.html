@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>테스트</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="./static/css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/common.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/mypage.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/jquery.bxslider.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="./static/css/font.css" />
+  <!--[if lt IE 9]>
+	<link type="text/css" rel="stylesheet" href="./static/css/ie9.css"/>
+	<script type="text/javascript" src="./static/js/respond.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<script src="./static/js/selectivizr-min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="./static/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="./static/js/jquery_publisher.js"></script>
+  <script type="text/javascript" src="./static/js/mypage.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+
+<body>
+  <!-- 스킵네비게이션 -->
+  <div id="skipNav">
+    <div><a href="#content">skip to the menu</a></div>
+  </div>
+  <!-- 스킵네비게이션 END -->
+  <div id="wrap" data-ng-app="">
+    <!-- 헤더영역 -->
+    <div id="header">
+      <div class="headInner">
+        <div class="headL">
+          <h1><a href="index.html"><img src="./static/images/main/logo.png" alt="design share"/></a></h1>
+          <ul class="gnb">
+            <li><a href="portfolio">포트폴리오</a></li>
+            <li><a href="confirm">제안의뢰</a></li>
+            <li><a href="torrent">디자인공유</a></li>
+            <li><a href="news">디자인소식</a></li>
+            <li><a href="faq">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="headR">
+          <div class="mainMenu">
+            <ul>
+              <li><a href="#">제안의뢰</a>
+                <ul class="subMenu">
+                  <li><a href="#">0원 제안</a></li>
+                  <li><a href="#">무료 의뢰</a></li>
+                  <li><a href="#">공모전</a></li>
+                </ul>
+              </li>
+              <li><a href="#">포트폴리오</a>
+                <ul class="subMenu">
+                  <li><a href="#">디자인 분류별</a></li>
+                  <li><a href="#">디자이너별</a></li>
+                </ul>
+              </li>
+              <li><a href="#">회원기업정보</a>
+
+              </li>
+              <li><a href="#">디자인 소식</a>
+                <ul class="subMenu">
+                  <li><a href="#">디자인 뉴스</a></li>
+                  <li><a href="#">TOP 디자이너</a></li>
+                  <li><a href="#">디자인 홍보</a></li>
+                  <li><a href="#">무료공유</a></li>
+                  <li><a href="#">자유게시판</a></li>
+                </ul>
+              </li>
+              <li><a href="#">고객센터</a>
+                <ul class="subMenu">
+                  <li><a href="#">공지게시판</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">문의게시판</a></li>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="searchBox">
+            <select>
+          		<option>전체</option>
+          		<option>디자이너</option>
+          		<option>기업</option>
+          	</select>
+            <input type="text" id="search" name="search" value="search" />
+            <label for="search"><a href="검색버튼" class="searchBtn"><img src="./static/images/common/searchBtn.png" alt="검색버튼"/></a></label>
+          </div>
+          <div class="loginBox">
+            <a href="#">로그인<i class="fa fa-user"></i></a>
+          </div>
+          <div class="m_loginBox">
+          </div>
+          <div class="signUp">
+            <a href="#">회원가입<i class="fa fa-upload"></i></a>
+          </div>
+          <div class="m_signUp">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="m_menu_btn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="m_bell">
+          <i class="fa fa-bell-o" aria-hidden="true"></i>
+        </div>
+        <div class="m_search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <!-- 헤더영역 END -->
+    <!-- 서브 배너 영역 -->
+    <div id="subBanner"></div>
+    <!-- 서브 배너 영역 END -->
+    <!-- 본문 영역 -->
+    <div id="container">
+      <div class="conBox">
+        <div class="menuWrap">
+          <div class="deTitle">
+            <p>디자이너 홈</p>
+          </div>
+          <ul class="lnb">
+            <li><a href="디자이너홈_프로필.html"  class="on">프로필</a></li>
+            <li><a href="디자이너홈_포트폴리오.html">포트폴리오</a></li>
+            <li><a href="디자이너홈_관심자료.html">관심자료</a>
+              <ul class="lnbInner">
+                <li><a href="#">- 관심작품</a></li>
+                <li><a href="#">- 관심의뢰</a></li>
+              </ul>
+            </li>
+            <li><a href="#">의뢰참여</a></li>
+            <li><a href="#">지정제의</a>
+              <ul class="lnbInner">
+                <li><a href="#">- 받은의뢰</a></li>
+                <li><a href="#">- 보낸제안</a></li>
+              </ul>
+            </li>
+            <li><a href="#">대표지정</a></li>
+            <li><a href="#">홍보하기</a></li>
+            <li><a href="#">문의답변</a></li>
+            <li><a href="#">업로드</a></li>
+          </ul>
+        </div>
+        <div class="myContent">
+          <div class="myConInner">
+            <div class="topMenu">
+              <ul>
+                <li><a href="#"><i class="fa fa-user-circle-o"></i><span style="display:none;">마이페이지</span></a></li>
+                <li><a href="#"><i class="fa fa-weixin"><span style="display:none;">메시지</span></i></a></li>
+                <li><a href="#"><i class="fa fa-bell-o"></i><span style="display:none;">알림</span></a></li>
+              </ul>
+            </div>
+            <div class="title">
+              <div class="tBox">
+                <div class="pImg">
+                  <img src="./static/images/main/profile_icon01.gif" alt="프로필사진" />
+                </div>
+                <div class="pInfo">
+                  <h3><span class="name">김동기</span><a href="#">포트폴리오</a></h3>
+                  <p class="like">그래픽 디자인, 편집 디자인, 일러스트레이션 </p>
+                  <p class="sns">SNS를 설정하세요.</p>
+                </div>
+              </div>
+            </div>
+            <div class="pf">
+              <div class="pfCon">
+                <div class="pfBoxL">
+                  <div class="pfTitle">
+                    <h3 class="bold"> 소속</h3>
+                    <input type="checkbox" id="belong" />
+                    <label for="belong">노출</label>
+                  </div>
+                  <p class="belong01 bn">1차소속<span>홍익대학교 시각디자인학과</span></p>
+                  <p class="belong02 bn">2차소속<span>창조의 아침학원(서울 마포구 창전동)</span></p>
+                  <p class="belong03 bn">3차소속<span><a href="#none" class="group">소속을 설정하세요.</a></span></p>
+                </div>
+                <div class="pfBoxR">
+                  <div class="pfTitle">
+                    <h3 class="bold">성별/나이</h3>
+                    <input type="checkbox" id="age" />
+                    <label for="age">노출</label>
+                  </div>
+                  <p class="gender">
+                    <span>성별</span>
+                    <select>
+									<option>성별을 설정하세요.</option>
+								</select>
+                  </p>
+                  <p class="age">
+                    <span>나이</span>
+                    <select>
+									<option>출생연도를 설정하세요.</option>
+								</select>
+                  </p>
+                </div>
+              </div>
+              <div class="about">
+                <div class="pfTitle">
+                  <h3>
+								<span>자기소개(0/140자)</span>
+								<input type="checkbox" id="produce"/>
+								<label for="produce">노출</label>
+							</h3>
+                  <textarea> 자기소개를 등록하세요.</textarea>
+                </div>
+              </div>
+              <div class="info">
+                <p>이메일 : <span>sko1086@naver.com</span><a href="#" class="naver">네이버 인증</a></p>
+                <p>개인 URL : <span class="myUrl">www.designshare.co.kr/designshare</span></p>
+                <p>비밀번호 : <a href="#none" class="pwRe">비밀번호 변경</a></p>
+                <p>
+                  <label for="emailCheck">이메일 수신동의</label>
+                  <input type="checkbox" id="emailCheck" />
+                </p>
+              </div>
+              <div class="botBtn">
+                <a href="#" class="sec">회원탈퇴</a>
+                <a href="#" class="req">의뢰하기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 본문 영역 END-->
+    <!-- 푸터 영역 -->
+    <div id="footer">
+      <div class="ftInner">
+        <p>회사명 : ㈜아이유아이 ㅣ 대표이사 : 박상균 ㅣ 개인정보관리책임자 : 최원제</p>
+        <p>주소 : 서울시 마포구 토정로47 (합정도) 서일빌딩 203호 ㅣ 사업자등록번호 : 105-86-53688 </p>
+        <p class="copylight">©Copyright DesignShare</p>
+      </div>
+    </div>
+    <!-- 푸터 영역 END -->
+    <!-- 모바일 메뉴 영역 -->
+    <div class="m_mainMenu">
+      <ul>
+        <li><a href="#" class="m_nav_btn">Home</a>
+          <ul class="homeMenu">
+            <li class="m_home">
+              <div class="homeBox">
+                <div class="homeL">
+                  <img src="./static/images/main/top_designer_01.jpg" alt="" />
+                </div>
+                <div class="homeR">
+                  <p>홍길동 님</p>
+                  <p class="dy">웹/앱 디자인</p>
+                  <p class="homeBtn">
+                    하위메뉴보기 ▼
+                  </p>
+                </div>
+              </div>
+              <ul class="deph">
+                <li><a href="#">프로필</a></li>
+                <li><a href="#">포트폴리오</a></li>
+                <li><a href="#">관심자료</a></li>
+                <li><a href="#">의뢰참여</a></li>
+                <li><a href="#">지정제의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="m_nav_btn">제안의뢰</a>
+          <ul class="subMenu">
+            <li><a href="#">0원 제안</a></li>
+            <li><a href="#">무료 의뢰</a></li>
+            <li><a href="#">공모전</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="m_nav_btn">포트폴리오</a>
+          <ul class="subMenu">
+            <li><a href="#">디자인 분류별</a></li>
+            <li><a href="#">디자이너별</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">회원기업정보</a>
+        </li>
+        <li><a href="#" class="m_nav_btn">디자인 소식</a>
+          <ul class="subMenu">
+            <li><a href="#">디자인 뉴스</a></li>
+            <li><a href="#">TOP 디자이너</a></li>
+            <li><a href="#">디자인 홍보</a></li>
+            <li><a href="#">무료공유</a></li>
+            <li><a href="#">자유게시판</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="m_nav_btn">고객센터</a>
+          <ul class="subMenu">
+            <li><a href="#">공지게시판</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">문의게시판</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- 모바일 메뉴 영역 END-->
+    <!-- 모바일 알림 영역 -->
+    <div class="m_know">
+      <p class="title">알림(<span class="num">0</span>)</p>
+      <p class="ht">알림 내역이 없습니다.</p>
+    </div>
+    <!-- 모바일 알림 영역 END-->
+    <!--로그인 팝업-->
+    <div class="loginWrap">
+      <!-- 로그인 -->
+      <div class="loginInner step1">
+        <div class="title">로그인<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="contentBox">
+          <div class="naver"><a href="#">naver</a></div>
+          <div class="facebook"><a href="#">facebook</a></div>
+          <div class="br">또는</div>
+          <div class="form">
+            <form action="#">
+              <div class="id"><input type="text" placeholder="이메일주소" /></div>
+              <div class="password"><input type="password" placeholder="비밀번호" /></div>
+              <a href="#" class="logBtn">로그인</a>
+            </form>
+            <div class="find">
+              <a href="#" class="pw_find">비밀번호 찾기</a>
+              <a href="#" class="sign">회원가입</a>
+            </div>
+          </div>
+        </div>
+        <div class="state">
+          <input type="checkbox" id="state" /><label for="state">로그인 상태 유지</label>
+        </div>
+      </div>
+      <!-- 로그인 END -->
+      <!-- 비밀번호 찾기 -->
+      <div class="loginInner step2">
+        <div class="title pwTitle">비밀번호 찾기<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="contentBox">
+          <div>
+            <p>가입하신 이메일을 입력하고 비밀번호 설정 버튼을 눌러주세요.</p>
+            <div class="email">
+              <input type="text" placeholder="이메일" />
+            </div>
+            <div class="set">
+              <a href="#">비밀번호 설정</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 찾기 END-->
+      <!-- 비밀번호 설정 -->
+      <div class="loginInner step3">
+        <div class="title">비밀번호 설정<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="contentBox">
+          <div>
+            <p>입력하신 이메일 주소로 비밀번호 설정하는 방법을 보내드렸습니다. 지금 확인해 보세요.
+            </p>
+            <div class="close">
+              <a href="#">닫기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 설정 END -->
+    </div>
+    <!--로그인 팝업 END-->
+    <!--회원가입 팝업-->
+    <div class="signForm">
+      <!-- 회원가입 -->
+      <div class="loginInner signStep1">
+        <div class="title">회원가입<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="signWrap">
+          <div class="userSlect">
+            <a href="#none" class="design" onclick="signUp_form();">디자이너 회원</a>
+            <a href="#none" class="company" onclick="company_signUp_form();">기업 회원</a>
+          </div>
+          <div class="ct">
+            <div class="naver"><a href="#none" onclick="">네이버로 회원가입</a></div>
+            <div class="facebook"><a href="#none" onclick="">페이스북으로 회원가입</a></div>
+            <div class="normal"><a href="#none" onclick="">전용 E-mail / PW로 회원가입</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- 회원가입 END -->
+      <!-- 디자이너 회원가입 -->
+      <div class="loginInner signStep2">
+        <div class="title">회원가입<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="signWrap">
+          <form action="#">
+            <div class="email">
+              <input type="text" id="signUpEmail" placeholder="이메일" />
+            </div>
+            <div class="password">
+              <input type="password" id="signUpPw" placeholder="비밀번호" />
+            </div>
+            <div class="pwConfirm">
+              <input type="password" id="signUpIdRePw" placeholder="비밀번호 확인" />
+            </div>
+            <div class="name">
+              <input type="text" id="signUpIdReName" placeholder="이름(기입명)" />
+            </div>
+            <div class="urlValue">
+              www.designshare.co.kr/{{email}}
+            </div>
+            <div class="url">
+              <input id="url" type="text" data-ng-model="email" placeholder="개인 URL(4자이상 영문, 숫자)" />
+            </div>
+            <div class="like">
+              <div class="likeTitle">관심분야 (최대 3개까지 선택)</div>
+              <ul class="checkBox">
+                <li><input type="checkbox" /><label>그래픽 디자인</label></li>
+                <li><input type="checkbox" /><label>영상 디자인</label></li>
+                <li><input type="checkbox" /><label>편집 디자인</label></li>
+                <li><input type="checkbox" /><label>타이포그래피</label></li>
+                <li><input type="checkbox" /><label>일러스트레이션</label></li>
+                <li><input type="checkbox" /><label>포토그래피</label></li>
+                <li><input type="checkbox" /><label>만화/게임 디자인</label></li>
+                <li><input type="checkbox" /><label>제품 디자인</label></li>
+                <li><input type="checkbox" /><label>패션 디자인</label></li>
+                <li><input type="checkbox" /><label>공예 디자인</label></li>
+                <li><input type="checkbox" /><label>웹/모바일 디자인</label></li>
+                <li><input type="checkbox" /><label>환경 디자인</label></li>
+                <li><input type="checkbox" /><label>캐릭터 디자인</label></li>
+                <li><input type="checkbox" /><label>순수 미술</label></li>
+              </ul>
+            </div>
+            <div class="check">
+              <div class="box1">
+                <input type="checkbox" checked />
+                <label class="">이용약관, 개인정보 수집 모두 동의</label>
+              </div>
+              <div class="box2">
+                <input type="checkbox" checked />
+                <label class="">이메일 수신동의</label>
+                <div class="detail"><a href="#" target="_blank">상세보기</a></div>
+              </div>
+            </div>
+            <div class="signUpBtn">
+              <a href="" class="submit" onclick="value_check();">회원가입</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- 디자이너 회원가입 END-->
+      <!-- 기업 회원가입 -->
+      <div class="loginInner signStep3">
+        <div class="title">회원가입<i class="fa fa-times" aria-hidden="true"></i><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="signWrap">
+          <form action="#">
+            <div class="email">
+              <input type="text" id="signUpEmail2" placeholder="이메일" />
+            </div>
+            <div class="password">
+              <input type="password" id="signUpPw2" placeholder="비밀번호" />
+            </div>
+            <div class="pwConfirm">
+              <input type="password" id="signUpIdRePw2" placeholder="비밀번호 확인" />
+            </div>
+            <div class="name">
+              <input type="text" id="signUpIdReName2" placeholder="기업명" />
+            </div>
+            <div class="sectors">
+              <p class="stTitle">기업분류</p>
+              <div class="deph1">
+                <select id="deph1">
+                    <option value="0">1차 분류 선택</option>
+                    <option value="1">교육서비스</option>
+                    <option value="2">방송/광고/문화 서비스</option>
+                    <option value="3">도매/소매</option>
+                    <option value="4">금융/보험</option>
+                    <option value="5">IT/정보통신</option>
+                    <option value="6">공공/의료/사회기반 사업</option>
+                    <option value="7">제조업</option>
+                    <option value="8">유통/물류/무역/운수</option>
+                    <option value="9">건설업</option>
+                  </select>
+              </div>
+              <div class="deph2">
+                <select id="deph2">
+                    <option>2차 분류 선택</option>
+                  </select>
+              </div>
+            </div>
+            <div class="check">
+              <div class="box1">
+                <input type="checkbox" checked />
+                <label class="">이용약관, 개인정보 수집 모두 동의</label>
+              </div>
+              <div class="box2">
+                <input type="checkbox" checked />
+                <label class="">이메일 수신동의</label>
+                <div class="detail"><a href="#" target="_blank">상세보기</a></div>
+              </div>
+            </div>
+            <div class="signUpBtn">
+              <a href="" class="submit" onclick="value_check();">회원가입</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- 기업 회원가입 END-->
+    </div>
+    <!--회원가입 팝업 END-->
+    <!-- 이름변경 팝업 -->
+    <div class="namePopup">
+      <div class="loginInner">
+        <div class="title">이름변경<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <p>변경할 이름을 적어주세요</p>
+          <p class="nameInput"><input type="text" placeholder="이름" /></p>
+          <p><a class="submit">변경하기</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- 이름변경 팝업 END-->
+    <!-- 관심분야 변경 -->
+    <div class="interestPopup">
+      <div class="loginInner">
+        <div class="title">관심분야 변경<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <p>관심분야는 최대 3개까지 선택 가능합니다.</p>
+          <div class="checkBox">
+            <div>
+              <input type="checkbox" />
+              <label for="">그래픽 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">영상 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">편집 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">타이포그래피</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">일러스트레이션</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">포토그래피</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">제품 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">만화/게임디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">패션 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">공예 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">웹/모바일 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">환경 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">캐릭터 디자인</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label for="">순수미술</label>
+            </div>
+          </div>
+          <p><a class="submit">변경하기</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- 관심분야 변경 END -->
+    <!-- SNS 주소 설정 -->
+    <div class="snsPopup">
+      <div class="loginInner">
+        <div class="title">SNS 주소 설정<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <p>설정을 원하는 사이트에 URL을 지정해 주세요.</p>
+          <div class="inputBox">
+            <div class="item">
+              <div class="titleL">홈페이지</div>
+              <div class="input"><input type="text" /></div>
+            </div>
+            <div class="item">
+              <div class="titleL">페이스북</div>
+              <div class="input"><span>facebook.com /</span><input type="text" class="half" /></div>
+            </div>
+            <div class="item">
+              <div class="titleL">인스타그램</div>
+              <div class="input"><span>pinterest.com /</span><input type="text" class="half" /></div>
+            </div>
+            <div class="item">
+              <div class="titleL">트위터</div>
+              <div class="input"><span>twitter.com /</span><input type="text" class="half" /></div>
+            </div>
+            <div class="item">
+              <div class="titleL">Etc.</div>
+              <div class="input"><input type="text" /></div>
+            </div>
+          </div>
+          <p><a class="submit">설정하기</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- SNS 주소 설정 END-->
+    <!-- 개인 url 팝업 -->
+    <div class="urlPopup">
+      <div class="loginInner">
+        <div class="title">개인 URL 변경<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <form action="#">
+            <p>개인 URL은 4자이상 영문, 숫자로 설정이 가능합니다.</p>
+            <div class="inputBox">
+              <p>www.designshare.co.kr/{{myUrl}}</p>
+              <p>
+                <input id="myUrl" type="text" data-ng-model="myUrl" placeholder="개인 URL(4자이상 영문, 숫자)" />
+              </p>
+            </div>
+            <p><a href="#" class="submit">설정하기</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 개인 url 팝업 END-->
+    <!-- 비밀번호 변경(설정) -->
+    <div class="rePwPopup">
+      <div class="loginInner">
+        <div class="title">비밀번호 변경(설정)<i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <form action="#">
+            <p>새로운 비밀번호를 설정하세요.</p>
+            <p><input type="password" placeholder="현재 비밀번호" /></p>
+            <p><input type="password" placeholder="새 비밀번호" /></p>
+            <p><input type="password" placeholder="비밀번호 확인" /></p>
+            <p><a href="#" class="submit">설정하기</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 비밀번호 변경(설정) END -->
+    <!-- 소속 설정 -->
+    <div class="groupPopup">
+      <div class="loginInner">
+        <div class="title">소속 설정<i class="fa fa-times xBtn" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <form action="#">
+            <p>소속된 학교 또는 학원을 설정하세요.</p>
+            <div class="tab">
+              <a href="#none" class="grBtn01 btnOn">학교</a>
+              <a href="#none" class="grBtn02">학원</a>
+            </div>
+            <div class="tabBox01 tabOn">
+              <div class="sc">
+                <a href="#" class="grBtn03">중학교</a>
+                <a href="#" class="grBtn04">고등학교</a>
+                <a href="#" class="grBtn05">대학교</a>
+              </div>
+              <p>
+                <select class="scSelect">
+                <option>학교명</option>
+              </select>
+              </p>
+              <p>
+                <select class="scSelect02">
+                <option>학과명</option>
+              </select>
+                <span class="sl">학과</span>
+              </p>
+              <p><a href="#" class="submit">설정하기</a></p>
+            </div>
+            <div class="tabBox02">
+              <p>
+                <input type="text" placeholder="학원명">
+              </p>
+              <div class="searchWrap">
+                <p>검색결과</p>
+                <p>창조의아침(서울 마포구 합정동)<a href="#" class="st">선택</a></p>
+                <p>창조의아침(서울 마포구 창전동)<a href="#" class="st">선택</a></p>
+                <p>창조의아침(서울 마포구 명장동)<a href="#" class="st">선택</a></p>
+                <p><a href="#">검색 결과 없음</a></p>
+                <p class="null">검색결과에 학원을 찾을 수 없나요? <br/> 그럼 아래에서 학원을 직접 등록 하세요.
+                </p>
+                <p class="map">
+                  <input id="" type="text" placeholder="학원명(띄워쓰기 불가)">
+                  <label for=""><a href="#none">주소설정</a></label>
+                </p>
+                <p>학원주소 : <span></span></p>
+                <p><a href="#" class="submit">설정하기</a></p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="acMap">
+          <div class="title">학원 주소 설정<i class="fa fa-times" aria-hidden="true"></i></div>
+          <div class="innerBox">
+            <p>소속된 학교 또는 학원을 설정하세요.</p>
+            <p class="search">
+              <input type="text" placeholder="주소 검색(예, 세종대로, 상암동15)">
+            </p>
+            <p class="result">
+              검색결과
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 소속 설정 END -->
+    <!-- 회원탈퇴 팝업 -->
+    <div class="secessionPopup">
+      <div class="loginInner first">
+        <div class="title">회원탈퇴<i class="fa fa-times xBtn" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <p class="topTitle"><strong>회원 탈퇴를 하면,</strong></p>
+          <p>
+            - 회원전용 서비스를 이용할 수 없습니다. <br/> - 등록한 모든 포트폴리오와 개인정보는 삭제되며 다시 복원 할 수 없습니다. <br/> - 작성한 글 및 댓글은 삭제되지 않으며, 회원정보 삭제로 인해 작성자 본인을 확인할 수 없어 편집 및 삭제가 불가능합니다. 글 삭제를 원하시면 먼저 해당 게시물을 삭제하신 후 탈퇴를 신청해 주시기 바랍니다.<br/> - 외부로 공유된 회원님의 프로필 페이지와 포트폴리오 페이지에 접속할
+            수 없습니다.
+          </p>
+          <p class="botCheck">
+            <input type="checkbox">
+            <label>위 내용을 숙지했으며 회원 탈퇴에 동의합니다.</label>
+          </p>
+          <p class="bot"><a href="#" class="submit step1">회원탈퇴</a></p>
+        </div>
+      </div>
+      <div class="loginInner second">
+        <div class="title">탈퇴 완료<i class="fa fa-times xBtn" aria-hidden="true"></i></div>
+        <div class="innerBox">
+          <p class="topTitle">
+            회원 탈퇴가 완료되었습니다.
+          </p>
+          <p>
+            그동안 디자인쉐어를 이용해 주셔서 감사합니다.
+          </p>
+          <p class="bot"><a href="#" class="submit step2">확인</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- 회원탈퇴 팝업 END -->
+    <div class="bg"></div>
+  </div>
+</body>
+
+</html>
