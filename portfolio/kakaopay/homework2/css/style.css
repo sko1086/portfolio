@@ -51,7 +51,7 @@ h1 {
 }
 .gender button {
     width:50%;
-    height:30px;
+    height:35px;
     font-size:12px;
     font-weight:bold;
     color:#242424;
@@ -74,6 +74,7 @@ h1 {
     margin-right:10px;
 }
 .date select {
+    font-size:14px;
     width:74px;
     height:30px;
 }
@@ -81,8 +82,10 @@ h1 {
     padding-bottom:20px;
 }
 .phone select, .phone input, .phone button{
+    font-size:14px;
+    vertical-align: middle;
     height:30px;
-}
+}   
 .phone select {
     width:50px;
 }
