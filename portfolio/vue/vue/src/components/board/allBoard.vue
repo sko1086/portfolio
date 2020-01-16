@@ -17,6 +17,7 @@
                         <router-link :to="{ name:'view', params:{ listNo: boardArray.listNo}}">{{ boardArray.title }}</router-link>
                     </div>
                 </div>
+                <!--
                 <div class="listSummary">
                     <ul class="smmaryBox">
                         <li class="comment"><i class="item-icon fa fa-comment "></i> {{ boardArray.commentNum }}</li>
@@ -25,6 +26,7 @@
                         <li class="auth">{{ boardArray.auth }}</li>
                     </ul>
                 </div>
+                -->
             </li>
         </ul>
         <paginate v-model="page" :page-range="3" :margin-pages="2" :prev-text="'이전'" :next-text="'다음'" :container-class="'pagination'" :page-class="'page-item'" :click-handler="clickCallback"> </paginate>

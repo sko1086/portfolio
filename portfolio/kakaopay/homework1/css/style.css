@@ -1,0 +1,350 @@
+@charset "UTF-8";
+html, body {
+    position:relative; 
+    width:100%; 
+    height:100%; 
+    background:#2e2925;
+}
+#wrap {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%; 
+    background:url("../images/event_background.jpg") no-repeat top; 
+    background-size:cover;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-bottom:calc(139/750*100%);
+    box-sizing:border-box; 
+}
+.coin_box {
+    position:relative;
+}
+.coin_box div {
+    z-index:10;
+    position:absolute;
+    height:0;
+    animation:coin 0.2s ease-out;
+    -webkit-animation:coin 0.2s ease-out;
+}
+.coin_box .coin_1 {
+    top:0;
+    left:0;
+    margin-top:calc(250/750*100%);
+    width:calc(101/750* 100%);
+    padding-top:calc(276 / 750* 100%); 
+    background:url("../images/coin1.png") no-repeat left;
+    background-size:cover;
+}
+.coin_box .coin_2 {
+    top:0;
+    right:0;
+    width:calc(140/750* 100%);
+    padding-top:calc(186 / 750* 100%); 
+    background:url("../images/coin2.png") no-repeat left;
+    background-size:cover;
+    margin-top:calc(350/750*100%);
+    z-index:20;
+}
+.coin_box .coin_3 {
+    top:0;
+    right:5%;
+    width:calc(104/750* 100%); 
+    padding-top:calc(120 / 750* 100%); 
+    background:url("../images/coin3.png") no-repeat left;
+    background-size:cover;
+    margin-top:calc(450/750*100%);
+}
+.coin_box .coin_4 {
+    top:0;
+    left:20%;
+    width:calc(93/750* 100%);
+    padding-top:calc(119 / 750* 100%); 
+    background:url("../images/coin4.png") no-repeat left;
+    background-size:cover;
+    margin-top:calc(480/750*100%)
+}
+.coin_box .coin_5 {
+    top:0;
+    left:0;
+    width:calc(51/750* 100%);
+    padding-top:calc(129 / 750* 100%); 
+    background:url("../images/coin5.png") no-repeat left;
+    background-size:cover;
+    margin-top:calc(600/750*100%)
+}
+.coin_box .coin_6 {
+    top:0;
+    right:0;
+    width:calc(120/750* 100%);
+    padding-top:calc(198 / 750* 100%); 
+    background:url("../images/coin6.png") no-repeat left;
+    background-size:cover;
+    animation:coin 0.2s ease-out;
+    -webkit-animation:coin 0.2s ease-out;
+    margin-top:calc(650/750*100%)
+}
+.top_bar {
+    height:0;  
+    background:url("../images/tob_bar.png") no-repeat left;
+    background-size:cover; 
+    padding-top:calc(163 / 750* 100%); 
+}
+.flame {
+    position:absolute;
+    top:0;
+    left:16%;
+    width:calc(159/750* 100%); 
+    height:0;
+    background:url("../images/frame.png") no-repeat;
+    background-size:cover; 
+    padding-top:calc(157 / 750* 100%);
+    margin-top:calc(68/750*100%);
+    animation:flame 0.1s ease-out 1s forwards;
+    -webkit-animation:flame 0.1s ease-out 1s forwards;
+    opacity: 0;  
+}
+.title_neon {
+    height:0; 
+    padding-top:calc(310 / 750* 100%); 
+    background:url("../images/title_neon.png") no-repeat 0 0;
+    background-size:cover;
+    animation:title_neon 3s alternate infinite; 
+    -webkit-animation:title_neon 3s steps(1) alternate infinite;
+}
+.money { 
+    width:100%;
+    height:0; 
+    padding-top:calc(350 / 750* 100%); 
+    background:url("../images/money.png") no-repeat;
+    background-size:cover; 
+    animation:money 0.5s ease-in; 
+    animation-iteration-count: infinite;
+}
+.hand_box {
+    position:relative;
+}
+.price {
+    height:0;
+    padding-top:calc(125 / 750* 100%);
+    margin-top:calc(-80/750*100%);
+    background:url("../images/money_txt.png") no-repeat center;
+    background-size:cover; 
+    animation:price 0.5s ease-in infinite;
+    -webkit-animation:price 0.5s ease-in infinite;  
+}
+.hand_l, .hand_r {
+    position:absolute;  
+    width:calc(18/110* 100%);  
+    height:100%; 
+}
+.hand_l { 
+    top:5px; 
+    left:calc(18/110* 100%); 
+    background:url("../images/money_hand_l.png") no-repeat left; 
+    background-size:contain;
+    animation:hand_l 0.5s ease-in infinite;
+    -webkit-animation:hand_l 0.5s ease-in infinite; 
+}
+.hand_r {  
+    top:0; 
+    right:calc(20/110* 100%); 
+    background:url("../images/money_hand_r.png") no-repeat right; 
+    background-size:contain;
+    animation:hand_r 0.5s ease-in infinite;
+    -webkit-animation:hand_r 0.5s ease-in infinite; 
+}
+.reword {
+    background:url("../images/reword_txt.png") no-repeat center;
+    background-size:cover;
+    height:0; 
+    padding-top:calc(238/750* 100%);
+    margin-top:calc(40/750*100%);  
+}
+.sns {
+    height:0; 
+    padding-top:calc(216/750* 100%);
+    margin-top:calc(30/750*100%); 
+    background:url("../images/sns_neon.png") no-repeat 0 0;
+    background-size:cover;
+    animation:sns_neon 2.5s steps(1) alternate infinite;
+    -webkit-animation:sns_neon 2.5s steps(1) alternate infinite;   
+}
+.bot_coin {
+    background:url("../images/bot_coins.png") no-repeat center;
+    background-size:cover;
+    height:0; 
+    padding-top:calc(164/750* 100%);
+    margin-top:calc(30/750*100%); 
+}
+.in_button button {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:0;
+    background:url("../images/button.png") no-repeat center;
+    background-size:cover;
+    padding-top:calc(139/750* 100%);
+    box-sizing:border-box;
+    border:none;
+    z-index:100; 
+}
+.pop_wrap {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    display:none;
+}
+.pop_top {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:50%;
+    background:url("../images/pop_top.png") no-repeat bottom;
+    background-size:cover;
+    animation:pop_top 0.5s ease-in; 
+}
+.pop_bot {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50%;
+    background:url("../images/pop_bot.png") no-repeat top;
+    background-size:cover;
+    margin-top:100%;
+    animation:pop_bot 0.5s ease-in; 
+}
+.close_btn button {
+    position:absolute;
+    top:10%;
+    right:5%;
+    width:calc(63/750* 100%);
+    height:0;
+    background:url("../images/pop_close_btn.png") no-repeat center;
+    background-size:cover; 
+    padding-top:calc(63/750* 100%);
+    box-sizing:border-box;
+    border:none;
+    z-index:1;
+}
+.pop_btn button {
+    position:absolute;
+    bottom:5%;
+    width:100%;
+    height:0;
+    background:url("../images/pop_btn.png") no-repeat center;
+    background-size:cover; 
+    padding-top:calc(135/750* 100%);
+    box-sizing:border-box;
+    border:none;
+    z-index:100; 
+}
+@keyframes coin {
+    0% {
+        margin-top:-100px;
+    }
+}
+@keyframes flame {
+    0% {
+        opacity: 0;
+        background-position:20px 30px;
+    }
+    100% {
+        background-position:0 0;
+        opacity: 1;
+    }
+}
+@keyframes title_neon {
+    0% {
+        background-position:0 center;
+    }
+    10% {
+        background-position:0 0;
+    }
+    20% {
+        background-position:0 center;
+    }
+    20% {
+        background-position:0 0;
+    }
+    30% {
+        background-position:0 center;
+    }
+    40% {
+        background-position:0 bottom;
+    }
+    50% {
+        background-position:0 0;
+    }
+    60% {
+        background-position:0 bottom;
+    }
+}
+@keyframes hand_l {
+    10% {
+        -webkit-transform: rotate(-25deg);
+        -moz-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+    }
+}
+@keyframes hand_r {
+    10% {
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+}
+@keyframes price {
+    10% { 
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@keyframes money {
+    50% { 
+        -webkit-transform: translateY(3%);
+        -moz-transform: translateY(3%);
+        transform: translateY(3%);
+    }
+}
+@keyframes sns_neon {
+    5% {
+        background-position:0 bottom;
+    }
+    10% {
+        background-position:0 0;
+    }
+    15% {
+        background-position:0 bottom;
+    }
+    20% {
+        background-position:0 0;
+    }
+}
+@keyframes pop_top {
+    0% {
+        top:-100%;
+    }
+    80% {
+        top:0%;
+    }
+    90% {
+        top:-10%;
+    }
+}
+@keyframes pop_bot {
+    0% {
+        bottom:-100%;
+    }
+    80% {
+        bottom:0%;
+    }
+    90% {
+        bottom:-10%;
+    }
+}

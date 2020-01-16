@@ -17,7 +17,7 @@ var connection = mysql.createConnection({
   port: 3306,
   user: 'root',   
   password: '1234',
-  database: 'test_crud'  
+  database: 'vue'  
 });
 // Connect
 connection.connect(function (err) {   

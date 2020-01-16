@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/reset.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <title>카카오페이 이벤트 프로모션</title>
+    </head> 
+    <body>
+        <div id="wrap">
+            <div class="coin_box">
+                <div class="coin_1"></div>
+                <div class="coin_2"></div>
+                <div class="coin_3"></div>
+                <div class="coin_4"></div>
+                <div class="coin_5"></div>
+                <div class="coin_6"></div>
+                <div class="coin_7"></div>
+                <div class="coin_8"></div>
+            </div>
+            <div class="top_bar"></div>
+            <div class="flame"></div>
+            <div class="title_neon"></div>
+            <div class="money"></div>
+            <div class="hand_box">
+                <div class="hand_l"></div>
+                <div class="price"></div>
+                <div class="hand_r"></div>
+            </div>
+            <div class="reword"></div> 
+            <div class="sns"></div>
+            <div class="bot_coin"></div>
+            <div class="in_button">
+                <button onclick="btn_click();"></button>
+            </div>
+            <div class="pop_wrap">
+                <div class="pop_top">
+                    <div class="close_btn">
+                        <button onclick="pop_close_btn();"></button>
+                    </div>
+                </div>
+                <div class="pop_bot">
+                    <div class="pop_btn">
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $("#wrap").scroll(function(){
+                var scrollTop = $(this).scrollTop();
+                $(".coin_box").animate({top: -scrollTop}, 10);
+            });
+            function btn_click() {
+                $(".pop_wrap").show();
+                $(".in_button").hide();
+                $("#wrap").css({"overflow-y": "hidden"});
+                $("#wrap").scrollTop(0);
+            }
+            function pop_close_btn() {
+                $(".pop_wrap").hide();
+                $(".in_button").show();
+                $("#wrap").css({"overflow-y": "visible"});
+            }
+        </script> 
+    </body> 
+</html>
